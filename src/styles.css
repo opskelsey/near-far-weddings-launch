@@ -280,4 +280,5 @@ button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
   .intake-inner { grid-template-columns: 1fr; gap: 27px; }.intake-intro { text-align: center; }.intake-intro > p:not(.eyebrow) { margin-left: auto; margin-right: auto; }.intake-intro h2 { font-size: 48px; }.intake-photo, .intake-intro .little-note { display: none; }.intake-form { max-width: 440px; margin: auto; width: 100%; }.form-row { gap: 13px; }.intake-form input, .intake-form select, .intake-form textarea { font-size: 12px; padding-left: 10px; }.form-bottom { align-items: flex-start; flex-direction: column; gap: 18px; }.form-bottom .primary-cta { width: 100%; justify-content: space-between; }
   .footer-bottom { gap: 12px; font-size: 8px; }.footer-bottom > span:nth-child(2) { display: none; }.footer-logo { width: 195px; height: 195px; }
 }
+@media (max-width: 420px) { .intake-form fieldset .form-row { grid-template-columns: 1fr; gap: 2px; } }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { transition: none !important; animation: none !important; } }
