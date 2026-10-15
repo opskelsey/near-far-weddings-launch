@@ -1,4 +1,5 @@
 # Website roadmap
+- [x] Drop hero accent stars, vertically center hero text, trim offerings to checklists, remove the pricing note and footer tagline.
 - [x] Revise to approachable cosmic midnight navy and gold; replace the hero with a real photograph.
 - [x] Remove invented copy and add three lorem ipsum testimonials.
 - [x] Verify revised desktop/mobile page and package inquiry interactions.
