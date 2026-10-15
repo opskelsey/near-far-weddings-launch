@@ -177,12 +177,10 @@ button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
 .eyebrow { font-size: 9px; font-weight: 500; line-height: 1.5 !important; color: var(--muted-foreground); }
 .hero-eyebrow { display: flex; align-items: center; gap: 12px; margin-bottom: 21px; }
 .hero-eyebrow span { width: 29px; height: 1px; background: var(--gold); }
-.hero-brand { font-family: var(--font-display); font-size: 22px; margin-bottom: 3px; }
 .hero h1 { font-size: 74px; line-height: .98; max-width: 600px; }
 .hero h1 em { color: var(--primary); }
 .hero-copy { font-size: 13px; max-width: 345px; margin: 25px 0 24px; }
 .primary-cta { height: 45px; padding: 0 24px; border-radius: 0; box-shadow: none; font-size: 12px; gap: 24px; }
-.hero-bottom { position: absolute; bottom: 0; width: 100%; display: flex; align-items: center; justify-content: center; gap: 24px; height: 43px; background: color-mix(in oklch, var(--background) 88%, transparent); font-size: 8px; }
 .celestial-star { color: var(--gold); font-size: 23px; line-height: 1; }
 .section-space { padding: 83px 6%; }
 .ornament { display: flex; align-items: center; justify-content: center; gap: 18px; margin-bottom: 22px; }
@@ -199,10 +197,6 @@ button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
 .section-heading > p:last-child { font-size: 12px; color: var(--muted-foreground); }
 .offerings-grid { max-width: 1140px; margin: auto; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 38px; }
 .offering { min-width: 0; display: flex; flex-direction: column; }
-.offering-image { position: relative; aspect-ratio: 1.42; overflow: hidden; margin-bottom: 25px; }
-.offering-image img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s; }
-.offering:hover .offering-image img { transform: scale(1.035); }
-.offering-number { position: absolute; bottom: 0; left: 0; background: var(--parchment); width: 42px; height: 38px; display: grid; place-items: center; font-family: var(--font-display); font-size: 22px; color: var(--primary); }
 .offering h3 { font-size: 31px; line-height: 1.2; }
 .offering-price { font-size: 11px; color: var(--primary); margin-top: 5px; }
 .offering-tagline { font-family: var(--font-display); font-style: italic; font-size: 19px; line-height: 1.4 !important; margin: 18px 0 12px; min-height: 53px; }
@@ -236,8 +230,6 @@ button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
 .intake-intro > .celestial-star { display: block; font-size: 30px; margin-bottom: 22px; }
 .intake-intro h2 { margin: 16px 0 19px; font-size: 55px; }
 .intake-intro > p:not(.eyebrow) { font-size: 12px; color: var(--muted-foreground); max-width: 270px; }
-.intake-photo { width: 183px; height: 140px; margin-top: 27px; }
-.intake-photo img { height: 100%; width: 100%; object-fit: cover; }
 .intake-intro .little-note { font-family: var(--font-display); font-size: 17px !important; font-style: italic; margin-top: 18px; }
 .intake-form { padding-top: 10px; }
 .intake-form label, .intake-form legend { display: block; font-size: 11px; font-weight: 500; line-height: 1.6; }
@@ -254,7 +246,6 @@ button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
 .form-bottom > span { font-family: var(--font-display); font-style: italic; color: var(--muted-foreground); font-size: 16px; }
 .form-status { font-size: 11px; display: flex; gap: 8px; align-items: center; margin-top: 20px; }
 .site-footer { text-align: center; padding: 34px 6% 0; }
-.footer-logo { width: 210px; height: 210px; object-fit: contain; margin: 0 auto 25px; border-radius: 50%; }
 .footer-tagline { font-family: var(--font-display); font-style: italic; font-size: 24px; margin-top: -21px; }
 .footer-contact { display: flex; align-items: center; justify-content: center; gap: 7px; margin: 18px 0 9px; }
 .footer-contact .celestial-star { font-size: 13px; }
@@ -271,27 +262,23 @@ button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
   .mobile-nav { position: absolute; z-index: 20; top: 82px; left: 0; right: 0; background: var(--background); padding: 15px 6% 24px; border-bottom: 1px solid var(--border); }
   .mobile-nav a { display: flex; justify-content: space-between; padding: 13px 0; font-size: 13px; }
   .hero { height: 640px; min-height: 0; }.hero-image { object-position: 61% center; }.hero-wash { background: linear-gradient(90deg, var(--hero-wash), color-mix(in oklch, var(--hero-wash) 65%, transparent) 65%, color-mix(in oklch, var(--hero-wash) 10%, transparent)); }
-  .hero-inner { padding: 48px 7% 0; }.hero-eyebrow { font-size: 8px; gap: 7px; }.hero-eyebrow span { width: 15px; }.hero-brand { font-size: 22px; }.hero h1 { font-size: 62px; }.hero-copy { font-size: 12px; max-width: 290px; margin-top: 26px; }.hero-bottom { gap: 10px; font-size: 6px; padding: 0 12px; }.hero-bottom .celestial-star { font-size: 17px; }
+  .hero-inner { padding: 48px 7% 0; }.hero h1 { font-size: 62px; }.hero-copy { font-size: 12px; max-width: 290px; margin-top: 26px; }
   .section-space { padding: 60px 7%; }.wedding-site h2 { font-size: 39px; }.welcome { padding-top: 42px; }.welcome h2 { font-size: 36px; }.welcome-copy { font-size: 12px; }.signature { font-size: 25px; }
   .section-heading { margin-bottom: 31px; }.section-heading h2 { max-width: 320px; margin: 13px auto 17px; }.section-heading > p:last-child { max-width: 270px; margin: auto; }
-  .offerings-grid { grid-template-columns: 1fr; gap: 48px; max-width: 410px; }.offering-image { aspect-ratio: 1.45; margin-bottom: 20px; }.offering h3 { font-size: 32px; }.offering-tagline { min-height: 0; font-size: 20px; margin-top: 15px; }.offering-copy { min-height: 0; }.offering ul { font-size: 12px; }.offering-action { padding-top: 20px; }
+  .offerings-grid { grid-template-columns: 1fr; gap: 48px; max-width: 410px; }.offering h3 { font-size: 32px; }.offering-tagline { min-height: 0; font-size: 20px; margin-top: 15px; }.offering-copy { min-height: 0; }.offering ul { font-size: 12px; }.offering-action { padding-top: 20px; }
   .about-inner { grid-template-columns: 1fr; gap: 39px; max-width: 420px; }.headshot-wrap { max-width: 300px; margin: auto; }.about-copy { text-align: left; }.about-copy h2 { font-size: 45px; }.about-copy > p:not(.eyebrow):not(.signature) { font-size: 13px; }
   .kind-words { padding: 53px 7%; }.kind-words blockquote { font-size: 22px; }.kind-words h2 { font-size: 39px; }
-  .intake-inner { grid-template-columns: 1fr; gap: 27px; }.intake-intro { text-align: center; }.intake-intro > p:not(.eyebrow) { margin-left: auto; margin-right: auto; }.intake-intro h2 { font-size: 48px; }.intake-photo, .intake-intro .little-note { display: none; }.intake-form { max-width: 440px; margin: auto; width: 100%; }.form-row { gap: 13px; }.intake-form input, .intake-form select, .intake-form textarea { font-size: 12px; padding-left: 10px; }.form-bottom { align-items: flex-start; flex-direction: column; gap: 18px; }.form-bottom .primary-cta { width: 100%; justify-content: space-between; }
-  .footer-bottom { gap: 12px; font-size: 8px; }.footer-bottom > span:nth-child(2) { display: none; }.footer-logo { width: 195px; height: 195px; }
+  .intake-inner { grid-template-columns: 1fr; gap: 27px; }.intake-intro { text-align: center; }.intake-intro > p:not(.eyebrow) { margin-left: auto; margin-right: auto; }.intake-intro h2 { font-size: 48px; }.intake-form { max-width: 440px; margin: auto; width: 100%; }.form-row { gap: 13px; }.intake-form input, .intake-form select, .intake-form textarea { font-size: 12px; padding-left: 10px; }.form-bottom { align-items: flex-start; flex-direction: column; gap: 18px; }.form-bottom .primary-cta { width: 100%; justify-content: space-between; }
+  .footer-bottom { gap: 12px; font-size: 8px; }.footer-bottom > span:nth-child(2) { display: none; }
 }
 .site-header { border-bottom: 1px solid var(--border); }
 .desktop-nav { gap: 25px; }
-.desktop-nav > a:first-child { max-width: 145px; text-align: center; }
 .hero { height: 590px; min-height: 0; }
 .hero-image { object-position: center 62%; }
 .hero-wash { background: linear-gradient(90deg, var(--hero-wash), color-mix(in oklch, var(--hero-wash) 75%, transparent) 42%, color-mix(in oklch, var(--hero-wash) 12%, transparent) 85%); }
 .hero-inner { padding-top: 46px; position: relative; }
-.hero-brand { color: var(--gold); font-size: 23px; margin-bottom: 17px; }
 .hero h1 { font-size: 65px; line-height: 1.04; }
 .hero-copy { font-size: 14px; max-width: 380px; }
-.hero-bottom { height: 29px; background: transparent; gap: 18px; }
-.hero-bottom > span:not(.celestial-star) { height: 1px; width: 65px; background: var(--gold); }
 .hero-stars { position: absolute; right: 9%; top: 30px; display: flex; align-items: flex-start; gap: 30px; }
 .hero-stars .celestial-star:nth-child(2) { margin-top: 22px; font-size: 13px; }
 .hero-stars .celestial-star:nth-child(3) { font-size: 10px; }
@@ -301,7 +288,6 @@ button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
 .welcome-copy, .offering-copy, .about-copy > p:not(.eyebrow):not(.signature) { font-size: 14px; }
 .offerings { border-block: 1px solid var(--border); }
 .offering ul { font-size: 13px; }.offering-note { font-size: 12px; }
-.offering-image { aspect-ratio: 1.6; }.offering-image img { object-position: center 55%; }
 .includes-label { margin-top: 22px; font-size: 11px; color: var(--gold); }
 .offering h3 { font-size: 29px; }.offering-price { font-size: 13px; }
 .about { position: relative; }
@@ -320,7 +306,7 @@ button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
 @media (max-width: 700px) {
   .hero { height: 620px; }.hero-inner { padding-top: 45px; }.hero h1 { font-size: 52px; }.hero-copy { font-size: 14px; max-width: 295px; }
   .hero-image { object-position: 60% center; }.hero-wash { background: linear-gradient(90deg, var(--hero-wash), color-mix(in oklch, var(--hero-wash) 72%, transparent) 65%, color-mix(in oklch, var(--hero-wash) 20%, transparent)); }
-  .hero-stars { right: 8%; top: 15px; gap: 20px; }.hero-brand { font-size: 21px; margin-bottom: 22px; }
+  .hero-stars { right: 8%; top: 15px; gap: 20px; }
   .welcome::before, .welcome::after { display: none; }
   .testimonials-grid { grid-template-columns: 1fr; gap: 18px; }.testimonials-grid figure + figure { border-left: none; border-top: 1px solid var(--border); }
   .testimonials-grid blockquote { font-size: 23px; }.offering h3 { font-size: 32px; }.footer-tagline { margin-top: 0; }
