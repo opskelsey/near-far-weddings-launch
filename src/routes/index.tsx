@@ -12,7 +12,7 @@ export const Route = createFileRoute("/")({
   head: () => ({ meta: [
     { title: 'Near & Far Weddings | Your Wedding, Wrapped Up With Care' },
     { name: 'description', content: 'Thoughtful wedding planning with Kelsey Marshall. Wedding Plan Coach, Day-of Coordination, and Full Service. Arizona-rooted, travel bag ready.' },
-    { property: 'og:title', content: 'Near & Far Weddings | Weddings, Tied Up With a Bow' },
+    { property: 'og:title', content: 'Near & Far Weddings | Your Wedding, Wrapped Up With Care' },
     { property: 'og:description', content: 'Thoughtful planning for couples who want to be fully present at their own celebration, with a little warmth and a lot of care for the details.' },
     { property: 'og:type', content: 'website' },
     { name: 'twitter:card', content: 'summary_large_image' },
@@ -56,7 +56,6 @@ function Index() {
           <img src={hero.url} alt="A warm meadow of daisies in soft light with gentle film grain" className="hero-image" width={1920} height={1024} fetchPriority="high" />
           <div className="hero-wash" />
           <div className="hero-inner">
-            <div className="hero-stars" aria-hidden="true"><Star /><Star /><Star /></div>
             <h1 id="hero-heading">Your wedding,<br />wrapped up<br />with <em>care.</em></h1>
             <p className="hero-copy">Thoughtful planning for couples who want to be fully present at their own celebration, with a little warmth and a lot of care for the details.</p>
             <Button asChild className="primary-cta"><a href="#inquire">Send Me a Note <ArrowRight size={17} /></a></Button>
@@ -75,11 +74,9 @@ function Index() {
           <div className="offerings-grid">
             {offerings.map((offering, index) => <article key={offering.id} className="offering">
               <div className="offering-title"><h3>{offering.name}</h3><p className="offering-price">{offering.priceLabel}</p></div>
-              <p className="offering-tagline">{offering.tagline}</p><p className="offering-copy">{offering.copy}</p>
               <p className="includes-label">Includes:</p>
               <ul>{offering.includes.map(item => <li key={item}><Check size={13} /><span>{item}</span></li>)}</ul>
               {index === 0 && <p className="offering-note">Decide you’d like ongoing support? Your ${COACH_CREDIT} is credited toward Day-of Coordination or Full Service if you book within {COACH_CREDIT_WINDOW_DAYS} days of your follow-up call.</p>}
-              {index === 2 && <p className="offering-note">Pricing depends on guest count, scope, and level of support.</p>}
               <div className="offering-action">{index === 0 ? <Button asChild variant="link"><a href={BOOKING_PLACEHOLDER} target="_blank" rel="noopener noreferrer">Book Your Session <ArrowRight /></a></Button> : <Button variant="link" onClick={() => inquire(offering.service)}>Inquire <ArrowRight /></Button>}</div>
             </article>)}
           </div>
@@ -103,7 +100,7 @@ function Index() {
         </div></section>
       </main>
 
-      <footer className="site-footer"><p className="footer-tagline">Weddings, tied up with a bow.</p><div className="footer-contact"><Button variant="link" disabled><Mail size={15} /> Email</Button><Star /><Button variant="link" disabled><Instagram size={15} /> Instagram</Button></div><p className="footer-location">Arizona-rooted, travel bag ready.</p><div className="footer-bottom"><span>© 2026 Near & Far Weddings</span><Button asChild variant="ghost" size="icon"><a href="#top" aria-label="Back to top"><ArrowUp size={17} /></a></Button></div></footer>
+      <footer className="site-footer"><div className="footer-contact"><Button variant="link" disabled><Mail size={15} /> Email</Button><Star /><Button variant="link" disabled><Instagram size={15} /> Instagram</Button></div><p className="footer-location">Arizona-rooted, travel bag ready.</p><div className="footer-bottom"><span>© 2026 Near & Far Weddings</span><Button asChild variant="ghost" size="icon"><a href="#top" aria-label="Back to top"><ArrowUp size={17} /></a></Button></div></footer>
     </div>
   );
 }
