@@ -4,12 +4,8 @@ import { ArrowRight, ArrowUp, Check, Menu, X, Instagram, Mail } from 'lucide-rea
 import { toast } from 'sonner';
 import { Button } from '@/components/ui/button';
 import { offerings, BOOKING_PLACEHOLDER, COACH_CREDIT, COACH_CREDIT_WINDOW_DAYS } from '@/lib/wedding-offerings';
-import hero from '@/assets/natural-bouquet.jpg.asset.json';
-import lace from '@/assets/soft-iris.jpg.asset.json';
-import flowers from '@/assets/natural-bouquet.jpg.asset.json';
-import table from '@/assets/garden-poppies.jpg.asset.json';
+import hero from '@/assets/hero-cosmic-night.jpg.asset.json';
 import headshot from '@/assets/kelsey-marshall.jpg.asset.json';
-import logo from '@/assets/near-and-far-logo.png.asset.json';
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -30,9 +26,8 @@ function Star({ className = '' }: { className?: string }) {
 function Index() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [service, setService] = useState('Not sure yet');
-  
-  const images = [lace.url, flowers.url, table.url];
-  const nav = [['Ways We Can Work Together', '#offerings'], ['About', '#about'], ['Kind Words', '#kind-words']] as const;
+
+  const nav = [['Offerings', '#offerings'], ['About', '#about']] as const;
 
   function inquire(selectedService: string) {
     setService(selectedService);
@@ -58,21 +53,18 @@ function Index() {
 
       <main>
         <section className="hero" aria-labelledby="hero-heading">
-          <img src={hero.url} alt="A naturally arranged bouquet of warm garden flowers in soft light" className="hero-image" width={1920} height={1024} fetchPriority="high" />
+          <img src={hero.url} alt="A warm meadow of daisies in soft light with gentle film grain" className="hero-image" width={1920} height={1024} fetchPriority="high" />
           <div className="hero-wash" />
           <div className="hero-inner">
             <div className="hero-stars" aria-hidden="true"><Star /><Star /><Star /></div>
-            <p className="hero-brand">Near & Far Weddings</p>
             <h1 id="hero-heading">Your wedding,<br />wrapped up<br />with <em>care.</em></h1>
             <p className="hero-copy">Thoughtful planning for couples who want to be fully present at their own celebration, with a little warmth and a lot of care for the details.</p>
             <Button asChild className="primary-cta"><a href="#inquire">Send Me a Note <ArrowRight size={17} /></a></Button>
           </div>
-          <div className="hero-bottom" aria-hidden="true"><span /><Star /><span /></div>
         </section>
 
         <section className="welcome section-space" aria-labelledby="welcome-heading">
           <div className="ornament"><span /><Star /><span /></div>
-          <p className="eyebrow">A WARM WELCOME</p>
           <h2 id="welcome-heading">Hello, and <em>congratulations!</em></h2>
           <div className="welcome-copy"><p>Planning a wedding should feel a bit like opening a well-loved recipe box: familiar, joyful, and full of good things to come. If it feels more like a pile of tabs, spreadsheets, and opinions, I’m here to help.</p><p>I’ll guide you on a path toward your vision, without the vendor pressure and cookie-cutter templates, so you can spend your day on what <em>you</em> care about and let the rest go.</p></div>
 
@@ -82,7 +74,6 @@ function Index() {
           <div className="section-heading"><h2 id="offerings-heading">Ways We Can <em>Work Together</em></h2><p>Choose the amount of help that suits you. Every path starts with a conversation.</p></div>
           <div className="offerings-grid">
             {offerings.map((offering, index) => <article key={offering.id} className="offering">
-              <div className="offering-image"><img src={images[index]} alt={['A delicate pink iris in soft natural light', 'Colorful, naturally arranged garden flowers', 'Golden poppies growing in the garden'][index]} width={768} height={1024} loading="lazy" /><span className="offering-number">0{index + 1}</span></div>
               <div className="offering-title"><h3>{offering.name}</h3><p className="offering-price">{offering.priceLabel}</p></div>
               <p className="offering-tagline">{offering.tagline}</p><p className="offering-copy">{offering.copy}</p>
               <p className="includes-label">Includes:</p>
@@ -96,17 +87,15 @@ function Index() {
 
         <section id="about" className="about section-space" aria-labelledby="about-heading">
           <div className="about-inner"><div className="headshot-wrap"><img src={headshot.url} alt="Kelsey Marshall among snow-covered evergreen trees" width={768} height={1152} loading="lazy" /><div className="headshot-caption" aria-hidden="true"><Star /></div></div>
-          <div className="about-copy"><p className="eyebrow">About</p><h2 id="about-heading">Nice to meet you,<br />I’m <em>Kelsey.</em></h2><p>I’m a <strong>designer, lifelong organizer, and believer that the little details are what make people feel cared for.</strong> Before planning weddings, I spent more than a decade leading corporate event and design operations teams, where I learned to anticipate the details, solve problems calmly, and turn a lot of moving pieces into something that feels effortless.</p><p>After planning my own intimate wedding in 2024, and it reminded me just how much the right celebration can be about the people, the place, and the little things.</p><p>I believe in warm welcomes, honest budgets, and hand-written thank-you notes. I’ll be straight with you, cheer you on, and never let you feel like just another booking.</p></div></div>
+          <div className="about-copy"><h2 id="about-heading">Nice to meet you,<br />I’m <em>Kelsey.</em></h2><p>I’m a <strong>designer, lifelong organizer, and believer that the little details are what make people feel cared for.</strong> Before planning weddings, I spent more than a decade leading corporate event and design operations teams, where I learned to anticipate the details, solve problems calmly, and turn a lot of moving pieces into something that feels effortless.</p><p>After planning my own intimate wedding in 2024, and it reminded me just how much the right celebration can be about the people, the place, and the little things.</p><p>I believe in warm welcomes, honest budgets, and hand-written thank-you notes. I’ll be straight with you, cheer you on, and never let you feel like just another booking.</p></div></div>
         </section>
 
-        <section id="kind-words" className="kind-words section-space" aria-labelledby="kind-heading"><div className="ornament"><span /><Star /><span /></div><h2 id="kind-heading">Kind <em>Words</em></h2><div className="testimonials-grid">{["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."].map((quote, index) => <figure key={index}><span className="quote-mark" aria-hidden="true">“</span><blockquote>{quote}</blockquote><Star /></figure>)}</div></section>
+        <section id="kind-words" className="kind-words section-space" aria-labelledby="kind-heading"><div className="ornament"><span /><Star /><span /></div><h2 id="kind-heading">Kind <em>Words</em></h2><div className="testimonials-grid">{["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."].map((quote, index) => <figure key={index}><span className="quote-mark" aria-hidden="true">“</span><blockquote>{quote}</blockquote></figure>)}</div></section>
 
-        <section id="inquire" className="intake section-space" aria-labelledby="intake-heading"><div className="intake-inner"><div className="intake-intro"><Star /><h2 id="intake-heading">Let’s begin,<br /><em>shall we?</em></h2><p>Tell me about your day and I’ll reply within 1–2 business days.</p><div className="intake-photo"><img src={flowers.url} alt="Soft garden roses and delicate white flowers" width={768} height={1024} loading="lazy" /></div></div>
+        <section id="inquire" className="intake section-space" aria-labelledby="intake-heading"><div className="intake-inner"><div className="intake-intro"><Star /><h2 id="intake-heading">Let’s begin,<br /><em>shall we?</em></h2><p>Tell me about your day and I’ll reply within 1–2 business days.</p></div>
           <form onSubmit={submitNote} className="intake-form">
-            <div className="form-row"><label>Your names <span>*</span><input name="names"  autoComplete="name" required /></label><label>Email <span>*</span><input type="email" name="email"  autoComplete="email" required /></label></div>
-            <div className="form-row"><label>Wedding date<input name="date" placeholder="Still deciding" /></label><label>Venue / location<input name="venue" placeholder="Not yet chosen" /></label></div>
-            <fieldset><legend>Guest count & budget range</legend><div className="form-row"><label className="sr-only" htmlFor="guests">Guest count</label><select id="guests" name="guests" defaultValue=""><option value="" disabled>Guest count</option><option>Under 30</option><option>30–75</option><option>76–150</option><option>151–250</option><option>250+</option><option>Still deciding</option></select><label className="sr-only" htmlFor="budget">Budget range</label><select id="budget" name="budget" defaultValue=""><option value="" disabled>Budget range</option><option>Under $10,000</option><option>$10,000–$20,000</option><option>$20,000–$35,000</option><option>$35,000–$50,000</option><option>$50,000+</option><option>Still deciding</option></select></div></fieldset>
-            <label>What are you most hoping for, or most overwhelmed by?<textarea name="message" rows={4}  /></label>
+            <div className="form-row"><label>Your names <span>*</span><input name="names" autoComplete="name" required /></label><label>Email <span>*</span><input type="email" name="email" autoComplete="email" required /></label></div>
+            <div className="form-row"><label>Wedding date<input name="date" placeholder="Still deciding" /></label></div>
             <label htmlFor="service">Which service interests you? <span className="optional">(optional)</span></label><select id="service" name="service" value={service} onChange={event => setService(event.target.value)}><option>Not sure yet</option>{offerings.map(item => <option key={item.id}>{item.service}</option>)}</select>
             <div className="form-bottom"><Button type="submit" className="primary-cta">Send it my way <ArrowRight /></Button></div>
 
@@ -114,7 +103,7 @@ function Index() {
         </div></section>
       </main>
 
-      <footer className="site-footer"><img src={logo.url} alt="Near & Far Weddings logomark" className="footer-logo" width={768} height={768} loading="lazy" /><p className="footer-tagline">Weddings, tied up with a bow.</p><div className="footer-contact"><Button variant="link" disabled><Mail size={15} /> Email</Button><Star /><Button variant="link" disabled><Instagram size={15} /> Instagram</Button></div><p className="footer-location">Arizona-rooted, travel bag ready.</p><div className="footer-bottom"><span>© 2026 Near & Far Weddings</span><Button asChild variant="ghost" size="icon"><a href="#top" aria-label="Back to top"><ArrowUp size={17} /></a></Button></div></footer>
+      <footer className="site-footer"><p className="footer-tagline">Weddings, tied up with a bow.</p><div className="footer-contact"><Button variant="link" disabled><Mail size={15} /> Email</Button><Star /><Button variant="link" disabled><Instagram size={15} /> Instagram</Button></div><p className="footer-location">Arizona-rooted, travel bag ready.</p><div className="footer-bottom"><span>© 2026 Near & Far Weddings</span><Button asChild variant="ghost" size="icon"><a href="#top" aria-label="Back to top"><ArrowUp size={17} /></a></Button></div></footer>
     </div>
   );
 }
