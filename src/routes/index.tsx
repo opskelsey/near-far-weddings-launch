@@ -1,5 +1,4 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useServerFn } from '@tanstack/react-start';
 import { useRef, useState, type FormEvent } from 'react';
 import { ArrowRight, ArrowUp, Check, Menu, X, Instagram, Mail, CalendarIcon, LoaderCircle } from 'lucide-react';
 import { toast } from 'sonner';
@@ -12,7 +11,7 @@ import { offerings, BOOKING_URL, INSTAGRAM_URL, COACH_CREDIT, COACH_CREDIT_WINDO
 import hero from '@/assets/hero-bouquet.jpg';
 import headshot from '@/assets/kelsey-marshall.jpg';
 import { intakeSchema } from '@/lib/intake-schema';
-import { submitIntake } from '@/lib/intake.functions';
+import { deliverIntake, WEB3FORMS_PUBLIC_ACCESS_KEY } from '@/lib/intake';
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -39,7 +38,6 @@ function Index() {
   const sendingRef = useRef(false);
   const [confirmation, setConfirmation] = useState('');
   const [submitError, setSubmitError] = useState('');
-  const sendIntake = useServerFn(submitIntake);
 
   const nav = [['Offerings', '#offerings'], ['About', '#about']] as const;
 
@@ -67,7 +65,7 @@ function Index() {
     sendingRef.current = true;
     setSending(true);
     try {
-      const result = await sendIntake({ data: parsed.data });
+      const result = await deliverIntake(parsed.data, WEB3FORMS_PUBLIC_ACCESS_KEY);
       if (!result.success) throw new Error('Submission failed');
       const message = 'Thank you! Your inquiry has been sent. I’ll reply within 1–2 business days.';
       setConfirmation(message);
