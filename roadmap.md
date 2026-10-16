@@ -1,4 +1,5 @@
 # Website roadmap
+- [ ] Connect the intake form to Web3Forms with validated fields and sending, success, and error states; verify submission.
 - [x] Set the hero script line to Stalemate (Google Font); removed the East Liberty Signature hookup.
 - [x] Swap in the high-res watermark-free hero photo as a real project file so it loads in production.
 - [x] Offerings: drop the intro sentence, add the line–star–line divider above the heading; reword the closing line; even out the two welcome paragraphs.
