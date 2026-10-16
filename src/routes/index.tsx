@@ -8,7 +8,7 @@ import { Calendar } from '@/components/ui/calendar';
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
 import { cn } from '@/lib/utils';
 import { offerings, BOOKING_PLACEHOLDER, COACH_CREDIT, COACH_CREDIT_WINDOW_DAYS } from '@/lib/wedding-offerings';
-import hero from '@/assets/hero-bouquet.png';
+import hero from '@/assets/hero-bouquet.jpg';
 import headshot from '@/assets/kelsey-marshall.jpg';
 
 export const Route = createFileRoute("/")({
@@ -60,7 +60,7 @@ function Index() {
       <main>
         <section className="hero" aria-labelledby="hero-heading">
           <div className="hero-media">
-            <img src={hero} alt="A bridal bouquet of pink and cream flowers wrapped in white ribbon, resting on a burnt-orange velvet sofa" className="hero-image" width={1242} height={1947} fetchPriority="high" />
+            <img src={hero} alt="A bridal bouquet of pale pink daisies, peach roses, and blue-gray sea holly, tied with white ribbon, resting on a tan velvet sofa" className="hero-image" width={1600} height={2400} fetchPriority="high" />
           </div>
           <div className="hero-inner">
             <h1 id="hero-heading">Your wedding,<span className="hero-script">wrapped in a bow.</span></h1>
@@ -77,7 +77,7 @@ function Index() {
         </section>
 
         <section className="fit section-space" aria-labelledby="fit-heading">
-          <div className="fit-inner"><h2 id="fit-heading"><em>This might be for you if…</em></h2><ul><li><span className="fit-star" aria-hidden="true">✦</span><span>You’re planning your first wedding and have no idea where to start.</span></li><li><span className="fit-star" aria-hidden="true">✦</span><span>You’d rather spend money on the things you care about than follow every wedding tradition.</span></li><li><span className="fit-star" aria-hidden="true">✦</span><span>You want to celebrate with the people you love—not your friend's neighbor's cousin.</span></li><li><span className="fit-star" aria-hidden="true">✦</span><span>You want your wedding to feel personal, relaxed, and a little unconventional.</span></li><li><span className="fit-star" aria-hidden="true">✦</span><span>You have a budget you actually need to stick to.</span></li><li><span className="fit-star" aria-hidden="true">✦</span><span>You have a Pinterest board, 47 browser tabs, and approximately zero idea what comes next.</span></li><li><span className="fit-star" aria-hidden="true">✦</span><span>You want an experienced planner in your corner taking the logistical weight off your shoulders.</span></li></ul><p className="fit-close">If that sounds like you, we’ll probably get along.</p></div>
+          <div className="fit-inner"><h2 id="fit-heading"><em>This might be for you if…</em></h2><ul><li><span className="fit-star" aria-hidden="true">✦</span><span>You’re planning your first wedding and have no idea where to start.</span></li><li><span className="fit-star" aria-hidden="true">✦</span><span>You’d rather spend money on the things you care about than follow every wedding tradition.</span></li><li><span className="fit-star" aria-hidden="true">✦</span><span>You want to celebrate with the people you love—not your friend's neighbor's cousin.</span></li><li><span className="fit-star" aria-hidden="true">✦</span><span>You want your wedding to feel personal, relaxed, and a little unconventional.</span></li><li><span className="fit-star" aria-hidden="true">✦</span><span>You have a budget you actually need to stick to.</span></li><li><span className="fit-star" aria-hidden="true">✦</span><span>You have a Pinterest board, 47 browser tabs, and approximately zero idea what comes next.</span></li><li><span className="fit-star" aria-hidden="true">✦</span><span>You want an experienced planner in your corner taking the logistical weight off your shoulders.</span></li></ul><p className="fit-close">If that sounds like you, you’re in the right place.</p></div>
         </section>
 
         <section id="about" className="about section-space" aria-labelledby="about-heading">
@@ -86,7 +86,8 @@ function Index() {
         </section>
 
         <section id="offerings" className="offerings section-space" aria-labelledby="offerings-heading">
-          <div className="section-heading"><h2 id="offerings-heading">Ways We Can <em>Work Together</em></h2><p>Choose the amount of help that suits you.</p></div>
+          <div className="ornament"><span /><Star /><span /></div>
+          <div className="section-heading"><h2 id="offerings-heading">Ways We Can <em>Work Together</em></h2></div>
           <div className="offerings-grid">
             {offerings.map((offering, index) => <article key={offering.id} className="offering"><span className="offering-number" aria-hidden="true">0{index + 1}</span><div className="offering-body">
               <div className="offering-title"><h3>{offering.name}</h3><p className="offering-price">{offering.priceLabel}{'originalPrice' in offering && <del className="original-price" aria-label={`Original price $${offering.originalPrice}`}>${offering.originalPrice}</del>}</p></div>

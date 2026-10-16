@@ -1,6 +1,7 @@
 # Website roadmap
 - [x] Set the hero script line to Stalemate (Google Font); removed the East Liberty Signature hookup.
-- [ ] Swap in the high-res hero photo when Kelsey supplies it.
+- [x] Swap in the high-res watermark-free hero photo as a real project file so it loads in production.
+- [x] Offerings: drop the intro sentence, add the line–star–line divider above the heading; reword the closing line; even out the two welcome paragraphs.
 - [x] Day-of Coordination: drop “flat” from the price, use the new tagline and description, and replace the includes list.
 - [x] Change "creative teams, budgets" to "creative teams, and budgets."
 - [x] Reword the "This might be for you if…" planner bullet to "taking the logistical weight off your shoulders."

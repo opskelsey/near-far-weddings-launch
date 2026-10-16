@@ -176,7 +176,7 @@ button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
 .welcome { text-align: center; max-width: 860px; margin: auto; padding-top: 60px; padding-bottom: 68px; }
 .welcome .eyebrow { margin-bottom: 13px; }
 .welcome h2 { margin-bottom: 23px; }
-.welcome-copy { max-width: 600px; margin: auto; font-size: 13px; }
+.welcome-copy { max-width: 500px; margin: auto; font-size: 13px; }
 .welcome-copy p { text-wrap: pretty; }
 .welcome-copy p { text-wrap: balance; }
 .welcome-copy em { font-family: inherit; font-style: italic; }
