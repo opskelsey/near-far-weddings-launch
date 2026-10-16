@@ -337,3 +337,10 @@ button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
   .hero-copy { margin: 28px 0 26px; max-width: none; }
 }
 @media (max-width: 1199px) { .welcome::before, .welcome::after { display: none; } }
+/* Touch targets on tablet and mobile: every control at least 44x44px */
+@media (max-width: 1024px) {
+  .mobile-menu { min-height: 44px; min-width: 44px; }
+  .offering-action > * { height: auto; min-height: 44px; }
+  .footer-contact button, .footer-contact a { min-height: 44px; min-width: 44px; }
+  .footer-bottom a[aria-label="Back to top"] { min-height: 44px; min-width: 44px; }
+}
