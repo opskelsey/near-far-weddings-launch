@@ -1,4 +1,5 @@
 # Website roadmap
+- [x] Change "creative teams, budgets" to "creative teams, and budgets."
 - [x] Reword the "This might be for you if…" planner bullet to "taking the logistical weight off your shoulders."
 - [x] Apply requested wording, Kickstart Session name and discount, clearer offering text, photos shown without styling, and intake form rows with a date picker; verify pricing and inquiry flow.
 - [x] Keep paper texture only behind the About section, make the other sections solid, warm up the Kind Words background, and swap in the new hero photo.
