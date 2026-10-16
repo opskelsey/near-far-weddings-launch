@@ -16,8 +16,10 @@ describe('Intake submissions', () => {
     const call = send.mock.calls[0];
     expect(call?.[0]).toBe('https://api.web3forms.com/submit');
     expect(call?.[1]?.method).toBe('POST');
-    const body = JSON.parse(String(call?.[1]?.body));
-    expect({ name: body.name, email: body.email, date: body.date, services: body.services }).toEqual({ name: input.name, email: input.email, date: input.date, services: input.services });
+    const body = call?.[1]?.body;
+    expect(body).toBeInstanceOf(FormData);
+    if (!(body instanceof FormData)) throw new Error('Expected form fields');
+    expect({ name: body.get('name'), email: body.get('email'), date: body.get('date'), services: body.get('services') }).toEqual({ name: input.name, email: input.email, date: input.date, services: input.services });
   });
   it('allows an undecided date', () => expect(intakeSchema.safeParse({ ...input, date: '' }).success).toBe(true));
   it('only confirms success when Web3Forms accepts the request', async () => {
