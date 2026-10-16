@@ -83,6 +83,8 @@
   --secondary-foreground: oklch(0.29 0.035 132);
   --muted: oklch(0.91 0.025 85);
   --muted-foreground: oklch(0.445 0.027 57);
+  --original-price: oklch(0.46 0 0);
+  --photo-treatment: sepia(.18) saturate(.82) contrast(.96) brightness(1.02);
   --accent: oklch(0.82 0.048 62);
   --accent-foreground: var(--foreground);
   --destructive: oklch(0.5 0.17 27);
@@ -119,6 +121,7 @@
   --secondary-foreground: var(--foreground);
   --muted: var(--parchment);
   --muted-foreground: oklch(0.79 0.026 85);
+  --original-price: oklch(0.76 0 0);
   --accent: oklch(0.36 0.046 47);
   --border: oklch(0.76 0.05 65 / 35%);
   --input: var(--border);
@@ -173,6 +176,10 @@ button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
 .welcome .eyebrow { margin-bottom: 13px; }
 .welcome h2 { margin-bottom: 23px; }
 .welcome-copy { max-width: 627px; margin: auto; font-size: 13px; }
+.welcome-copy p { text-wrap: pretty; }
+.welcome-copy p:first-child { text-wrap: balance; }
+.welcome-copy em { font-family: inherit; font-style: italic; }
+.hero-image, .headshot-wrap > img { filter: var(--photo-treatment); }
 .welcome-copy p + p { margin-top: 14px; }
 .signature { font-family: var(--font-display); font-style: italic; font-size: 26px; color: var(--primary); margin-top: 21px; }
 .offerings { background-color: var(--secondary); }
@@ -182,14 +189,15 @@ button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
 .offerings-grid { max-width: 1140px; margin: auto; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 38px; }
 .offering { min-width: 0; display: flex; flex-direction: column; }
 .offering h3 { font-size: 31px; line-height: 1.2; }
-.offering-price { font-size: 11px; color: var(--primary); margin-top: 5px; }
+.offering-price { font-size: 11px; color: var(--secondary-foreground); margin-top: 5px; display: flex; align-items: baseline; gap: 12px; }
+.original-price { color: var(--original-price); font-weight: 400; }
 .includes-label { font-size: 8px; margin: 25px 0 14px; }
 .offering ul { display: flex; flex-direction: column; gap: 11px; font-size: 11px; color: var(--muted-foreground); line-height: 1.65; }
 .offering li { display: flex; gap: 9px; }
 .offering li svg { flex: 0 0 13px; margin-top: 3px; color: var(--gold); }
 .offering-note { font-size: 11px; font-style: italic; color: var(--muted-foreground); margin-top: 20px; }
 .offering-action { margin-top: auto; padding-top: 26px; }
-.offering-action > * { justify-content: space-between; border-top: 1px solid var(--border); color: var(--primary); padding: 17px 0 0; width: 100%; height: 41px; border-radius: 0; font-size: 12px; }
+.offering-action > * { justify-content: space-between; border-top: 1px solid var(--border); color: var(--secondary-foreground); padding: 17px 0 0; width: 100%; height: 41px; border-radius: 0; font-size: 12px; }
 .about { background-color: var(--background); background-image: url('./assets/organic-paper.jpg'); background-size: 640px 640px; background-blend-mode: multiply; padding-top: 100px; padding-bottom: 100px; }
 .about-inner { max-width: 980px; margin: auto; display: grid; grid-template-columns: .85fr 1fr; gap: 92px; align-items: center; }
 .headshot-wrap { position: relative; padding: 13px 13px 0; border: 1px solid var(--border); border-radius: 180px 180px 0 0; }
@@ -217,7 +225,7 @@ button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
 .intake-form label, .intake-form legend { display: block; font-size: 11px; font-weight: 500; line-height: 1.6; }
 .intake-form label > span { color: var(--primary); }
 .intake-form label > .optional { color: var(--muted-foreground); font-weight: 400; }
-.form-row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; margin-bottom: 23px; }
+.form-row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: end; gap: 22px; margin-bottom: 23px; }
 .intake-form input, .intake-form select, .intake-form textarea { width: 100%; border: 1px solid var(--border); border-radius: 0; background: color-mix(in oklch, var(--background) 64%, transparent); color: var(--foreground); font-family: var(--font-sans); font-size: 11px; padding: 12px 13px; margin-top: 9px; outline: none; font-weight: 400; }
 .intake-form input { height: 43px; }
 .intake-form select { height: 43px; }
@@ -267,7 +275,7 @@ button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
 .welcome-copy, .about-copy > p:not(.eyebrow):not(.signature) { font-size: 14px; }
 .offerings { border-block: 1px solid var(--border); }
 .offering ul { font-size: 13px; }.offering-note { font-size: 12px; }
-.includes-label { margin-top: 22px; font-size: 11px; color: var(--gold); }
+.includes-label { margin-top: 22px; font-size: 11px; color: var(--secondary-foreground); }
 .offering h3 { font-size: 29px; }.offering-price { font-size: 13px; }
 .about { position: relative; }
 .headshot-wrap { border-radius: 7px; padding: 10px 10px 0; }.headshot-wrap > img { border-radius: 3px; }

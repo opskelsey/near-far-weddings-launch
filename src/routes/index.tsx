@@ -11,9 +11,9 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({ meta: [
     { title: 'Near & Far Weddings | Your Wedding, Wrapped Up With Care' },
-    { name: 'description', content: 'Thoughtful wedding planning with Kelsey Marshall. Wedding Plan Coach, Day-of Coordination, and Full Service. Arizona-rooted, travel bag ready.' },
+    { name: 'description', content: 'Thoughtful wedding planning with Kelsey Marshall. Kickstart Session, Day-of Coordination, and Full Service. Arizona-rooted, travel bag ready.' },
     { property: 'og:title', content: 'Near & Far Weddings | Your Wedding, Wrapped Up With Care' },
-    { property: 'og:description', content: 'Thoughtful planning for couples who want to be fully present at their own celebration, with a little warmth and a lot of care for the details.' },
+    { property: 'og:description', content: 'Thoughtful planning for couples who want to be fully present at their own celebration.' },
     { property: 'og:type', content: 'website' },
     { name: 'twitter:card', content: 'summary_large_image' },
   ] }),
@@ -57,7 +57,7 @@ function Index() {
           <div className="hero-wash" />
           <div className="hero-inner">
             <h1 id="hero-heading">Your wedding,<br />wrapped up<br />with <em>care.</em></h1>
-            <p className="hero-copy">Thoughtful planning for couples who want to be fully present at their own celebration, with a little warmth and a lot of care for the details.</p>
+            <p className="hero-copy">Thoughtful planning for couples who want to be fully present at their own celebration.</p>
             <Button asChild className="primary-cta"><a href="#inquire">Send Me a Note <ArrowRight size={17} /></a></Button>
           </div>
         </section>
@@ -70,10 +70,10 @@ function Index() {
         </section>
 
         <section id="offerings" className="offerings section-space" aria-labelledby="offerings-heading">
-          <div className="section-heading"><h2 id="offerings-heading">Ways We Can <em>Work Together</em></h2><p>Choose the amount of help that suits you. Every path starts with a conversation.</p></div>
+          <div className="section-heading"><h2 id="offerings-heading">Ways We Can <em>Work Together</em></h2><p>Choose the amount of help that suits you.</p></div>
           <div className="offerings-grid">
             {offerings.map((offering, index) => <article key={offering.id} className="offering">
-              <div className="offering-title"><h3>{offering.name}</h3><p className="offering-price">{offering.priceLabel}</p></div>
+              <div className="offering-title"><h3>{offering.name}</h3><p className="offering-price">{offering.priceLabel}{'originalPrice' in offering && <del className="original-price" aria-label={`Original price $${offering.originalPrice}`}>${offering.originalPrice}</del>}</p></div>
               <p className="includes-label">Includes:</p>
               <ul>{offering.includes.map(item => <li key={item}><Check size={13} /><span>{item}</span></li>)}</ul>
               {index === 0 && <p className="offering-note">Decide you’d like ongoing support? Your ${COACH_CREDIT} is credited toward Day-of Coordination or Full Service if you book within {COACH_CREDIT_WINDOW_DAYS} days of your follow-up call.</p>}
@@ -84,7 +84,7 @@ function Index() {
 
         <section id="about" className="about section-space" aria-labelledby="about-heading">
           <div className="about-inner"><div className="headshot-wrap"><img src={headshot.url} alt="Kelsey Marshall among snow-covered evergreen trees" width={768} height={1152} loading="lazy" /><div className="headshot-caption" aria-hidden="true"><Star /></div></div>
-          <div className="about-copy"><h2 id="about-heading">Nice to meet you,<br />I’m <em>Kelsey.</em></h2><p>I’m a <strong>designer, lifelong organizer, and believer that the little details are what make people feel cared for.</strong> Before planning weddings, I spent more than a decade leading corporate event and design operations teams, where I learned to anticipate the details, solve problems calmly, and turn a lot of moving pieces into something that feels effortless.</p><p>After planning my own intimate wedding in 2024, and it reminded me just how much the right celebration can be about the people, the place, and the little things.</p><p>I believe in warm welcomes, honest budgets, and hand-written thank-you notes. I’ll be straight with you, cheer you on, and never let you feel like just another booking.</p></div></div>
+          <div className="about-copy"><h2 id="about-heading">Nice to meet you,<br />I’m <em>Kelsey.</em></h2><p>I’m a <strong>lifelong organizer, wanderlusty traveler, and believer that the little details are what make people feel cared for.</strong> Before planning weddings, I spent more than a decade leading corporate event and design teams, where I learned to anticipate the details, solve problems calmly, and turn a lot of moving pieces into something that feels effortless.</p><p>My own intimate wedding in 2024 reminded me just how much the right celebration can be about the people, the place, and the little things.</p><p>I believe in warm welcomes, magical connections, and hand-written thank-you notes. I’ll be straight with you, cheer you on, and never let you feel like just another booking.</p></div></div>
         </section>
 
         <section id="kind-words" className="kind-words section-space" aria-labelledby="kind-heading"><div className="ornament"><span /><Star /><span /></div><h2 id="kind-heading">Kind <em>Words</em></h2><div className="testimonials-grid">{["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."].map((quote, index) => <figure key={index}><span className="quote-mark" aria-hidden="true">“</span><blockquote>{quote}</blockquote></figure>)}</div></section>
@@ -92,8 +92,7 @@ function Index() {
         <section id="inquire" className="intake section-space" aria-labelledby="intake-heading"><div className="intake-inner"><div className="intake-intro"><Star /><h2 id="intake-heading">Let’s begin,<br /><em>shall we?</em></h2><p>Tell me about your day and I’ll reply within 1–2 business days.</p></div>
           <form onSubmit={submitNote} className="intake-form">
             <div className="form-row"><label>Your names <span>*</span><input name="names" autoComplete="name" required /></label><label>Email <span>*</span><input type="email" name="email" autoComplete="email" required /></label></div>
-            <div className="form-row"><label>Wedding date<input name="date" placeholder="Still deciding" /></label></div>
-            <label htmlFor="service">Which service interests you? <span className="optional">(optional)</span></label><select id="service" name="service" value={service} onChange={event => setService(event.target.value)}><option>Not sure yet</option>{offerings.map(item => <option key={item.id}>{item.service}</option>)}</select>
+            <div className="form-row"><label>Wedding date<input name="date" placeholder="Still deciding" /></label><label htmlFor="service">Which service interests you? <span className="optional">(optional)</span><select id="service" name="service" value={service} onChange={event => setService(event.target.value)}><option>Not sure yet</option>{offerings.map(item => <option key={item.id}>{item.service}</option>)}</select></label></div>
             <div className="form-bottom"><Button type="submit" className="primary-cta">Send it my way <ArrowRight /></Button></div>
 
           </form>
