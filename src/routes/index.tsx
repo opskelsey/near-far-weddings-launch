@@ -12,10 +12,23 @@ import hero from '@/assets/hero-bouquet.jpg';
 import headshot from '@/assets/kelsey-marshall.jpg';
 import { intakeSchema } from '@/lib/intake-schema';
 import { deliverIntake, WEB3FORMS_PUBLIC_ACCESS_KEY } from '@/lib/intake';
+import { getRequestOrigin } from '@/lib/origin.functions';
+
+const OG_IMAGE_ALT = 'A bridal bouquet of pale pink daisies, peach roses, and blue-gray sea holly tied with white ribbon, resting on a tan velvet sofa';
 
 export const Route = createFileRoute("/")({
   component: Index,
-  head: () => ({ meta: [
+  loader: async () => ({ origin: await getRequestOrigin() }),
+  head: ({ loaderData }) => ({ meta: [
+    ...(loaderData?.origin ? [
+      { property: 'og:image', content: `${loaderData.origin}/og-image.jpg` },
+      { property: 'og:image:width', content: '1200' },
+      { property: 'og:image:height', content: '630' },
+      { property: 'og:image:type', content: 'image/jpeg' },
+      { property: 'og:image:alt', content: OG_IMAGE_ALT },
+      { name: 'twitter:image', content: `${loaderData.origin}/og-image.jpg` },
+      { name: 'twitter:image:alt', content: OG_IMAGE_ALT },
+    ] : []),
     { title: 'Arizona Wedding Planner & Coordinator | Kelsey Marshall' },
     { name: 'description', content: 'Intimate, unconventional wedding planning in Arizona and beyond. Kickstart Sessions, Day-of Coordination, and Full Service for real-world budgets.' },
     { name: "robots", content: "index, follow, max-image-preview:large" },
