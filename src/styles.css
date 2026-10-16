@@ -249,7 +249,7 @@ button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
 .footer-location { font-family: var(--font-display); font-style: italic; color: var(--muted-foreground); font-size: 16px; }
 .footer-bottom { max-width: 1150px; margin: 33px auto 0; height: 66px; display: flex; align-items: center; justify-content: space-between; font-size: 9px; color: var(--muted-foreground); }
 .footer-bottom > span:nth-child(2) { font-size: 8px; }
-@media (min-width: 1600px) { .hero { height: 690px; } .hero-inner { max-width: 1440px; } }
+@media (min-width: 1600px) { .hero { height: 690px; } }
 @media (max-width: 1000px) { .desktop-nav { gap: 23px; } .offerings-grid { gap: 25px; } .offering h3 { font-size: 27px; } .about-inner { gap: 50px; } .intake-inner { gap: 44px; } }
 @media (max-width: 700px) {
   .site-header { height: 82px; padding: 0 6%; }
@@ -322,7 +322,7 @@ button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
 .hero { position: relative; display: block; height: 640px; }
 .hero-media { position: absolute; inset: 0; }
 .hero-image { object-position: 70% center; }
-.hero-inner { position: relative; z-index: 1; height: calc(100% - 80px); width: min(640px, 40%); min-width: 480px; top: 40px; margin: 0 0 0 calc(max(0px, (100vw - 1440px) / 2) + 6vw); padding: 0 60px; background: color-mix(in srgb, #d9cdbe 75%, transparent); }
+.hero-inner { position: relative; z-index: 1; height: calc(100% - 80px); width: 480px; top: 40px; margin: 0 0 0 calc(max(0px, (100vw - 1440px) / 2) + 6vw); padding: 0 60px; background: color-mix(in srgb, #d9cdbe 75%, transparent); }
 .hero h1 { font-family: var(--font-display); font-size: 62px; line-height: 1.05; color: var(--foreground); }
 .hero h1 .hero-script { display: block; font-family: var(--font-script); font-style: normal; font-size: 64px; line-height: 1; margin: 6px 0 0 1.6em; color: var(--foreground); white-space: nowrap; }
 .hero-copy { margin: 44px 0 40px; }
@@ -331,6 +331,6 @@ button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
   .hero-media { position: absolute; inset: 0; height: auto; }
   .hero-image { object-fit: cover; object-position: center; }
   .hero-inner { width: min(100% - 40px, 350px); min-width: 0; margin: 0 auto; padding: 34px 22px; height: calc(100% - 80px); top: 0; display: flex; flex-direction: column; justify-content: center; }
-  .hero h1 { font-size: 46px; } .hero h1 .hero-script { font-size: 42px; margin-left: 0; text-align: right; }
+  .hero h1 { font-size: 46px; width: 100%; max-width: none; } .hero h1 .hero-script { font-size: 42px; margin-left: 0; text-align: right; }
   .hero-copy { margin: 28px 0 26px; max-width: none; }
 }
