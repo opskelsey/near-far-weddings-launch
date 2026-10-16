@@ -18,21 +18,11 @@
  * 2. Register it in @theme inline as --color-<name>: var(--<name>)
  */
 
-/* Signature script: drop the licensed file at public/fonts/east-liberty-signature.ttf
- * (or install the font locally) and it takes over the script line automatically. */
-@font-face {
-  font-family: 'East Liberty Signature';
-  src: local('East Liberty Signature'), local('East liberty signature'), local('EastLibertySignature'),
-       url('/fonts/east-liberty-signature.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
 
 @theme inline {
   --font-sans: 'DM Sans', sans-serif;
   --font-display: 'The Seasons', 'Cormorant Garamond', Georgia, serif;
-  --font-script: 'East Liberty Signature', 'Allura', cursive;
+  --font-script: 'Stalemate', cursive;
   --color-gold: var(--gold);
   --color-parchment: var(--parchment);
   --color-hero-wash: var(--hero-wash);
