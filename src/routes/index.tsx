@@ -8,7 +8,7 @@ import { Calendar } from '@/components/ui/calendar';
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
 import { cn } from '@/lib/utils';
 import { offerings, BOOKING_PLACEHOLDER, COACH_CREDIT, COACH_CREDIT_WINDOW_DAYS } from '@/lib/wedding-offerings';
-import hero from '@/assets/hero-couple-field.jpg';
+import hero from '@/assets/hero-bouquet.png';
 import headshot from '@/assets/kelsey-marshall.jpg';
 
 export const Route = createFileRoute("/")({
@@ -59,8 +59,9 @@ function Index() {
 
       <main>
         <section className="hero" aria-labelledby="hero-heading">
-          <img src={hero} alt="A couple at their outdoor ceremony, the bride holding a bouquet of dried roses, wheat and eucalyptus in warm evening light" className="hero-image" width={5040} height={3360} fetchPriority="high" />
-          <div className="hero-wash" />
+          <div className="hero-media">
+            <img src={hero} alt="A bridal bouquet of pink and cream flowers wrapped in white ribbon, resting on a burnt-orange velvet sofa" className="hero-image" width={1242} height={1947} fetchPriority="high" />
+          </div>
           <div className="hero-inner">
             <h1 id="hero-heading">Your wedding,<br />tied with a <em>bow</em>.</h1>
             <p className="hero-copy">Intimate, unconventional weddings—with practical planning for real-world budgets.</p>
