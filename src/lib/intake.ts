@@ -1,5 +1,8 @@
 import { intakeSchema, type IntakeInput } from './intake-schema';
 
+// Web3Forms publishable submission key is designed for browser-side forms.
+export const WEB3FORMS_PUBLIC_ACCESS_KEY = '660107bd-8fef-47fe-8c67-287833a3ffc0';
+
 export async function deliverIntake(input: IntakeInput, accessKey: string, send: typeof fetch = fetch): Promise<{ success: boolean }> {
   const data = intakeSchema.parse(input);
   if (data.botcheck) return { success: false };

@@ -1,6 +1,6 @@
 import { describe, expect, it, vi } from 'vitest';
 import { intakeSchema } from '@/lib/intake-schema';
-import { deliverIntake } from '@/lib/intake.server';
+import { deliverIntake } from '@/lib/intake';
 
 const input = { name: 'Test Couple', email: 'test@example.com', date: '2027-05-22', services: 'Day-of Coordination', botcheck: false };
 

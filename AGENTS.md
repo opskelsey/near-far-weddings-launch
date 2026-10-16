@@ -11,6 +11,6 @@
 
 - Keep this website as a single index route with hash navigation between sections, because the brief explicitly requires one scrolling page.
 - Keep offering prices and credit eligibility in the shared wedding-offerings module with concrete rule tests, so business values remain consistent.
-- Send intake inquiries through a validated public TanStack server function to Web3Forms, with the access key read only inside the handler; confirm submission only after provider acceptance to prevent false delivery claims.
+- Send intake inquiries directly from browser event handlers to Web3Forms using its publishable submission key and shared input validation, because its free tier blocks server requests; confirm submission only after provider acceptance.
 
 - Keep the organic palette and paper material in global CSS semantic tokens so shared controls and section surfaces remain consistent when colors change.
