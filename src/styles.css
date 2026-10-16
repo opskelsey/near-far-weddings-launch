@@ -291,7 +291,6 @@ button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
 .intake-form label, .intake-form legend { font-size: 12px; }
 .intake-form input, .intake-form select, .intake-form textarea, .date-trigger { font-size: 13px; color-scheme: light; }
 .intake-intro > p:not(.eyebrow) { font-size: 14px; }
-.form-bottom { justify-content: flex-end; }
 .footer-contact button:disabled { opacity: 1; }
 .primary-cta { border-radius: 3px; font-size: 13px; }
 @media (max-width: 700px) {
