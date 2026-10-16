@@ -1,10 +1,10 @@
 export const offerings = [
   {
-    id: 'coach', name: 'Wedding Plan Coach', price: 150, priceLabel: '$150',
+    id: 'coach', name: 'Kickstart Session', price: 150, originalPrice: 225, priceLabel: '$150',
     tagline: 'For couples who want a clear starting point.',
     copy: "Tell me your vision, and I'll turn it into a plan that fits your budget. Two no-pressure calls and a workbook made just for you.",
-    includes: ['Intake on your dream day, budget, and priorities', 'A custom planning workbook: month-by-month checklist, personalized budget, guest list tracker, and sample timeline', "An honest look at what's possible, and help focusing on what you care about most", "Two calls: intake, then a follow-up once you've had time to digest"],
-    service: 'Wedding Plan Coach',
+    includes: ['Intake on your dream day, budget, and priorities', 'A customized workbook to help you plan your day', 'Expert advice from a seasoned event planner', 'Two calls: intake + follow-up'],
+    service: 'Kickstart Session',
   },
   {
     id: 'day-of', name: 'Day-of Coordination', price: 900, priceLabel: 'Starting at $900',
@@ -17,7 +17,7 @@ export const offerings = [
     id: 'full-service', name: 'Full Service', price: null, priceLabel: 'Custom pricing',
     tagline: 'A partner from “we’re engaged!” to the last dance.',
     copy: 'I handle the details and you stay in the loop, making the decisions that matter while I manage the fine print.',
-    includes: ['Everything in Day-of Coordination', 'Vendor sourcing, with me directly supporting every step of the way', 'Design and vision development: mood boards, layout, and decor planning', 'Full budget management', 'Contract review, deadline and payment tracking', 'Regular check-ins and responsive support throughout'],
+    includes: ['Everything in Day-of Coordination', 'Vendor sourcing, with me directly supporting every step of the way', 'Design and vision development: mood boards, layout, and decor planning', 'Full budget management', 'Contract review, deadline and payment tracking', 'Regular check-ins and responsive support throughout', 'Arranging travel accommodations'],
     service: 'Full Service',
   },
 ] as const;
