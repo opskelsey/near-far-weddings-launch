@@ -1,5 +1,5 @@
 # Website roadmap
-- [ ] Refresh the palette with terracotta, sage, beige, wood tones, and subtle paper texture while preserving content and controls; verify the page and inquiry flow.
+- [x] Refresh the palette with terracotta, sage, beige, wood tones, and subtle paper texture while preserving content and controls; verify the page and inquiry flow.
 - [x] Drop hero accent stars, vertically center hero text, trim offerings to checklists, remove the pricing note and footer tagline.
 - [x] Revise to approachable cosmic midnight navy and gold; replace the hero with a real photograph.
 - [x] Remove invented copy and add three lorem ipsum testimonials.
