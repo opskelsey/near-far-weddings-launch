@@ -1,4 +1,6 @@
 # Website roadmap
+- [x] Connect intake to Web3Forms with validated fields, sending, success, and error states; tests pass and live failure preserves entries.
+- [ ] Verify a successful live inquiry — blocked by Web3Forms HTTP 403 server-side restriction; requires a paid plan and server IP safelisting with Web3Forms.
 - [x] Set the hero script line to Stalemate (Google Font); removed the East Liberty Signature hookup.
 - [x] Swap in the high-res watermark-free hero photo as a real project file so it loads in production.
 - [x] Offerings: drop the intro sentence, add the line–star–line divider above the heading; reword the closing line; even out the two welcome paragraphs.
