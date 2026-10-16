@@ -1,4 +1,5 @@
 # Website roadmap
+- [x] Set the page/share title to "Your Wedding, Wrapped in a Bow." and apply Kelsey's wording edits (handwritten, pile of Post-Its, staring at a checklist, Instagram screenshots).
 - [x] Switch intake to direct browser submission for Web3Forms free tier; verify loading, simulated success, and real network-error states.
 - [x] Connect intake to Web3Forms with validated fields, sending, success, and error states; tests pass and live failure preserves entries.
 - [ ] Verify a successful live inquiry — local browser test is blocked by Web3Forms cross-origin response; successful delivery remains unverified.
