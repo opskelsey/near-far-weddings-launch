@@ -328,8 +328,9 @@ button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
 .hero h1 .hero-script { display: block; font-family: var(--font-script); font-style: normal; font-size: 64px; line-height: 1; margin: 6px 0 0 1.6em; color: var(--foreground); white-space: nowrap; }
 .hero-copy { margin: 44px 0 40px; }
 @media (max-width: 900px) {
-  .hero { height: auto; }
-  .hero-media { position: relative; height: 340px; inset: auto; }
-  .hero-inner { width: auto; min-width: 0; margin: 0; padding: 52px 7%; height: auto; }
-  .hero h1 { font-size: 48px; } .hero h1 .hero-script { font-size: 48px; margin-left: 1.2em; }
+  .hero { height: auto; min-height: 0; padding: 26px 0 30px; }
+  .hero-media { position: absolute; inset: 0; height: auto; }
+  .hero-inner { width: auto; min-width: 0; margin: 0 5%; padding: 36px 24px 32px; height: auto; }
+  .hero h1 { font-size: 42px; } .hero h1 .hero-script { font-size: 38px; margin-left: 1.1em; }
+  .hero-copy { margin: 28px 0 26px; max-width: none; }
 }
