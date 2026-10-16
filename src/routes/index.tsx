@@ -60,7 +60,7 @@ function Index() {
       <main>
         <section className="hero" aria-labelledby="hero-heading">
           <div className="hero-media">
-            <img src={hero} alt="A bridal bouquet of pale pink daisies, peach roses, and blue-gray sea holly, tied with white ribbon, resting on a tan velvet sofa" className="hero-image" width={1600} height={2399} fetchPriority="high" />
+            <img src={hero} alt="A bridal bouquet of pale pink daisies, peach roses, and blue-gray sea holly, tied with white ribbon, resting on a tan velvet sofa" className="hero-image" width={1600} height={2400} fetchPriority="high" />
           </div>
           <div className="hero-inner">
             <h1 id="hero-heading">Your wedding,<span className="hero-script">wrapped in a bow.</span></h1>
