@@ -24,7 +24,7 @@ export const offerings = [
 
 export const COACH_CREDIT = 150;
 export const COACH_CREDIT_WINDOW_DAYS = 30;
-export const BOOKING_PLACEHOLDER = 'https://example.com/book-wedding-plan-coach';
+export const BOOKING_URL = 'https://calendly.com/marshall-kelseyrose/30min';
 
 export function eligibleCoachCredit(daysSinceFollowUp: number, service: string) {
   return daysSinceFollowUp >= 0 && daysSinceFollowUp <= COACH_CREDIT_WINDOW_DAYS &&

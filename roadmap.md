@@ -3,6 +3,7 @@
 - [x] Swap in the high-res watermark-free hero photo as a real project file so it loads in production.
 - [x] Offerings: drop the intro sentence, add the line–star–line divider above the heading; reword the closing line; even out the two welcome paragraphs.
 - [x] Mobile hero: keep the cream box overlaid on the photo (no stacking), fully inside the photo, whole bouquet visible.
+- [x] Hook the “Book Your Session” button up to Kelsey’s Calendly.
 - [x] Day-of Coordination: drop “flat” from the price, use the new tagline and description, and replace the includes list.
 - [x] Change "creative teams, budgets" to "creative teams, and budgets."
 - [x] Reword the "This might be for you if…" planner bullet to "taking the logistical weight off your shoulders."
