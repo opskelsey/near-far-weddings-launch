@@ -18,6 +18,7 @@ export const Route = createFileRoute("/")({
   head: () => ({ meta: [
     { title: 'Arizona Wedding Planner & Coordinator | Kelsey Marshall' },
     { name: 'description', content: 'Intimate, unconventional wedding planning in Arizona and beyond. Kickstart Sessions, Day-of Coordination, and Full Service for real-world budgets.' },
+    { name: "robots", content: "index, follow, max-image-preview:large" },
     { property: 'og:title', content: 'Arizona Wedding Planner & Coordinator | Kelsey Marshall' },
     { property: 'og:description', content: 'Intimate, unconventional weddings with practical planning for real-world budgets. Your wedding, wrapped in a bow.' },
     { property: 'og:type', content: 'website' },
