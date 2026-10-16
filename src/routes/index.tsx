@@ -16,9 +16,9 @@ import { deliverIntake, WEB3FORMS_PUBLIC_ACCESS_KEY } from '@/lib/intake';
 export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({ meta: [
-    { title: 'Near & Far Weddings | Your Wedding, Wrapped Up With Care' },
+    { title: 'Your Wedding, Wrapped in a Bow.' },
     { name: 'description', content: 'Thoughtful wedding planning with Kelsey Marshall. Kickstart Session, Day-of Coordination, and Full Service. Arizona-rooted, travel bag ready.' },
-    { property: 'og:title', content: 'Near & Far Weddings | Your Wedding, Wrapped Up With Care' },
+    { property: 'og:title', content: 'Your Wedding, Wrapped in a Bow.' },
     { property: 'og:description', content: 'Thoughtful planning for couples who want to be fully present at their own celebration.' },
     { property: 'og:type', content: 'website' },
     { name: 'twitter:card', content: 'summary_large_image' },
@@ -108,7 +108,7 @@ function Index() {
         <section className="welcome section-space" aria-labelledby="welcome-heading">
           <div className="ornament"><span /><Star /><span /></div>
           <h2 id="welcome-heading">Hello, and <em>congratulations!</em></h2>
-          <div className="welcome-copy"><p>Planning a wedding should feel a bit like opening a well-loved recipe box: familiar, joyful, and full of good things to come. If it feels more like a pile of tabs, spreadsheets, and opinions, I’m here to help.</p><p>I’ll guide you on a path toward your vision, without the vendor pressure and cookie-cutter templates, so you can spend your day on what <em>you</em> care about and let the rest go.</p></div>
+          <div className="welcome-copy"><p>Planning a wedding should feel a bit like opening a well-loved recipe box: familiar, joyful, and full of good things to come. If it feels more like a pile of Post-Its, spreadsheets, and opinions, I’m here to help.</p><p>I’ll guide you on a path toward your vision, without the vendor pressure and cookie-cutter templates, so you can spend your day on what <em>you</em> care about and let the rest go.</p></div>
 
         </section>
 
@@ -118,7 +118,7 @@ function Index() {
 
         <section id="about" className="about section-space" aria-labelledby="about-heading">
           <div className="about-inner"><div className="headshot-wrap"><img src={headshot} alt="Kelsey Marshall among snow-covered evergreen trees" width={768} height={1152} loading="lazy" /><div className="headshot-caption" aria-hidden="true"><Star /></div></div>
-          <div className="about-copy"><h2 id="about-heading">Nice to meet you,<br />I’m <em>Kelsey.</em></h2><p>I’m a <strong>lifelong organizer, wanderlusty traveler, and believer that the little details are what make people feel cared for.</strong> I've spent more than a decade managing complex events, projects, creative teams, and budgets. Now I use that experience to make wedding planning feel less overwhelming.</p><p>My own intimate wedding in 2024 reminded me just how much the right celebration can be about the people, the place, and the little things.</p><p>I believe in warm welcomes, magical connections, and hand-written thank-you notes. I’ll be straight with you, cheer you on, and never let you feel like just another booking.</p></div></div>
+          <div className="about-copy"><h2 id="about-heading">Nice to meet you,<br />I’m <em>Kelsey.</em></h2><p>I’m a <strong>lifelong organizer, wanderlusty traveler, and believer that the little details are what make people feel cared for.</strong> I've spent more than a decade managing complex events, projects, creative teams, and budgets. Now I use that experience to make wedding planning feel less overwhelming.</p><p>My own intimate wedding in 2024 reminded me just how much the right celebration can be about the people, the place, and the little things.</p><p>I believe in warm welcomes, magical connections, and handwritten thank-you notes. I’ll be straight with you, cheer you on, and never let you feel like just another booking.</p></div></div>
         </section>
 
         <section id="offerings" className="offerings section-space" aria-labelledby="offerings-heading">
