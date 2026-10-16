@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useRef, useState, type FormEvent } from 'react';
-import { ArrowRight, ArrowUp, Check, Menu, X, Instagram, Mail, CalendarIcon, LoaderCircle } from 'lucide-react';
+import { ArrowRight, ArrowUp, Check, Menu, X, Instagram, CalendarIcon, LoaderCircle } from 'lucide-react';
 import { toast } from 'sonner';
 import { format } from 'date-fns';
 import { Button } from '@/components/ui/button';
@@ -165,7 +165,7 @@ function Index() {
         </div></section>
       </main>
 
-      <footer className="site-footer"><div className="footer-contact"><Button variant="link" disabled><Mail size={15} /> Email</Button><Star /><Button asChild variant="link"><a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer"><Instagram size={15} /> Instagram</a></Button></div><p className="footer-location">Arizona-rooted, travel bag ready.</p><div className="footer-bottom"><span>© 2026 Near & Far Weddings</span><Button asChild variant="ghost" size="icon"><a href="#top" aria-label="Back to top"><ArrowUp size={17} /></a></Button></div></footer>
+      <footer className="site-footer"><div className="footer-contact"><p className="footer-location">Arizona-rooted, travel bag ready.</p><Star /><Button asChild variant="link"><a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer"><Instagram size={15} /> Instagram</a></Button></div><div className="footer-bottom"><span>© 2026 Near & Far Weddings</span><Button asChild variant="ghost" size="icon"><a href="#top" aria-label="Back to top"><ArrowUp size={17} /></a></Button></div></footer>
     </div>
   );
 }
