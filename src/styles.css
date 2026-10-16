@@ -245,7 +245,7 @@ button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
 .footer-tagline { font-family: var(--font-display); font-style: italic; font-size: 24px; margin-top: -21px; }
 .footer-contact { display: flex; align-items: center; justify-content: center; gap: 7px; margin: 18px 0 9px; }
 .footer-contact .celestial-star { font-size: 13px; }
-.footer-contact button { color: var(--foreground); font-size: 10px; height: 28px; }
+.footer-contact button, .footer-contact a { color: var(--foreground); font-size: 10px; height: 28px; }
 .footer-location { font-family: var(--font-display); font-style: italic; color: var(--muted-foreground); font-size: 16px; }
 .footer-bottom { max-width: 1150px; margin: 33px auto 0; height: 66px; display: flex; align-items: center; justify-content: space-between; font-size: 9px; color: var(--muted-foreground); }
 .footer-bottom > span:nth-child(2) { font-size: 8px; }
