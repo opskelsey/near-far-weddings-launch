@@ -81,8 +81,8 @@
   --popover-foreground: var(--foreground);
   --primary: oklch(0.49 0.109 39);
   --primary-foreground: oklch(0.985 0.012 85);
-  --secondary: oklch(0.845 0.039 132);
-  --secondary-foreground: oklch(0.29 0.035 132);
+  --secondary: oklch(0.83 0.038 118);
+  --secondary-foreground: oklch(0.29 0.032 118);
   --muted: oklch(0.91 0.025 85);
   --muted-foreground: oklch(0.445 0.027 57);
   --original-price: oklch(0.46 0 0);
@@ -94,7 +94,7 @@
   --input: oklch(0.49 0.05 65 / 45%);
   --ring: var(--primary);
   --chart-1: var(--primary);
-  --chart-2: oklch(0.55 0.06 132);
+  --chart-2: oklch(0.55 0.06 118);
   --chart-3: var(--gold);
   --chart-4: var(--accent);
   --chart-5: var(--secondary);
@@ -118,7 +118,7 @@
   --popover: var(--parchment);
   --primary: oklch(0.74 0.095 39);
   --primary-foreground: oklch(0.26 0.024 57);
-  --secondary: oklch(0.34 0.035 132);
+  --secondary: oklch(0.34 0.035 118);
   --secondary-foreground: var(--foreground);
   --muted: var(--parchment);
   --muted-foreground: oklch(0.79 0.026 85);
