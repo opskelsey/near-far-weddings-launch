@@ -1,4 +1,5 @@
 # Website roadmap
+- [x] Day-of Coordination: drop “flat” from the price, use the new tagline and description, and replace the includes list.
 - [x] Change "creative teams, budgets" to "creative teams, and budgets."
 - [x] Reword the "This might be for you if…" planner bullet to "taking the logistical weight off your shoulders."
 - [x] Apply requested wording, Kickstart Session name and discount, clearer offering text, photos shown without styling, and intake form rows with a date picker; verify pricing and inquiry flow.
