@@ -5,6 +5,19 @@ describe('Wedding offering rules', () => {
   it('prices Kickstart Session at $150', () => expect(offerings[0].price).toBe(150));
   it('sets the original Kickstart Session price to $225', () => expect(offerings[0].originalPrice).toBe(225));
   it('starts Day-of Coordination at $900', () => expect(offerings[1].price).toBe(900));
+  it('shows the Day-of Coordination price with no extra wording', () => expect(offerings[1].priceLabel).toBe('$900'));
+  it('lists Day-of Coordination includes in the requested order', () => {
+    expect(offerings[1].includes).toEqual([
+      'Vendor coordination, with me as point of contact on your big day',
+      'Timeline management',
+      'Final vendor confirmations and logistics checks',
+      'Decor setup and teardown',
+      '12 hours on-site, plus rehearsal attendance',
+      '2–3 planning calls',
+      'Responsive support from the day you book',
+      'Personalized vendor recommendations',
+    ]);
+  });
   it('prices Full Planning & Coordination at $3,000', () => expect(offerings[2].price).toBe(3000));
   it('credits $150 toward Day-of within 30 days of follow-up', () => {
     expect(eligibleCoachCredit(30, 'Day-of Coordination')).toBe(150);

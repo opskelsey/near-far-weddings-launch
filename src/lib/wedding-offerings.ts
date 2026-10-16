@@ -7,10 +7,10 @@ export const offerings = [
     service: 'Kickstart Session',
   },
   {
-    id: 'day-of', name: 'Day-of Coordination', price: 900, priceLabel: '$900 flat',
-    tagline: "You don't need to spend more to make it meaningful.",
-    copy: ["I’m not here to convince you that you need the upgraded linen, the bigger floral package, or a wedding tradition you never cared about in the first place.", "I’ll help you understand your options, prioritize what matters, and make informed decisions about where your budget goes."],
-    includes: ['Final timeline and day-of schedule, created and executed', 'Vendor coordination, with me as point of contact on the day', 'Decor setup and teardown', 'Responsive support from the day you book', '2–3 planning calls', '12 hours on-site, plus rehearsal attendance', 'Personalized vendor recommendations'],
+    id: 'day-of', name: 'Day-of Coordination', price: 900, priceLabel: '$900',
+    tagline: 'You’ve made the decisions. I’ll make sure they happen.',
+    copy: ["You don’t need to spend more to make your wedding meaningful. My job is to take the plans you’ve made and turn them into a smooth, well-run wedding day—so you’re not answering vendor texts, tracking down the caterer, or wondering whether the cake arrived while you’re getting married."],
+    includes: ['Vendor coordination, with me as point of contact on your big day', 'Timeline management', 'Final vendor confirmations and logistics checks', 'Decor setup and teardown', '12 hours on-site, plus rehearsal attendance', '2–3 planning calls', 'Responsive support from the day you book', 'Personalized vendor recommendations'],
     service: 'Day-of Coordination',
   },
   {
