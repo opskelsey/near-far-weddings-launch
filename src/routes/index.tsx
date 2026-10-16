@@ -4,7 +4,7 @@ import { ArrowRight, ArrowUp, Check, Menu, X, Instagram, Mail } from 'lucide-rea
 import { toast } from 'sonner';
 import { Button } from '@/components/ui/button';
 import { offerings, BOOKING_PLACEHOLDER, COACH_CREDIT, COACH_CREDIT_WINDOW_DAYS } from '@/lib/wedding-offerings';
-import hero from '@/assets/hero-cosmic-night.jpg.asset.json';
+import hero from '@/assets/hero-couple-field.jpg.asset.json';
 import headshot from '@/assets/kelsey-marshall.jpg.asset.json';
 
 export const Route = createFileRoute("/")({
@@ -53,7 +53,7 @@ function Index() {
 
       <main>
         <section className="hero" aria-labelledby="hero-heading">
-          <img src={hero.url} alt="A warm meadow of daisies in soft light with gentle film grain" className="hero-image" width={1920} height={1024} fetchPriority="high" />
+          <img src={hero.url} alt="A couple at their outdoor ceremony, the bride holding a bouquet of dried roses, wheat and eucalyptus in warm evening light" className="hero-image" width={5040} height={3360} fetchPriority="high" />
           <div className="hero-wash" />
           <div className="hero-inner">
             <h1 id="hero-heading">Your wedding,<br />wrapped up<br />with <em>care.</em></h1>
