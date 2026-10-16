@@ -1,8 +1,12 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState, type FormEvent } from 'react';
-import { ArrowRight, ArrowUp, Check, Menu, X, Instagram, Mail } from 'lucide-react';
+import { ArrowRight, ArrowUp, Check, Menu, X, Instagram, Mail, CalendarIcon } from 'lucide-react';
 import { toast } from 'sonner';
+import { format } from 'date-fns';
 import { Button } from '@/components/ui/button';
+import { Calendar } from '@/components/ui/calendar';
+import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
+import { cn } from '@/lib/utils';
 import { offerings, BOOKING_PLACEHOLDER, COACH_CREDIT, COACH_CREDIT_WINDOW_DAYS } from '@/lib/wedding-offerings';
 import hero from '@/assets/hero-couple-field.jpg.asset.json';
 import headshot from '@/assets/kelsey-marshall.jpg.asset.json';
