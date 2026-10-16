@@ -1,5 +1,5 @@
 # Website roadmap
-- [x] Set the hero script line to East Liberty Signature (drop-in ready at public/fonts/east-liberty-signature.ttf); stand-in script shows until the licensed file arrives.
+- [x] Set the hero script line to Stalemate (Google Font); removed the East Liberty Signature hookup.
 - [ ] Swap in the high-res hero photo when Kelsey supplies it.
 - [x] Day-of Coordination: drop “flat” from the price, use the new tagline and description, and replace the includes list.
 - [x] Change "creative teams, budgets" to "creative teams, and budgets."
