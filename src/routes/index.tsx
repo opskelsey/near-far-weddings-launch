@@ -63,7 +63,7 @@ function Index() {
             <img src={hero} alt="A bridal bouquet of pink and cream flowers wrapped in white ribbon, resting on a burnt-orange velvet sofa" className="hero-image" width={1242} height={1947} fetchPriority="high" />
           </div>
           <div className="hero-inner">
-            <h1 id="hero-heading">Your wedding,<br />tied with a <em>bow</em>.</h1>
+            <h1 id="hero-heading">Your wedding,<span className="hero-script">wrapped in a bow.</span></h1>
             <p className="hero-copy">Intimate, unconventional weddings—with practical planning for real-world budgets.</p>
             <Button asChild className="primary-cta"><a href="#inquire">Send Me a Note <ArrowRight size={17} /></a></Button>
           </div>

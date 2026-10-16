@@ -20,7 +20,8 @@
 
 @theme inline {
   --font-sans: 'DM Sans', sans-serif;
-  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-display: 'The Seasons', 'Cormorant Garamond', Georgia, serif;
+  --font-script: 'Abramo', 'Mrs Saint Delafield', cursive;
   --color-gold: var(--gold);
   --color-parchment: var(--parchment);
   --color-hero-wash: var(--hero-wash);
@@ -317,3 +318,17 @@ button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
 .offering-tagline { font-family: var(--font-display, serif); font-style: italic; font-size: 22px; margin: 16px 0 10px; }
 .offering-copy { font-size: 14px; color: var(--muted-foreground); display: flex; flex-direction: column; gap: 10px; margin-bottom: 20px; }
 @media (max-width: 760px) { .offerings-grid { max-width: none; } .offering { flex-direction: column; gap: 10px; padding: 32px 24px; } .offering-number { font-size: 34px; } .fit ul, .fit-close { font-size: 14px; } }
+/* Hero: full-bleed photo with translucent panel */
+.hero { position: relative; display: block; height: 640px; }
+.hero-media { position: absolute; inset: 0; }
+.hero-image { object-position: 70% center; }
+.hero-inner { position: relative; z-index: 1; height: calc(100% - 80px); width: min(640px, 38%); min-width: 460px; margin: 40px 0 0 3.5%; padding: 0 60px; background: color-mix(in srgb, #d9cdbe 75%, transparent); }
+.hero h1 { font-family: var(--font-display); font-size: 62px; line-height: 1.05; color: var(--foreground); }
+.hero h1 .hero-script { display: block; font-family: var(--font-script); font-style: normal; font-size: 64px; line-height: 1; margin: 6px 0 0 2.4em; color: var(--foreground); }
+.hero-copy { margin: 44px 0 40px; }
+@media (max-width: 900px) {
+  .hero { height: auto; }
+  .hero-media { position: relative; height: 340px; inset: auto; }
+  .hero-inner { width: auto; min-width: 0; margin: 0; padding: 52px 7%; height: auto; }
+  .hero h1 { font-size: 48px; } .hero h1 .hero-script { font-size: 48px; margin-left: 1.2em; }
+}
