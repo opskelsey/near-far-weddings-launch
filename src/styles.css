@@ -274,8 +274,6 @@ button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
 .hero h1 { font-size: 65px; line-height: 1.04; }
 .hero-copy { font-size: 14px; max-width: 380px; }
 .welcome { position: relative; }
-.welcome::before, .welcome::after { content: '✧'; position: absolute; color: var(--gold); font-size: 39px; top: 115px; }
-.welcome::before { left: 0; }.welcome::after { right: 0; }
 .welcome-copy, .about-copy > p:not(.eyebrow):not(.signature) { font-size: 14px; }
 .offerings { border-block: none; }
 .offering ul { font-size: 13px; }.offering-note { font-size: 12px; }
@@ -297,7 +295,6 @@ button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
 .primary-cta { border-radius: 3px; font-size: 13px; }
 @media (max-width: 700px) {
   .hero h1 { font-size: 52px; }.hero-copy { font-size: 14px; max-width: 295px; }
-  .welcome::before, .welcome::after { display: none; }
   .testimonials-grid { grid-template-columns: 1fr; gap: 18px; }.testimonials-grid figure + figure { border-left: none; border-top: 1px solid var(--border); }
   .testimonials-grid blockquote { font-size: 23px; }.offering h3 { font-size: 32px; }.footer-tagline { margin-top: 0; }
 }
@@ -330,10 +327,10 @@ button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
 .hero h1 .hero-script { display: block; font-family: var(--font-script); font-style: normal; font-size: 64px; line-height: 1; margin: 6px 0 0 1.6em; color: var(--foreground); white-space: nowrap; }
 .hero-copy { margin: 44px 0 40px; }
 @media (max-width: 900px) {
-  .hero { height: auto; min-height: 585px; display: flex; align-items: center; justify-content: center; padding: 30px 0 34px; background: var(--background); }
+  .hero { height: 640px; display: flex; align-items: center; justify-content: center; padding: 0; background: var(--background); }
   .hero-media { position: absolute; inset: 0; height: auto; }
-  .hero-image { object-fit: contain; object-position: center; }
-  .hero-inner { width: min(100% - 40px, 350px); min-width: 0; margin: 0 auto; padding: 34px 22px 30px; height: auto; top: 0; }
+  .hero-image { object-fit: cover; object-position: center; }
+  .hero-inner { width: min(100% - 40px, 350px); min-width: 0; margin: 0 auto; padding: 34px 22px; height: calc(100% - 80px); top: 0; display: flex; flex-direction: column; justify-content: center; }
   .hero h1 { font-size: 46px; } .hero h1 .hero-script { font-size: 42px; margin-left: 0.7em; }
   .hero-copy { margin: 28px 0 26px; max-width: none; }
 }
