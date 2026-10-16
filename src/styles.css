@@ -286,7 +286,9 @@ button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
 .testimonials-grid { max-width: 1140px; margin: 22px auto 0; display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 35px; }
 .testimonials-grid figure { margin: 0; padding: 0 20px 18px; }
 .testimonials-grid figure + figure { border-left: 1px solid var(--border); }
-.testimonials-grid blockquote { font-size: 22px; line-height: 1.65; margin-bottom: 25px; }
+.testimonials-grid blockquote { font-size: 22px; line-height: 1.65; margin-bottom: 16px; }
+.testimonials-grid figcaption { font-size: 12px; letter-spacing: .07em; color: var(--muted-foreground); }
+.testimonials-grid figcaption span { color: var(--gold); margin: 0 5px; }
 .quote-mark { color: var(--gold); }
 .intake-form label, .intake-form legend { font-size: 12px; }
 .intake-form input, .intake-form select, .intake-form textarea, .date-trigger { font-size: 13px; color-scheme: light; }
