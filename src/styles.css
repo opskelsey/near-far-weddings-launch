@@ -335,5 +335,5 @@ button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
   .hero-inner { width: min(100% - 40px, 350px); min-width: 0; margin: 0 auto; padding: 34px 22px; height: calc(100% - 80px); top: 0; display: flex; flex-direction: column; justify-content: center; }
   .hero h1 { font-size: 46px; width: 100%; max-width: none; } .hero h1 .hero-script { font-size: 42px; margin-left: 0; text-align: right; }
   .hero-copy { margin: 28px 0 26px; max-width: none; }
-  .welcome::before, .welcome::after { display: none; }
 }
+@media (max-width: 1199px) { .welcome::before, .welcome::after { display: none; } }
