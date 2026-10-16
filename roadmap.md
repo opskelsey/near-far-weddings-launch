@@ -1,4 +1,5 @@
 # Website roadmap
+- [x] Keep paper texture only behind the About section, make the other sections solid, warm up the Kind Words background, and swap in the new hero photo.
 - [x] Refresh the palette with terracotta, sage, beige, wood tones, and subtle paper texture while preserving content and controls; verify the page and inquiry flow.
 - [x] Drop hero accent stars, vertically center hero text, trim offerings to checklists, remove the pricing note and footer tagline.
 - [x] Revise to approachable cosmic midnight navy and gold; replace the hero with a real photograph.
