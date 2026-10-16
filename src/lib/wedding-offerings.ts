@@ -7,17 +7,17 @@ export const offerings = [
     service: 'Kickstart Session',
   },
   {
-    id: 'day-of', name: 'Day-of Coordination', price: 900, priceLabel: 'Starting at $900',
+    id: 'day-of', name: 'Day-of Coordination', price: 900, priceLabel: '$900 flat',
     tagline: "You don't need to spend more to make it meaningful.",
     copy: ["I’m not here to convince you that you need the upgraded linen, the bigger floral package, or a wedding tradition you never cared about in the first place.", "I’ll help you understand your options, prioritize what matters, and make informed decisions about where your budget goes."],
     includes: ['Final timeline and day-of schedule, created and executed', 'Vendor coordination, with me as point of contact on the day', 'Decor setup and teardown', 'Responsive support from the day you book', '2–3 planning calls', '12 hours on-site, plus rehearsal attendance', 'Personalized vendor recommendations'],
     service: 'Day-of Coordination',
   },
   {
-    id: 'full-service', name: 'Full Planning & Coordination', price: null, priceLabel: 'Custom pricing',
+    id: 'full-service', name: 'Full Planning & Coordination', price: 3000, priceLabel: '$3,000',
     tagline: 'You bring the ideas. I help you bring it to life.',
     copy: ["Bring me your Pinterest board, your wild ideas, your budget, and your scratchpad of questions. I'll figure out how to make the machine work.", "From “we just got engaged” to “the last guest just left,” I’ll keep the logistics moving—budget, vendors, contracts, timeline, communication—and make sure nothing falls through the cracks."],
-    includes: ['Everything in Day-of Coordination', 'Vendor sourcing, with me directly supporting every step of the way', 'Design and vision development: mood boards, layout, and decor planning', 'Full budget management', 'Contract review, deadline and payment tracking', 'Regular check-ins and responsive support throughout', 'Arranging travel accommodations'],
+    includes: ['Everything in Day-of Coordination', 'Vendor sourcing, with me directly supporting every step of the way', 'Full budget management', 'Contract review, deadline and payment tracking', 'Arranging travel accommodations', 'Regular check-ins and responsive support throughout'],
     service: 'Full Planning & Coordination',
   },
 ] as const;

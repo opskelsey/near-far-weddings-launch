@@ -62,7 +62,7 @@ function Index() {
           <img src={hero} alt="A couple at their outdoor ceremony, the bride holding a bouquet of dried roses, wheat and eucalyptus in warm evening light" className="hero-image" width={5040} height={3360} fetchPriority="high" />
           <div className="hero-wash" />
           <div className="hero-inner">
-            <h1 id="hero-heading">Your wedding,<br />tied with a <em>bow</em></h1>
+            <h1 id="hero-heading">Your wedding,<br />tied with a <em>bow</em>.</h1>
             <p className="hero-copy">Intimate, unconventional weddings—with practical planning for real-world budgets.</p>
             <Button asChild className="primary-cta"><a href="#inquire">Send Me a Note <ArrowRight size={17} /></a></Button>
           </div>
@@ -76,7 +76,7 @@ function Index() {
         </section>
 
         <section className="fit section-space" aria-labelledby="fit-heading">
-          <div className="fit-inner"><h2 id="fit-heading"><em>This might be for you if…</em></h2><ul><li><span className="fit-star" aria-hidden="true">★</span><span>You’re planning your first wedding and have no idea where to start.</span></li><li><span className="fit-star" aria-hidden="true">★</span><span>You’d rather spend money on the things you care about than follow every wedding tradition.</span></li><li><span className="fit-star" aria-hidden="true">★</span><span>You want to celebrate with the people you love—not your friend's neighbor's cousin.</span></li><li><span className="fit-star" aria-hidden="true">★</span><span>You want your wedding to feel personal, relaxed, and a little unconventional.</span></li><li><span className="fit-star" aria-hidden="true">★</span><span>You have a budget you actually need to stick to.</span></li><li><span className="fit-star" aria-hidden="true">★</span><span>You have a Pinterest board, 47 browser tabs, and approximately zero idea what comes next.</span></li><li><span className="fit-star" aria-hidden="true">★</span><span>You want an experienced planner in your corner without handing over the entire thing.</span></li></ul><p className="fit-close">If that sounds like you, we’ll probably get along.</p></div>
+          <div className="fit-inner"><h2 id="fit-heading"><em>This might be for you if…</em></h2><ul><li><span className="fit-star" aria-hidden="true">✦</span><span>You’re planning your first wedding and have no idea where to start.</span></li><li><span className="fit-star" aria-hidden="true">✦</span><span>You’d rather spend money on the things you care about than follow every wedding tradition.</span></li><li><span className="fit-star" aria-hidden="true">✦</span><span>You want to celebrate with the people you love—not your friend's neighbor's cousin.</span></li><li><span className="fit-star" aria-hidden="true">✦</span><span>You want your wedding to feel personal, relaxed, and a little unconventional.</span></li><li><span className="fit-star" aria-hidden="true">✦</span><span>You have a budget you actually need to stick to.</span></li><li><span className="fit-star" aria-hidden="true">✦</span><span>You have a Pinterest board, 47 browser tabs, and approximately zero idea what comes next.</span></li><li><span className="fit-star" aria-hidden="true">✦</span><span>You want an experienced planner in your corner without handing over the entire thing.</span></li></ul><p className="fit-close">If that sounds like you, we’ll probably get along.</p></div>
         </section>
 
         <section id="about" className="about section-space" aria-labelledby="about-heading">
@@ -93,7 +93,7 @@ function Index() {
               <div className="offering-copy">{offering.copy.map(p => <p key={p}>{p}</p>)}</div>
               <p className="includes-label">Includes:</p>
               <ul>{offering.includes.map(item => <li key={item}><Check size={13} /><span>{item}</span></li>)}</ul>
-              {index === 0 && <p className="offering-note">Decide you’d like ongoing support? Your ${COACH_CREDIT} is credited toward Day-of Coordination or Full Service if you book within {COACH_CREDIT_WINDOW_DAYS} days of your follow-up call.</p>}
+              {index === 0 && <p className="offering-note">Decide you’d like ongoing support? Your ${COACH_CREDIT} is credited toward a Day-of or Full Planning package if you book within {COACH_CREDIT_WINDOW_DAYS} days of your follow-up call.</p>}
               <div className="offering-action">{index === 0 ? <Button asChild variant="link"><a href={BOOKING_PLACEHOLDER} target="_blank" rel="noopener noreferrer">Book Your Session <ArrowRight /></a></Button> : <Button variant="link" onClick={() => inquire(offering.service)}>Inquire <ArrowRight /></Button>}</div>
             </div></article>)}
           </div>

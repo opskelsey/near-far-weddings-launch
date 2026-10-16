@@ -174,9 +174,9 @@ button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
 .welcome { text-align: center; max-width: 860px; margin: auto; padding-top: 60px; padding-bottom: 68px; }
 .welcome .eyebrow { margin-bottom: 13px; }
 .welcome h2 { margin-bottom: 23px; }
-.welcome-copy { max-width: 627px; margin: auto; font-size: 13px; }
+.welcome-copy { max-width: 600px; margin: auto; font-size: 13px; }
 .welcome-copy p { text-wrap: pretty; }
-.welcome-copy p:first-child { text-wrap: balance; }
+.welcome-copy p { text-wrap: balance; }
 .welcome-copy em { font-family: inherit; font-style: italic; }
 .welcome-copy p + p { margin-top: 14px; }
 .signature { font-family: var(--font-display); font-style: italic; font-size: 26px; color: var(--primary); margin-top: 21px; }
@@ -245,7 +245,7 @@ button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
 .footer-contact .celestial-star { font-size: 13px; }
 .footer-contact button { color: var(--foreground); font-size: 10px; height: 28px; }
 .footer-location { font-family: var(--font-display); font-style: italic; color: var(--muted-foreground); font-size: 16px; }
-.footer-bottom { border-top: 1px solid var(--border); max-width: 1150px; margin: 33px auto 0; height: 66px; display: flex; align-items: center; justify-content: space-between; font-size: 9px; color: var(--muted-foreground); }
+.footer-bottom { max-width: 1150px; margin: 33px auto 0; height: 66px; display: flex; align-items: center; justify-content: space-between; font-size: 9px; color: var(--muted-foreground); }
 .footer-bottom > span:nth-child(2) { font-size: 8px; }
 @media (min-width: 1600px) { .hero { height: 690px; } .hero-inner { max-width: 1440px; } }
 @media (max-width: 1000px) { .desktop-nav { gap: 23px; } .offerings-grid { gap: 25px; } .offering h3 { font-size: 27px; } .about-inner { gap: 50px; } .intake-inner { gap: 44px; } }
@@ -277,7 +277,7 @@ button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
 .welcome::before, .welcome::after { content: '✧'; position: absolute; color: var(--gold); font-size: 39px; top: 115px; }
 .welcome::before { left: 0; }.welcome::after { right: 0; }
 .welcome-copy, .about-copy > p:not(.eyebrow):not(.signature) { font-size: 14px; }
-.offerings { border-block: 1px solid var(--border); }
+.offerings { border-block: none; }
 .offering ul { font-size: 13px; }.offering-note { font-size: 12px; }
 .includes-label { margin-top: 22px; font-size: 11px; color: var(--secondary-foreground); }
 .offering h3 { font-size: 29px; }.offering-price { font-size: 13px; }
