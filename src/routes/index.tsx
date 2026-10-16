@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button';
 import { Calendar } from '@/components/ui/calendar';
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
 import { cn } from '@/lib/utils';
-import { offerings, BOOKING_URL, COACH_CREDIT, COACH_CREDIT_WINDOW_DAYS } from '@/lib/wedding-offerings';
+import { offerings, BOOKING_URL, INSTAGRAM_URL, COACH_CREDIT, COACH_CREDIT_WINDOW_DAYS } from '@/lib/wedding-offerings';
 import hero from '@/assets/hero-bouquet.jpg';
 import headshot from '@/assets/kelsey-marshall.jpg';
 
@@ -126,7 +126,7 @@ function Index() {
         </div></section>
       </main>
 
-      <footer className="site-footer"><div className="footer-contact"><Button variant="link" disabled><Mail size={15} /> Email</Button><Star /><Button variant="link" disabled><Instagram size={15} /> Instagram</Button></div><p className="footer-location">Arizona-rooted, travel bag ready.</p><div className="footer-bottom"><span>© 2026 Near & Far Weddings</span><Button asChild variant="ghost" size="icon"><a href="#top" aria-label="Back to top"><ArrowUp size={17} /></a></Button></div></footer>
+      <footer className="site-footer"><div className="footer-contact"><Button variant="link" disabled><Mail size={15} /> Email</Button><Star /><Button asChild variant="link"><a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer"><Instagram size={15} /> Instagram</a></Button></div><p className="footer-location">Arizona-rooted, travel bag ready.</p><div className="footer-bottom"><span>© 2026 Near & Far Weddings</span><Button asChild variant="ghost" size="icon"><a href="#top" aria-label="Back to top"><ArrowUp size={17} /></a></Button></div></footer>
     </div>
   );
 }

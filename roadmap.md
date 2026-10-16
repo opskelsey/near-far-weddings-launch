@@ -7,6 +7,7 @@
 - [x] Align the hero box's left edge with the logo and the sections' left margin on desktop.
 - [x] Replace the lorem ipsum Kind Words with three placeholder quotes (name + initial, states WI, AZ, MI).
 - [ ] Kelsey to supply real testimonials to replace the placeholders.
+- [x] Connect the footer Instagram button to @nearandfarweddings.
 - [x] Day-of Coordination: drop “flat” from the price, use the new tagline and description, and replace the includes list.
 - [x] Change "creative teams, budgets" to "creative teams, and budgets."
 - [x] Reword the "This might be for you if…" planner bullet to "taking the logistical weight off your shoulders."
