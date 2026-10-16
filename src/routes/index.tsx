@@ -19,7 +19,7 @@ export const Route = createFileRoute("/")({
     { title: 'Your Wedding, Wrapped in a Bow.' },
     { name: 'description', content: 'Thoughtful wedding planning with Kelsey Marshall. Kickstart Session, Day-of Coordination, and Full Service. Arizona-rooted, travel bag ready.' },
     { property: 'og:title', content: 'Your Wedding, Wrapped in a Bow.' },
-    { property: 'og:description', content: 'Thoughtful planning for couples who want to be fully present at their own celebration.' },
+    { property: 'og:description', content: 'Intimate, unconventional weddings—with practical planning for real-world budgets.' },
     { property: 'og:type', content: 'website' },
     { name: 'twitter:card', content: 'summary_large_image' },
   ] }),
