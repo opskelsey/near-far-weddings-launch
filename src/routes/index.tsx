@@ -30,6 +30,8 @@ function Star({ className = '' }: { className?: string }) {
 function Index() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [service, setService] = useState('Not sure yet');
+  const [date, setDate] = useState<Date>();
+  const [dateOpen, setDateOpen] = useState(false);
 
   const nav = [['Offerings', '#offerings'], ['About', '#about']] as const;
 
