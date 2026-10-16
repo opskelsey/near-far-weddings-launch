@@ -177,6 +177,7 @@ button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
 .welcome h2 { margin-bottom: 23px; }
 .welcome-copy { max-width: 627px; margin: auto; font-size: 13px; }
 .welcome-copy p { text-wrap: pretty; }
+.welcome-copy p:first-child { text-wrap: balance; }
 .welcome-copy em { font-family: inherit; font-style: italic; }
 .hero-image, .headshot-wrap > img { filter: var(--photo-treatment); }
 .welcome-copy p + p { margin-top: 14px; }
@@ -224,7 +225,7 @@ button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
 .intake-form label, .intake-form legend { display: block; font-size: 11px; font-weight: 500; line-height: 1.6; }
 .intake-form label > span { color: var(--primary); }
 .intake-form label > .optional { color: var(--muted-foreground); font-weight: 400; }
-.form-row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; margin-bottom: 23px; }
+.form-row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: end; gap: 22px; margin-bottom: 23px; }
 .intake-form input, .intake-form select, .intake-form textarea { width: 100%; border: 1px solid var(--border); border-radius: 0; background: color-mix(in oklch, var(--background) 64%, transparent); color: var(--foreground); font-family: var(--font-sans); font-size: 11px; padding: 12px 13px; margin-top: 9px; outline: none; font-weight: 400; }
 .intake-form input { height: 43px; }
 .intake-form select { height: 43px; }
