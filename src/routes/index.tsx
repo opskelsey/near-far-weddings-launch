@@ -1,8 +1,12 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState, type FormEvent } from 'react';
-import { ArrowRight, ArrowUp, Check, Menu, X, Instagram, Mail } from 'lucide-react';
+import { ArrowRight, ArrowUp, Check, Menu, X, Instagram, Mail, CalendarIcon } from 'lucide-react';
 import { toast } from 'sonner';
+import { format } from 'date-fns';
 import { Button } from '@/components/ui/button';
+import { Calendar } from '@/components/ui/calendar';
+import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
+import { cn } from '@/lib/utils';
 import { offerings, BOOKING_PLACEHOLDER, COACH_CREDIT, COACH_CREDIT_WINDOW_DAYS } from '@/lib/wedding-offerings';
 import hero from '@/assets/hero-couple-field.jpg.asset.json';
 import headshot from '@/assets/kelsey-marshall.jpg.asset.json';
@@ -26,6 +30,8 @@ function Star({ className = '' }: { className?: string }) {
 function Index() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [service, setService] = useState('Not sure yet');
+  const [date, setDate] = useState<Date>();
+  const [dateOpen, setDateOpen] = useState(false);
 
   const nav = [['Offerings', '#offerings'], ['About', '#about']] as const;
 
@@ -91,9 +97,21 @@ function Index() {
 
         <section id="inquire" className="intake section-space" aria-labelledby="intake-heading"><div className="intake-inner"><div className="intake-intro"><Star /><h2 id="intake-heading">Let’s begin,<br /><em>shall we?</em></h2><p>Tell me about your day and I’ll reply within 1–2 business days.</p></div>
           <form onSubmit={submitNote} className="intake-form">
-            <div className="form-row"><label>Your names <span>*</span><input name="names" autoComplete="name" required /></label><label>Email <span>*</span><input type="email" name="email" autoComplete="email" required /></label></div>
-            <div className="form-row"><label>Wedding date<input name="date" placeholder="Still deciding" /></label><label htmlFor="service">Which service interests you? <span className="optional">(optional)</span><select id="service" name="service" value={service} onChange={event => setService(event.target.value)}><option>Not sure yet</option>{offerings.map(item => <option key={item.id}>{item.service}</option>)}</select></label></div>
-            <div className="form-bottom"><Button type="submit" className="primary-cta">Send it my way <ArrowRight /></Button></div>
+            <div className="form-row form-names"><label>Your names <span>*</span><input name="names" autoComplete="name" required /></label><label htmlFor="wedding-date">Wedding date
+              <Popover open={dateOpen} onOpenChange={setDateOpen}>
+                <PopoverTrigger asChild>
+                  <Button type="button" id="wedding-date" variant="outline" className={cn('date-trigger', !date && 'date-empty')}>
+                    <CalendarIcon />
+                    {date ? format(date, 'PPP') : <span>Still deciding</span>}
+                  </Button>
+                </PopoverTrigger>
+                <PopoverContent className="w-auto p-0 date-pop" align="start">
+                  <Calendar mode="single" selected={date} captionLayout="dropdown" className="pointer-events-auto" onSelect={day => { setDate(day); setDateOpen(false); }} />
+                </PopoverContent>
+              </Popover>
+            </label></div>
+            <div className="form-row form-single"><label>Email <span>*</span><input type="email" name="email" autoComplete="email" required /></label></div>
+            <div className="form-row form-service"><label htmlFor="service">Which service interests you? <span className="optional">(optional)</span><select id="service" name="service" value={service} onChange={event => setService(event.target.value)}><option>Not sure yet</option>{offerings.map(item => <option key={item.id}>{item.service}</option>)}</select></label><Button type="submit" className="primary-cta">Send it my way <ArrowRight /></Button></div>
 
           </form>
         </div></section>
