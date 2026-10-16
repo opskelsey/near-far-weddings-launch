@@ -1,5 +1,5 @@
 # Website roadmap
-- [x] Apply requested wording, Kickstart Session name and discount, clearer offering text, cohesive photo treatment, and side-by-side date/service fields; verify pricing and inquiry flow.
+- [x] Apply requested wording, Kickstart Session name and discount, clearer offering text, side-by-side date/service fields, and photos shown without styling; verify pricing and inquiry flow.
 - [x] Keep paper texture only behind the About section, make the other sections solid, warm up the Kind Words background, and swap in the new hero photo.
 - [x] Refresh the palette with terracotta, sage, beige, wood tones, and subtle paper texture while preserving content and controls; verify the page and inquiry flow.
 - [x] Drop hero accent stars, vertically center hero text, trim offerings to checklists, remove the pricing note and footer tagline.
