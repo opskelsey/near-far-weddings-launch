@@ -21,6 +21,8 @@ export const Route = createFileRoute("/")({
     { property: 'og:title', content: 'Arizona Wedding Planner & Coordinator | Kelsey Marshall' },
     { property: 'og:description', content: 'Intimate, unconventional weddings with practical planning for real-world budgets. Your wedding, wrapped in a bow.' },
     { property: 'og:type', content: 'website' },
+    { property: 'og:site_name', content: "Near and Far Weddings" },
+    { property: 'og:locale', content: "en_US" },
     { name: 'twitter:card', content: 'summary_large_image' },
   ] }),
 });
