@@ -178,7 +178,6 @@ button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
 .welcome-copy p { text-wrap: pretty; }
 .welcome-copy p:first-child { text-wrap: balance; }
 .welcome-copy em { font-family: inherit; font-style: italic; }
-.hero-image, .headshot-wrap > img { filter: var(--photo-treatment); }
 .welcome-copy p + p { margin-top: 14px; }
 .signature { font-family: var(--font-display); font-style: italic; font-size: 26px; color: var(--primary); margin-top: 21px; }
 .offerings { background-color: var(--secondary); }
