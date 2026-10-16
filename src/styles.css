@@ -324,7 +324,7 @@ button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
 .hero-image { object-position: 70% center; }
 .hero-inner { position: relative; z-index: 1; height: calc(100% - 80px); width: min(640px, 40%); min-width: 480px; top: 40px; margin: 0 0 0 3.5%; padding: 0 60px; background: color-mix(in srgb, #d9cdbe 75%, transparent); }
 .hero h1 { font-family: var(--font-display); font-size: 62px; line-height: 1.05; color: var(--foreground); }
-.hero h1 .hero-script { display: block; font-family: var(--font-script); font-style: normal; font-size: 64px; line-height: 1; margin: 6px 0 0 2.4em; color: var(--foreground); white-space: nowrap; }
+.hero h1 .hero-script { display: block; font-family: var(--font-script); font-style: normal; font-size: 64px; line-height: 1; margin: 6px 0 0 1.6em; color: var(--foreground); white-space: nowrap; }
 .hero-copy { margin: 44px 0 40px; }
 @media (max-width: 900px) {
   .hero { height: auto; }
