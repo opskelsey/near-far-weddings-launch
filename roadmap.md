@@ -1,4 +1,5 @@
 # Website roadmap
+- [ ] Switch intake to direct browser submission for Web3Forms free tier and verify success and error states.
 - [x] Connect intake to Web3Forms with validated fields, sending, success, and error states; tests pass and live failure preserves entries.
 - [ ] Verify a successful live inquiry — blocked by Web3Forms HTTP 403 server-side restriction; requires a paid plan and server IP safelisting with Web3Forms.
 - [x] Set the hero script line to Stalemate (Google Font); removed the East Liberty Signature hookup.
