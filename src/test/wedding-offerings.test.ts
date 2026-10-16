@@ -3,7 +3,7 @@ import { offerings, eligibleCoachCredit, BOOKING_URL } from '@/lib/wedding-offer
 
 describe('Wedding offering rules', () => {
   it('prices Kickstart Session at $150', () => expect(offerings[0].price).toBe(150));
-  it('books Kickstart Session through Kelsey’s Calendly', () => expect(BOOKING_URL).toBe('https://calendly.com/marshall-kelseyrose/30min'));
+  it('books Kickstart Session through Kelsey’s Calendly', () => expect(BOOKING_URL).toBe('https://calendly.com/marshall-kelseyrose/kickstart'));
   it('sets the original Kickstart Session price to $225', () => expect(offerings[0].originalPrice).toBe(225));
   it('starts Day-of Coordination at $900', () => expect(offerings[1].price).toBe(900));
   it('shows the Day-of Coordination price with no extra wording', () => expect(offerings[1].priceLabel).toBe('$900'));
