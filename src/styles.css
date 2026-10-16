@@ -249,7 +249,7 @@ button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
 .footer-location { font-family: var(--font-display); font-style: italic; color: var(--muted-foreground); font-size: 16px; }
 .footer-bottom { max-width: 1150px; margin: 33px auto 0; height: 66px; display: flex; align-items: center; justify-content: space-between; font-size: 9px; color: var(--muted-foreground); }
 .footer-bottom > span:nth-child(2) { font-size: 8px; }
-@media (min-width: 1600px) { .hero { height: 690px; } .hero-inner { max-width: 1440px; } }
+@media (min-width: 1600px) { .hero { height: 690px; } }
 @media (max-width: 1000px) { .desktop-nav { gap: 23px; } .offerings-grid { gap: 25px; } .offering h3 { font-size: 27px; } .about-inner { gap: 50px; } .intake-inner { gap: 44px; } }
 @media (max-width: 700px) {
   .site-header { height: 82px; padding: 0 6%; }
