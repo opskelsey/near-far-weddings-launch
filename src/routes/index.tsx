@@ -8,8 +8,8 @@ import { Calendar } from '@/components/ui/calendar';
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
 import { cn } from '@/lib/utils';
 import { offerings, BOOKING_PLACEHOLDER, COACH_CREDIT, COACH_CREDIT_WINDOW_DAYS } from '@/lib/wedding-offerings';
-import hero from '@/assets/hero-couple-field.jpg.asset.json';
-import headshot from '@/assets/kelsey-marshall.jpg.asset.json';
+import hero from '@/assets/hero-couple-field.jpg';
+import headshot from '@/assets/kelsey-marshall.jpg';
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -59,7 +59,7 @@ function Index() {
 
       <main>
         <section className="hero" aria-labelledby="hero-heading">
-          <img src={hero.url} alt="A couple at their outdoor ceremony, the bride holding a bouquet of dried roses, wheat and eucalyptus in warm evening light" className="hero-image" width={5040} height={3360} fetchPriority="high" />
+          <img src={hero} alt="A couple at their outdoor ceremony, the bride holding a bouquet of dried roses, wheat and eucalyptus in warm evening light" className="hero-image" width={5040} height={3360} fetchPriority="high" />
           <div className="hero-wash" />
           <div className="hero-inner">
             <h1 id="hero-heading">Your wedding,<br />wrapped up<br />with <em>care.</em></h1>
@@ -89,7 +89,7 @@ function Index() {
         </section>
 
         <section id="about" className="about section-space" aria-labelledby="about-heading">
-          <div className="about-inner"><div className="headshot-wrap"><img src={headshot.url} alt="Kelsey Marshall among snow-covered evergreen trees" width={768} height={1152} loading="lazy" /><div className="headshot-caption" aria-hidden="true"><Star /></div></div>
+          <div className="about-inner"><div className="headshot-wrap"><img src={headshot} alt="Kelsey Marshall among snow-covered evergreen trees" width={768} height={1152} loading="lazy" /><div className="headshot-caption" aria-hidden="true"><Star /></div></div>
           <div className="about-copy"><h2 id="about-heading">Nice to meet you,<br />I’m <em>Kelsey.</em></h2><p>I’m a <strong>lifelong organizer, wanderlusty traveler, and believer that the little details are what make people feel cared for.</strong> Before planning weddings, I spent more than a decade leading corporate event and design teams, where I learned to anticipate the details, solve problems calmly, and turn a lot of moving pieces into something that feels effortless.</p><p>My own intimate wedding in 2024 reminded me just how much the right celebration can be about the people, the place, and the little things.</p><p>I believe in warm welcomes, magical connections, and hand-written thank-you notes. I’ll be straight with you, cheer you on, and never let you feel like just another booking.</p></div></div>
         </section>
 
