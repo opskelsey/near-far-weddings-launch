@@ -10,7 +10,7 @@
 - [x] Connect the footer Instagram button to @nearandfarweddings.
 - [x] Tablet/phone hero: photo full-bleed to the screen edges, box tall and centered with small top/bottom margins; drop the outlined stars beside Hello.
 - [x] Right-align "wrapped in a bow" inside the hero box on tablet and mobile.
-- [ ] Lock the desktop hero box's max width to the width Kelsey currently sees.
+- [ ] Desktop hero box: fixed width of 480px (no min/max juggling).
 - [x] Day-of Coordination: drop “flat” from the price, use the new tagline and description, and replace the includes list.
 - [x] Change "creative teams, budgets" to "creative teams, and budgets."
 - [x] Reword the "This might be for you if…" planner bullet to "taking the logistical weight off your shoulders."
