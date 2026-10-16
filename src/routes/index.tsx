@@ -8,7 +8,7 @@ import { Calendar } from '@/components/ui/calendar';
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
 import { cn } from '@/lib/utils';
 import { offerings, BOOKING_PLACEHOLDER, COACH_CREDIT, COACH_CREDIT_WINDOW_DAYS } from '@/lib/wedding-offerings';
-import hero from '@/assets/hero-couple-field.jpg';
+import hero from '@/assets/hero-bouquet.png';
 import headshot from '@/assets/kelsey-marshall.jpg';
 
 export const Route = createFileRoute("/")({
