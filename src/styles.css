@@ -326,8 +326,8 @@ button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
 .hero-cta, .hero-cta:hover { text-decoration: none; }
 .hero-cta .hero-cta-label { position: relative; padding-bottom: 10px; }
 .hero-cta .hero-cta-label::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 1px; background: currentColor; opacity: .5; }
-.hero-cta .hero-cta-label::before { content: ""; position: absolute; left: 0; right: 0; bottom: -5px; height: 1px; background: var(--gold); transform: scaleX(.4); transform-origin: left; transition: transform .35s ease; }
-.hero-cta:hover .hero-cta-label::before { transform: scaleX(1); }
+.hero-cta .hero-cta-label::before { content: ""; position: absolute; left: 0; right: 0; bottom: -5px; height: 1px; background: var(--gold); opacity: .85; transform-origin: center; transition: transform .35s ease; }
+.hero-cta:hover .hero-cta-label::before { transform: scaleX(1.09); }
 .hero-cta svg { transition: transform .35s ease; }
 .hero-cta:hover svg { transform: translateX(5px); }
 @media (max-width: 900px) {
