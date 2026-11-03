@@ -8,13 +8,13 @@ import { Calendar } from '@/components/ui/calendar';
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
 import { cn } from '@/lib/utils';
 import { offerings, BOOKING_URL, INSTAGRAM_URL, COACH_CREDIT, COACH_CREDIT_WINDOW_DAYS } from '@/lib/wedding-offerings';
-import hero from '@/assets/hero-bouquet.jpg';
+import hero from '@/assets/hero-field.jpg';
 import headshot from '@/assets/kelsey-marshall.jpg';
 import { intakeSchema } from '@/lib/intake-schema';
 import { deliverIntake, WEB3FORMS_PUBLIC_ACCESS_KEY } from '@/lib/intake';
 import { getRequestOrigin } from '@/lib/origin.functions';
 
-const OG_IMAGE_ALT = 'A bridal bouquet of pale pink daisies, peach roses, and blue-gray sea holly tied with white ribbon, resting on a tan velvet sofa';
+const OG_IMAGE_ALT = 'A couple walking hand in hand across a dry grassy hilltop at golden hour, the bride in a white gown carrying a bouquet, hazy mountains behind them';
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -112,12 +112,12 @@ function Index() {
       <main>
         <section className="hero" aria-labelledby="hero-heading">
           <div className="hero-media">
-            <img src={hero} alt="A bridal bouquet of pale pink daisies, peach roses, and blue-gray sea holly, tied with white ribbon, resting on a tan velvet sofa" className="hero-image" width={1600} height={2400} fetchPriority="high" />
+            <img src={hero} alt="A couple walking hand in hand across a dry grassy hilltop at golden hour, the bride in a white gown carrying a bouquet, hazy mountains behind them" className="hero-image" width={1920} height={1280} fetchPriority="high" />
           </div>
           <div className="hero-inner">
-            <h1 id="hero-heading">Your wedding,<span className="hero-script">wrapped in a bow.</span></h1>
-            <p className="hero-copy">Intimate, unconventional weddings—with practical planning for real-world budgets.</p>
-            <Button asChild className="primary-cta"><a href="#inquire">Send Me a Note <ArrowRight size={17} /></a></Button>
+            <h1 id="hero-heading">Wedding Planning<br />& Day-Of Coordination</h1>
+            <p className="hero-copy">Whether you’re marrying close to home or a world away, let’s make it unforgettable.</p>
+            <Button asChild variant="link" className="hero-cta"><a href="#inquire"><span className="hero-cta-label">Send Me a Note</span><ArrowRight size={16} /></a></Button>
           </div>
         </section>
 
@@ -143,7 +143,7 @@ function Index() {
           <div className="offerings-grid">
             {offerings.map((offering, index) => <article key={offering.id} className="offering"><span className="offering-number" aria-hidden="true">0{index + 1}</span><div className="offering-body">
               <div className="offering-title"><h3>{offering.name}</h3><p className="offering-price">{offering.priceLabel}{'originalPrice' in offering && <del className="original-price" aria-label={`Original price $${offering.originalPrice}`}>${offering.originalPrice}</del>}</p></div>
-              <p className="offering-tagline">{offering.tagline}</p>
+              {'tagline' in offering && <p className="offering-tagline">{offering.tagline}</p>}
               <div className="offering-copy">{offering.copy.map(p => <p key={p}>{p}</p>)}</div>
               <p className="includes-label">Includes:</p>
               <ul>{offering.includes.map(item => <li key={item}><Check size={13} /><span>{item}</span></li>)}</ul>
