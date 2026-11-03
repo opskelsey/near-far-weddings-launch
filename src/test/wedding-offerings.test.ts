@@ -6,8 +6,13 @@ describe('Wedding offering rules', () => {
   it('books Kickstart Session through Kelsey’s Calendly', () => expect(BOOKING_URL).toBe('https://calendly.com/marshall-kelseyrose/kickstart'));
   it('links Instagram to the Near & Far account', () => expect(INSTAGRAM_URL).toBe('https://www.instagram.com/nearandfarweddings'));
   it('sets the original Kickstart Session price to $225', () => expect(offerings[0].originalPrice).toBe(225));
-  it('starts Day-of Coordination at $900', () => expect(offerings[1].price).toBe(900));
-  it('shows the Day-of Coordination price with no extra wording', () => expect(offerings[1].priceLabel).toBe('$900'));
+  it('prices Day-of Coordination at $950', () => expect(offerings[1].price).toBe(950));
+  it('shows the Day-of Coordination price with no extra wording', () => expect(offerings[1].priceLabel).toBe('$950'));
+  it('shows no tagline on any offering', () => expect(offerings.every(o => !('tagline' in o))).toBe(true));
+  it('opens the Day-of Coordination copy with the job description, not the removed sentence', () => {
+    expect(offerings[1].copy[0]).toMatch(/^My job is to take the plans you’ve made/);
+    expect(offerings[1].copy.join(' ')).not.toMatch(/you don’t need to spend more/i);
+  });
   it('lists Day-of Coordination includes in the requested order', () => {
     expect(offerings[1].includes).toEqual([
       'Vendor coordination, with me as point of contact on your big day',
