@@ -338,7 +338,7 @@ button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
 @media (max-width: 900px) {
   .hero { height: 700px; min-height: 0; }
   .hero-inner { padding-top: 62px; }
-  .hero h1 { font-size: 42px; }
+  .hero h1 { font-size: clamp(28px, 8.4vw, 42px); }
   .hero-copy { font-size: 14px; max-width: 320px; margin: 22px 0 30px; }
 }
 @media (max-width: 1199px) { .welcome::before, .welcome::after { display: none; } }
