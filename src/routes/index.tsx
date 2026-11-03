@@ -152,7 +152,7 @@ function Index() {
         <section className="welcome section-space" aria-labelledby="welcome-heading">
           <div className="ornament"><span /><Star /><span /></div>
           <h2 id="welcome-heading">Hello, and <em>congratulations!</em></h2>
-          <div className="welcome-copy"><p>Planning a wedding should feel a bit like opening a well-loved recipe box: heartfelt, joyful, and full of good things to come. If it feels more like a pile of Post-Its, spreadsheets, and opinions, I’m here to help.</p></div>
+          <div className="welcome-copy"><p>Planning a wedding should feel magical, deeply personal, and full of good things to come. If it feels more like a pile of Post-Its, spreadsheets, and opinions, I’m here to help.</p></div>
 
         </section>
 
