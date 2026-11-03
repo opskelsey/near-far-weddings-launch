@@ -330,7 +330,11 @@ button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
 .hero-cta:hover .hero-cta-label::before { transform: scaleX(1.09); }
 .hero-cta svg { transition: transform .35s ease; }
 .hero-cta:hover svg { transform: translateX(5px); }
-@media (min-width: 1500px) { .hero { height: min(92vh, 980px); } }
+@media (min-width: 1500px) {
+  .hero { height: min(90vh, 900px); }
+  .hero-image { object-position: 50% 100%; }
+  .hero-inner { padding-top: clamp(56px, 8vh, 88px); }
+}
 @media (max-width: 900px) {
   .hero { height: 700px; min-height: 0; }
   .hero-inner { padding-top: 62px; }
