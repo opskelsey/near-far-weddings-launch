@@ -33,7 +33,7 @@ export const Route = createFileRoute("/")({
     { name: 'description', content: 'Intimate, personalized wedding planning, from day-of coordination to full service packages.' },
     { name: "robots", content: "index, follow, max-image-preview:large" },
     { property: 'og:title', content: 'Wedding Planner & Coordinator | Arizona & Beyond' },
-    { property: 'og:description', content: 'Intimate, unconventional weddings with practical planning for real-world budgets. Your wedding, wrapped in a bow.' },
+    { property: 'og:description', content: 'Intimate, personalized wedding planning, from day-of coordination to full service packages.' },
     { property: 'og:type', content: 'website' },
     { property: 'og:site_name', content: "Near and Far Weddings" },
     { property: 'og:locale', content: "en_US" },
