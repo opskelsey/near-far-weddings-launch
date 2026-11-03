@@ -1,4 +1,5 @@
 # Website roadmap
+- [x] Replace the hero photo with the couple-on-the-hilltop shot, center the new header/subtitle directly over the sky with no containing box, and restyle "Send Me a Note" as an unfilled link with arrow and stylized underline.
 - [x] Set the page/share title to "Your Wedding, Wrapped in a Bow." and apply Kelsey's wording edits (handwritten, pile of Post-Its, staring at a checklist, Instagram screenshots).
 - [x] Switch intake to direct browser submission for Web3Forms free tier; verify loading, simulated success, and real network-error states.
 - [x] Connect intake to Web3Forms with validated fields, sending, success, and error states; tests pass and live failure preserves entries.
