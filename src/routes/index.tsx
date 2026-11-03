@@ -35,10 +35,38 @@ export const Route = createFileRoute("/")({
     { property: 'og:title', content: 'Wedding Planner & Coordinator | Arizona & Beyond' },
     { property: 'og:description', content: 'Intimate, personalized wedding planning, from day-of coordination to full service packages.' },
     { property: 'og:type', content: 'website' },
-    { property: 'og:site_name', content: "Near and Far Weddings" },
+    { property: 'og:site_name', content: "Near & Far Weddings" },
     { property: 'og:locale', content: "en_US" },
     { name: 'twitter:card', content: 'summary_large_image' },
-  ] }),
+  ], scripts: loaderData?.origin ? [{
+    type: 'application/ld+json',
+    children: JSON.stringify({
+      '@context': 'https://schema.org',
+      '@graph': [
+        {
+          '@type': 'Organization',
+          '@id': `${loaderData.origin}/#organization`,
+          name: 'Near & Far Weddings',
+          alternateName: 'Near and Far Weddings',
+          url: `${loaderData.origin}/`,
+          logo: `${loaderData.origin}/near-and-far-logo.png`,
+          image: `${loaderData.origin}/og-image.jpg`,
+          description: 'Intimate, personalized wedding planning, from day-of coordination to full service packages.',
+          founder: { '@type': 'Person', name: 'Kelsey Marshall' },
+          areaServed: ['Arizona', 'Worldwide'],
+        },
+        {
+          '@type': 'WebSite',
+          '@id': `${loaderData.origin}/#website`,
+          url: `${loaderData.origin}/`,
+          name: 'Near & Far Weddings',
+          publisher: { '@id': `${loaderData.origin}/#organization` },
+          inLanguage: 'en-US',
+        },
+      ],
+    }),
+  }] : [],
+  }),
 });
 
 function Star({ className = '' }: { className?: string }) {
