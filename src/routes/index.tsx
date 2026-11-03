@@ -1,13 +1,13 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useRef, useState, type FormEvent } from 'react';
-import { ArrowRight, ArrowUp, Check, Menu, X, Instagram, CalendarIcon, LoaderCircle } from 'lucide-react';
+import { ArrowRight, ArrowUp, Check, Menu, X, CalendarIcon, LoaderCircle } from 'lucide-react';
 import { toast } from 'sonner';
 import { format } from 'date-fns';
 import { Button } from '@/components/ui/button';
 import { Calendar } from '@/components/ui/calendar';
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
 import { cn } from '@/lib/utils';
-import { offerings, BOOKING_URL, INSTAGRAM_URL, COACH_CREDIT, COACH_CREDIT_WINDOW_DAYS } from '@/lib/wedding-offerings';
+import { offerings, BOOKING_URL, COACH_CREDIT, COACH_CREDIT_WINDOW_DAYS } from '@/lib/wedding-offerings';
 import hero from '@/assets/hero-field.jpg';
 import headshot from '@/assets/kelsey-marshall.jpg';
 import { intakeSchema } from '@/lib/intake-schema';
@@ -124,12 +124,12 @@ function Index() {
         <section className="welcome section-space" aria-labelledby="welcome-heading">
           <div className="ornament"><span /><Star /><span /></div>
           <h2 id="welcome-heading">Hello, and <em>congratulations!</em></h2>
-          <div className="welcome-copy"><p>Planning a wedding should feel a bit like opening a well-loved recipe box: familiar, joyful, and full of good things to come. If it feels more like a pile of Post-Its, spreadsheets, and opinions, I’m here to help.</p><p>I’ll guide you on a path toward your vision, without the vendor pressure and cookie-cutter templates, so you can spend your day on what <em>you</em> care about and let the rest go.</p></div>
+          <div className="welcome-copy"><p>Planning a wedding should feel a bit like opening a well-loved recipe box: familiar, joyful, and full of good things to come. If it feels more like a pile of Post-Its, spreadsheets, and opinions, I’m here to help.</p></div>
 
         </section>
 
         <section className="fit section-space" aria-labelledby="fit-heading">
-          <div className="fit-inner"><h2 id="fit-heading"><em>This might be for you if…</em></h2><ul><li><span className="fit-star" aria-hidden="true">✦</span><span>You’re planning your first wedding and have no idea where to start.</span></li><li><span className="fit-star" aria-hidden="true">✦</span><span>You’d rather spend money on the things you care about than follow every wedding tradition.</span></li><li><span className="fit-star" aria-hidden="true">✦</span><span>You want to celebrate with the people you love—not your friend's neighbor's cousin.</span></li><li><span className="fit-star" aria-hidden="true">✦</span><span>You want your wedding to feel personal, relaxed, and a little unconventional.</span></li><li><span className="fit-star" aria-hidden="true">✦</span><span>You have a budget you actually need to stick to.</span></li><li><span className="fit-star" aria-hidden="true">✦</span><span>You have a Pinterest board, 47 browser tabs, and approximately zero idea what comes next.</span></li><li><span className="fit-star" aria-hidden="true">✦</span><span>You want an experienced planner in your corner taking the logistical weight off your shoulders.</span></li></ul><p className="fit-close">If that sounds like you, you’re in the right place.</p></div>
+          <div className="fit-inner"><h2 id="fit-heading"><em>This might be for you if…</em></h2><ul><li><span className="fit-star" aria-hidden="true">✦</span><span>You’re planning your first wedding and have no idea where to start.</span></li><li><span className="fit-star" aria-hidden="true">✦</span><span>You want to focus on the things <em>you</em> care about rather than follow every wedding tradition.</span></li><li><span className="fit-star" aria-hidden="true">✦</span><span>You want to celebrate with the people you love.</span></li><li><span className="fit-star" aria-hidden="true">✦</span><span>You want your wedding to feel personal, intimate, and a little unconventional.</span></li><li><span className="fit-star" aria-hidden="true">✦</span><span>You have a Pinterest board, 47 browser tabs, and approximately zero idea what comes next.</span></li><li><span className="fit-star" aria-hidden="true">✦</span><span>You want an experienced planner in your corner taking the logistical weight off your shoulders.</span></li></ul><p className="fit-close">If that sounds like you, you’re in the right place.</p></div>
         </section>
 
         <section id="about" className="about section-space" aria-labelledby="about-heading">
@@ -143,7 +143,6 @@ function Index() {
           <div className="offerings-grid">
             {offerings.map((offering, index) => <article key={offering.id} className="offering"><span className="offering-number" aria-hidden="true">0{index + 1}</span><div className="offering-body">
               <div className="offering-title"><h3>{offering.name}</h3><p className="offering-price">{offering.priceLabel}{'originalPrice' in offering && <del className="original-price" aria-label={`Original price $${offering.originalPrice}`}>${offering.originalPrice}</del>}</p></div>
-              {'tagline' in offering && <p className="offering-tagline">{offering.tagline}</p>}
               <div className="offering-copy">{offering.copy.map(p => <p key={p}>{p}</p>)}</div>
               <p className="includes-label">Includes:</p>
               <ul>{offering.includes.map(item => <li key={item}><Check size={13} /><span>{item}</span></li>)}</ul>
@@ -181,7 +180,7 @@ function Index() {
         </div></section>
       </main>
 
-      <footer className="site-footer"><div className="footer-contact"><p className="footer-location">Arizona-rooted, travel bag ready.</p><Star /><Button asChild variant="link"><a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer"><Instagram size={15} /> Instagram</a></Button></div><div className="footer-bottom"><span>© 2026 Near & Far Weddings</span><Button asChild variant="ghost" size="icon"><a href="#top" aria-label="Back to top"><ArrowUp size={17} /></a></Button></div></footer>
+      <footer className="site-footer"><div className="footer-contact"><p className="footer-location">Arizona-rooted, travel bag ready.</p><Star /></div><div className="footer-bottom"><span>© 2026 Near & Far Weddings</span><Button asChild variant="ghost" size="icon"><a href="#top" aria-label="Back to top"><ArrowUp size={17} /></a></Button></div></footer>
     </div>
   );
 }
