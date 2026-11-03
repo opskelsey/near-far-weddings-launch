@@ -320,7 +320,7 @@ button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
 .hero-media { position: absolute; inset: 0; }
 .hero-image { object-position: 50% 64%; }
 .hero-inner { position: relative; z-index: 1; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; text-align: center; padding: clamp(56px, 11vh, 112px) 6% 0; background: none; }
-.hero h1 { font-family: var(--font-display); font-weight: 400; font-size: clamp(38px, 5.2vw, 64px); line-height: 1.1; color: var(--foreground); }
+.hero h1 { font-family: var(--font-display); font-weight: 400; font-size: clamp(38px, 5.2vw, 64px); line-height: 1.1; color: var(--foreground); max-width: none; }
 .hero-copy { font-size: 15px; max-width: 470px; margin: 26px 0 34px; color: var(--foreground); }
 .hero-cta { position: relative; height: auto; padding: 0; border-radius: 0; background: none; box-shadow: none; color: var(--foreground); font-size: 12px; letter-spacing: .17em; text-transform: uppercase; gap: 0; }
 .hero-cta, .hero-cta:hover { text-decoration: none; }
