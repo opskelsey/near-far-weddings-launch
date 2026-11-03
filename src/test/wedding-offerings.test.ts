@@ -26,6 +26,7 @@ describe('Wedding offering rules', () => {
     ]);
   });
   it('prices Full Planning & Coordination at $3,000', () => expect(offerings[2].price).toBe(3000));
+  it('shows the Full Planning price as starting at $3,000', () => expect(offerings[2].priceLabel).toBe('Starting at $3,000'));
   it('credits $150 toward Day-of within 30 days of follow-up', () => {
     expect(eligibleCoachCredit(30, 'Day-of Coordination')).toBe(150);
     expect(eligibleCoachCredit(31, 'Day-of Coordination')).toBe(0);

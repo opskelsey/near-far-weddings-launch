@@ -12,7 +12,7 @@ export const offerings = [
     service: 'Day-of Coordination',
   },
   {
-    id: 'full-service', name: 'Full Planning & Coordination', price: 3000, priceLabel: '$3,000',
+    id: 'full-service', name: 'Full Planning & Coordination', price: 3000, priceLabel: 'Starting at $3,000',
     copy: ["From “we just got engaged” to “the last guest just left,” I’ll keep the logistics moving—budget, vendors, contracts, timeline, communication—and make sure nothing falls through the cracks."],
     includes: ['Everything in Day-of Coordination', 'Vendor sourcing, with me directly supporting every step of the way', 'Full budget management', 'Contract review, deadline and payment tracking', 'Arranging travel accommodations', 'Regular check-ins and responsive support throughout'],
     service: 'Full Planning & Coordination',
