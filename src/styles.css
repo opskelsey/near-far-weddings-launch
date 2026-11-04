@@ -352,7 +352,9 @@ button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
 }
 
 /* Unlisted custom events page */
-.events-title { margin-bottom: 10px; }
+.wedding-site .events-title { font-size: 56px; line-height: 1.1; margin-bottom: 14px; }
+@media (max-width: 640px) { .wedding-site .events-title { font-size: 40px; } }
+.events-types-section { padding-bottom: 0; }
 .events-subhead { font-style: italic; color: var(--secondary-foreground); margin-bottom: 23px; }
 .events-types { display: flex; flex-wrap: wrap; justify-content: center; gap: 18px 40px; font-size: 20px; }
 .events-types li { display: flex; align-items: center; gap: 10px; }

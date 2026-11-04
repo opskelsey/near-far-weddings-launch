@@ -45,12 +45,12 @@ function CustomEvents() {
           <div className="welcome-copy"><p>Whether you’re gathering 100 guests for a celebratory banquet or hosting a multi-day retreat, great events require clear direction and airtight logistical execution. I handle the budget, the vendors, and the day-of moving parts so that your event goes off without a hitch.</p></div>
         </section>
 
-        <section className="offerings section-space" aria-labelledby="types-heading">
+        <section className="offerings events-types-section section-space" aria-labelledby="types-heading">
           <div className="section-heading"><h2 id="types-heading">Types of <em>Events</em></h2></div>
           <ul className="events-types">{eventTypes.map(t => <li key={t}><Star /><span>{t}</span></li>)}</ul>
         </section>
 
-        <section className="offerings section-space" aria-labelledby="scope-heading">
+        <section className="offerings section-space" style={{ paddingTop: 48 }} aria-labelledby="scope-heading">
           <div className="ornament"><span /><Star /><span /></div>
           <div className="section-heading"><h2 id="scope-heading">What’s <em>Included</em></h2></div>
           <div className="offerings-grid">
