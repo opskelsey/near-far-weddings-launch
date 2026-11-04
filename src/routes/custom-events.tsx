@@ -5,10 +5,30 @@ import { Button } from "@/components/ui/button";
 export const CONTACT_EMAIL = "marshall.kelseyrose@gmail.com";
 const MAILTO = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent("Custom event inquiry")}`;
 
-const scope = [
-  { title: "Logistics & Planning", items: ["Custom timelines", "Full budget planning and management", "Vendor coordination (catering, bartending, rentals, venues, decor, etc.)"] },
-  { title: "Design & Layout", items: ["Rental sourcing", "Venue layout", "Decor styling"] },
-  { title: "Execution & Day-Of", items: ["Vendor coordination on site", "Guest relations and communication", "Setup and teardown"] },
+type ScopeItem = { name: string; detail: string };
+const scope: { title: string; items: ScopeItem[] }[] = [
+  { title: "Logistics & Planning", items: [
+    { name: "Custom Timelines", detail: "Planning calendars built around your event date, from first booking to final walkthrough." },
+    { name: "Master Run-of-Show & Program Timing", detail: "A minute-by-minute schedule covering speeches, presentations, meal service, and transitions." },
+    { name: "Budget Planning & Management", detail: "A full budget set up front and tracked throughout, so spending stays where you want it." },
+    { name: "Contract & Payment Milestone Tracking", detail: "Keeping track of vendor deposit dates, balances due, and deliverables so nothing lapses." },
+    { name: "Vendor Coordination", detail: "Sourcing and managing catering, bartending, rentals, venues, decor, and more." },
+  ] },
+  { title: "Design & Layout", items: [
+    { name: "Rental Sourcing", detail: "Finding and booking the tables, chairs, linens, and equipment your event needs." },
+    { name: "Venue Layout", detail: "Planning where everything goes, from seating and bars to stages and registration." },
+    { name: "Decor Styling", detail: "Pulling the look of the space together so it matches the feel of your event." },
+    { name: "Tabletop & Tablescape Styling", detail: "Cohesive linens, place settings, centerpieces, and accents tailored to the gathering’s tone." },
+    { name: "Signage & Collateral Coordination", detail: "Overseeing placement of welcome boards, directional signs, printed programs, badges, or menus." },
+  ] },
+  { title: "Execution & Day-Of", items: [
+    { name: "On-Site Vendor Coordination", detail: "Directing vendors on the day so every delivery, setup, and service lands on time." },
+    { name: "Guest Relations & Communication", detail: "Keeping guests informed, welcomed, and looked after from arrival to send-off." },
+    { name: "Audio/Visual & Lighting Coordination", detail: "Aligning with tech teams on microphones, screen placement, projection, and ambient lighting cues." },
+    { name: "Speaker & Presenter Support", detail: "Ensuring speakers, MCs, or honored guests know where to be and are prepped on mic and timing cues." },
+    { name: "On-Site Troubleshooting & Crisis Management", detail: "Quietly resolving last-minute dietary needs, tech hiccups, or schedule drifts behind the scenes." },
+    { name: "Setup & Teardown", detail: "Managing load-in and breakdown so the venue is left exactly as you found it." },
+  ] },
 ];
 
 export const Route = createFileRoute("/custom-events")({
@@ -52,7 +72,7 @@ function CustomEvents() {
             {scope.map(group => (
               <article key={group.title} className="offering"><div className="offering-body">
                 <div className="offering-title"><h3>{group.title}</h3></div>
-                <ul>{group.items.map(item => <li key={item}><Check size={13} /><span>{item}</span></li>)}</ul>
+                <ul>{group.items.map(item => <li key={item.name}><Check size={13} /><span><strong>{item.name}:</strong> {item.detail}</span></li>)}</ul>
               </div></article>
             ))}
           </div>
