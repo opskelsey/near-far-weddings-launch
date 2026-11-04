@@ -8,7 +8,7 @@ const MAILTO = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent("Custom eve
 type ScopeItem = { name: string; detail: string };
 const scope: { title: string; items: ScopeItem[] }[] = [
   { title: "Logistics & Planning", items: [
-    { name: "Custom Timelines", detail: "Planning calendars built around your event date, from first booking to final walkthrough." },
+    { name: "Planning Calendar & Checklist", detail: "A custom calendar and task checklist built around your event date, from first booking to final walkthrough." },
     { name: "Master Run-of-Show & Program Timing", detail: "A minute-by-minute schedule covering speeches, presentations, meal service, and transitions." },
     { name: "Budget Planning & Management", detail: "A full budget set up front and tracked throughout, so spending stays where you want it." },
     { name: "Contract & Payment Milestone Tracking", detail: "Keeping track of vendor deposit dates, balances due, and deliverables so nothing lapses." },
