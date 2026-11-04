@@ -350,3 +350,11 @@ button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
   .footer-bottom a[aria-label="Back to top"] { min-height: 44px; min-width: 44px; }
   .hero-cta { min-height: 44px; }
 }
+
+/* Unlisted custom events page */
+.events-title { margin-bottom: 10px; }
+.events-subhead { font-style: italic; color: var(--secondary-foreground); margin-bottom: 23px; }
+.events-types { display: flex; flex-wrap: wrap; justify-content: center; gap: 18px 40px; font-size: 20px; }
+.events-types li { display: flex; align-items: center; gap: 10px; }
+.events-types .celestial-star { color: var(--gold); font-size: 13px; }
+.events-cta { margin-top: 26px; text-transform: none; }
