@@ -360,3 +360,4 @@ button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
 .events-types li { display: flex; align-items: center; gap: 10px; }
 .events-types .celestial-star { color: var(--gold); font-size: 13px; }
 .events-cta { margin-top: 26px; text-transform: none; }
+.offering-title h3 + ul, .offering-body > ul { margin-top: 16px; }

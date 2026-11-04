@@ -3,6 +3,7 @@ import { ArrowRight, Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export const CONTACT_EMAIL = "marshall.kelseyrose@gmail.com";
+const MAILTO = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent("Custom event inquiry")}`;
 
 const scope = [
   { title: "Logistics & Planning", items: ["Custom timelines", "Full budget planning and management", "Vendor coordination (catering, bartending, rentals, venues, decor, etc.)"] },
@@ -34,6 +35,7 @@ function CustomEvents() {
     <div className="wedding-site">
       <header className="site-header">
         <Link to="/" className="wordmark" aria-label="Near & Far Weddings home">NEAR <span>&</span> FAR<small>W E D D I N G S</small></Link>
+        <Button asChild variant="outline" className="nav-cta"><a href={MAILTO}>Inquire <ArrowRight /></a></Button>
       </header>
       <main>
         <section className="welcome section-space" aria-labelledby="events-heading">
@@ -65,7 +67,7 @@ function CustomEvents() {
         <section className="welcome section-space" aria-labelledby="contact-heading">
           <h2 id="contact-heading">Let’s <em>talk</em></h2>
           <div className="welcome-copy"><p>Reach out to me to inquire and schedule a free consult.</p></div>
-          <Button asChild variant="link" className="hero-cta events-cta"><a href={`mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent("Custom event inquiry")}`}><span className="hero-cta-label">Email me at {CONTACT_EMAIL}</span><ArrowRight size={16} /></a></Button>
+          <Button asChild variant="link" className="hero-cta events-cta"><a href={MAILTO}><span className="hero-cta-label">Email me at {CONTACT_EMAIL}</span><ArrowRight size={16} /></a></Button>
         </section>
       </main>
       <footer className="site-footer"><div className="footer-contact"><p className="footer-location">Arizona-rooted, travel bag ready.</p><Star /></div><div className="footer-bottom"><span>© 2026 Near & Far Weddings</span></div></footer>
