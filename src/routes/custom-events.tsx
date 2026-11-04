@@ -35,6 +35,7 @@ function CustomEvents() {
     <div className="wedding-site">
       <header className="site-header">
         <Link to="/" className="wordmark" aria-label="Near & Far Weddings home">NEAR <span>&</span> FAR<small>W E D D I N G S</small></Link>
+        <Button asChild variant="outline" className="nav-cta"><a href={MAILTO}>Inquire <ArrowRight /></a></Button>
       </header>
       <main>
         <section className="welcome section-space" aria-labelledby="events-heading">
