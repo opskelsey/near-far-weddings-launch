@@ -9,7 +9,7 @@
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
 
-- Keep this website as a single index route with hash navigation between sections, because the brief explicitly requires one scrolling page.
+- Keep the public site as a single index route with hash navigation; unlisted pages (e.g. /custom-events) are separate noindex routes not linked from navigation.
 - Keep offering prices and credit eligibility in the shared wedding-offerings module with concrete rule tests, so business values remain consistent.
 - Send intake inquiries directly from browser event handlers to Web3Forms using its publishable submission key and shared input validation, because its free tier blocks server requests; confirm submission only after provider acceptance.
 
