@@ -78,13 +78,13 @@ function CustomEvents() {
           </div>
         </section>
 
-        <section className="welcome section-space" aria-labelledby="pricing-heading">
+        <section className="welcome no-side-stars section-space" aria-labelledby="pricing-heading">
           <div className="ornament"><span /><Star /><span /></div>
           <h2 id="pricing-heading">Tailored Proposals &amp; <em>Custom Pricing</em></h2>
           <div className="welcome-copy"><p>Every gathering has its own footprint, from guest counts and venue logistics to single-evening vs. multi-day timelines. All services are custom-quoted based on the scope, scale, and hands-on hours required for your event.</p></div>
         </section>
 
-        <section className="welcome section-space" aria-labelledby="contact-heading">
+        <section className="welcome no-side-stars section-space" aria-labelledby="contact-heading">
           <h2 id="contact-heading">Let’s <em>talk</em></h2>
           <div className="welcome-copy"><p>Reach out to me to inquire and schedule a free consult.</p></div>
           <Button asChild variant="link" className="hero-cta events-cta"><a href={MAILTO}><span className="hero-cta-label">Email me at {CONTACT_EMAIL}</span><ArrowRight size={16} /></a></Button>
