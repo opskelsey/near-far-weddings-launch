@@ -32,3 +32,5 @@
 - [x] Connect package choices to intake and show a confirmation toast (preview only, no delivery).
 - [x] Check pricing rules, desktop/mobile layout, and inquiry flow.
 - [x] Custom events: more space under scope headings
+- [x] Remove the whitespace under the "Includes:" label on all three offering cards.
+- [x] Day-of: change the first includes line to "On-site vendor coordination, with me as point of contact on your day".
