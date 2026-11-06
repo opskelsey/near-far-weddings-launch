@@ -191,8 +191,9 @@ button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
 .offering h3 { font-size: 31px; line-height: 1.2; }
 .offering-price { font-size: 11px; color: var(--secondary-foreground); margin-top: 5px; display: flex; align-items: baseline; gap: 12px; }
 .original-price { color: var(--original-price); font-weight: 400; }
-.includes-label { font-size: 8px; margin: 25px 0 14px; }
-.offering ul { display: flex; flex-direction: column; gap: 11px; font-size: 11px; color: var(--muted-foreground); line-height: 1.65; }
+.includes-label { font-size: 8px; margin: 25px 0 0; line-height: 1; }
+.wedding-site .includes-label { line-height: 1; }
+.offering ul { margin-top: 0; display: flex; flex-direction: column; gap: 11px; font-size: 11px; color: var(--muted-foreground); line-height: 1.65; }
 .offering li { display: flex; gap: 9px; }
 .offering li svg { flex: 0 0 13px; margin-top: 3px; color: var(--gold); }
 .offering-note { font-size: 11px; font-style: italic; color: var(--muted-foreground); margin-top: 20px; }
@@ -361,4 +362,5 @@ button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
 .events-types .celestial-star { color: var(--gold); font-size: 13px; }
 .events-cta { margin-top: 26px; text-transform: none; }
 .offering-title h3 + ul, .offering-body > ul { margin-top: 16px; }
+.wedding-site .includes-label + ul { margin-top: 0; }
 .welcome.no-side-stars::before, .welcome.no-side-stars::after { display: none; }

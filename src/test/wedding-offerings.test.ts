@@ -15,7 +15,7 @@ describe('Wedding offering rules', () => {
   });
   it('lists Day-of Coordination includes in the requested order', () => {
     expect(offerings[1].includes).toEqual([
-      'Vendor coordination, with me as point of contact on your big day',
+      'On-site vendor coordination, with me as point of contact on your day',
       'Timeline management and execution',
       'Final vendor confirmations, payments, and logistics checks',
       'Overseeing decor setup and teardown, bringing your vision to life',
