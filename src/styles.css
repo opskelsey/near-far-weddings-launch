@@ -193,7 +193,7 @@ button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
 .original-price { color: var(--original-price); font-weight: 400; }
 .includes-label { font-size: 8px; margin: 25px 0 0; line-height: 1; }
 .wedding-site .includes-label { line-height: 1; }
-.offering ul { display: flex; flex-direction: column; gap: 11px; font-size: 11px; color: var(--muted-foreground); line-height: 1.65; }
+.offering ul { margin-top: 0; display: flex; flex-direction: column; gap: 11px; font-size: 11px; color: var(--muted-foreground); line-height: 1.65; }
 .offering li { display: flex; gap: 9px; }
 .offering li svg { flex: 0 0 13px; margin-top: 3px; color: var(--gold); }
 .offering-note { font-size: 11px; font-style: italic; color: var(--muted-foreground); margin-top: 20px; }
