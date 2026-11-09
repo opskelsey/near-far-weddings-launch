@@ -27,6 +27,17 @@ describe('Wedding offering rules', () => {
       'Travel anywhere in the East Valley included',
     ]);
   });
+  it('lists Full Planning includes in the requested order', () => {
+    expect(offerings[2].includes).toEqual([
+      'Everything in Day-of Coordination',
+      'Vendor sourcing: shortlists matched to your style and budget, plus outreach and booking support',
+      'Budget management and payment tracking through your wedding date',
+      'Attendance at venue tours, vendor meetings, and tastings',
+      'Contract review support: what to look for, questions to ask, and deadlines to track',
+      'Guest logistics: invitation and RSVP timeline, seating chart, and signage plan',
+      'Monthly planning check-ins',
+    ]);
+  });
   it('prices Full Planning & Coordination at $3,000', () => expect(offerings[2].price).toBe(3000));
   it('shows the Full Planning price as starting at $3,000', () => expect(offerings[2].priceLabel).toBe('Starting at $3,000'));
   it('credits $150 toward Day-of within 30 days of follow-up', () => {
