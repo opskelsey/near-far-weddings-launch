@@ -14,7 +14,7 @@ export const offerings = [
   {
     id: 'full-service', name: 'Full Planning & Coordination', price: 3000, priceLabel: 'Starting at $3,000',
     copy: ["From “we just got engaged” to “the last guest just left,” I’ll keep the logistics moving—budget, vendors, contracts, timeline, communication—and make sure nothing falls through the cracks."],
-    includes: ['Everything in Day-of Coordination', 'Vendor sourcing, with me directly supporting every step of the way', 'Full budget management', 'Contract review, deadline and payment tracking', 'Arranging travel accommodations', 'Regular check-ins and responsive support throughout'],
+    includes: ['Everything in Day-of Coordination', 'Vendor sourcing: shortlists matched to your style and budget, plus outreach and booking support', 'Budget management and payment tracking through your wedding date', 'Attendance at venue tours, vendor meetings, and tastings', 'Contract review support: what to look for, questions to ask, and deadlines to track', 'Guest logistics: invitation and RSVP timeline, seating chart, and signage plan', 'Monthly planning check-ins'],
     service: 'Full Planning & Coordination',
   },
 ] as const;
