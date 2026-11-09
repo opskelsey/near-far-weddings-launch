@@ -24,7 +24,7 @@ describe('Wedding offering rules', () => {
       'Ceremony cueing and reception flow, from processional to send-off',
       'Gift, card, and personal item handling',
       'Responsive support from the day you book, plus 2–3 final planning calls',
-      'Travel anywhere in the East Valley included',
+      'Travel anywhere in the Greater Phoenix area included',
     ]);
   });
   it('lists Full Planning includes in the requested order', () => {
@@ -35,6 +35,7 @@ describe('Wedding offering rules', () => {
       'Attendance at venue tours, vendor meetings, and tastings',
       'Contract review support: what to look for, questions to ask, and deadlines to track',
       'Guest logistics: invitation and RSVP timeline, seating chart, and signage plan',
+      'Arranging travel accommodations',
       'Monthly planning check-ins',
     ]);
   });
