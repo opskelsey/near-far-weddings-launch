@@ -8,7 +8,7 @@ export const offerings = [
   {
     id: 'day-of', name: 'Day-of Coordination', price: 1800, priceLabel: 'Starting at $1,800',
     copy: ["My job is to take the plans you’ve made and turn them into a smooth, well-run wedding day—so you’re not answering vendor texts, tracking down the caterer, or wondering whether the cake arrived while you’re getting married."],
-    includes: ['On-site vendor coordination, with me as point of contact on your day', 'Timeline management and execution', 'Final vendor confirmations, payments, and logistics checks', 'Overseeing decor setup and teardown, bringing your vision to life', '6+ hours on-site', '2–3 planning calls', 'Responsive support from the day you book', 'Personalized vendor recommendations'],
+    includes: ['Custom planning workbook: monthly checklist, personalized budget, and vendor recommendations', 'Master timeline, managed start to finish', 'Vendor outreach, final confirmations, and day-of point of contact', '10+ hours of on-site support', 'Setup and teardown oversight: florals, signage, décor, seating, and place cards', 'Getting-ready support', 'Ceremony cueing and reception flow, from processional to send-off', 'Gift, card, and personal item handling', 'Responsive support from the day you book, plus 2–3 final planning calls', 'Travel anywhere in the East Valley included'],
     service: 'Day-of Coordination',
   },
   {

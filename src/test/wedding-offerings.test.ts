@@ -15,14 +15,16 @@ describe('Wedding offering rules', () => {
   });
   it('lists Day-of Coordination includes in the requested order', () => {
     expect(offerings[1].includes).toEqual([
-      'On-site vendor coordination, with me as point of contact on your day',
-      'Timeline management and execution',
-      'Final vendor confirmations, payments, and logistics checks',
-      'Overseeing decor setup and teardown, bringing your vision to life',
-      '6+ hours on-site',
-      '2–3 planning calls',
-      'Responsive support from the day you book',
-      'Personalized vendor recommendations',
+      'Custom planning workbook: monthly checklist, personalized budget, and vendor recommendations',
+      'Master timeline, managed start to finish',
+      'Vendor outreach, final confirmations, and day-of point of contact',
+      '10+ hours of on-site support',
+      'Setup and teardown oversight: florals, signage, décor, seating, and place cards',
+      'Getting-ready support',
+      'Ceremony cueing and reception flow, from processional to send-off',
+      'Gift, card, and personal item handling',
+      'Responsive support from the day you book, plus 2–3 final planning calls',
+      'Travel anywhere in the East Valley included',
     ]);
   });
   it('prices Full Planning & Coordination at $3,000', () => expect(offerings[2].price).toBe(3000));
