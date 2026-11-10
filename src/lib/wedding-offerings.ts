@@ -12,10 +12,10 @@ export const offerings = [
     service: 'Day-of Coordination',
   },
   {
-    id: 'full-service', name: 'Full Planning & Coordination', price: 3000, priceLabel: 'Starting at $3,000',
+    id: 'full-service', name: 'Wedding Planning & Management', price: 3500, priceLabel: 'Starting at $3,500',
     copy: ["From “we just got engaged” to “the last guest just left,” I’ll keep the logistics moving—budget, vendors, contracts, timeline, communication—and make sure nothing falls through the cracks."],
     includes: ['Everything in Day-of Coordination', 'Vendor sourcing: shortlists matched to your style and budget, plus outreach and booking support', 'Budget management and payment tracking through your wedding date', 'Attendance at venue tours, vendor meetings, and tastings', 'Contract review support: what to look for, questions to ask, and deadlines to track', 'Guest logistics: invitation and RSVP timeline, seating chart, and signage plan', 'Arranging travel accommodations', 'Monthly planning check-ins'],
-    service: 'Full Planning & Coordination',
+    service: 'Wedding Planning & Management',
   },
 ] as const;
 
@@ -26,5 +26,5 @@ export const INSTAGRAM_URL = 'https://www.instagram.com/nearandfarweddings';
 
 export function eligibleCoachCredit(daysSinceFollowUp: number, service: string) {
   return daysSinceFollowUp >= 0 && daysSinceFollowUp <= COACH_CREDIT_WINDOW_DAYS &&
-    (service === 'Day-of Coordination' || service === 'Full Planning & Coordination') ? COACH_CREDIT : 0;
+    (service === 'Day-of Coordination' || service === 'Wedding Planning & Management') ? COACH_CREDIT : 0;
 }

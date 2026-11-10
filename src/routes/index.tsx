@@ -174,7 +174,7 @@ function Index() {
               <div className="offering-copy">{offering.copy.map(p => <p key={p}>{p}</p>)}</div>
               <p className="includes-label">Includes:</p>
               <ul>{offering.includes.map(item => <li key={item}><Check size={13} /><span>{item}</span></li>)}</ul>
-              {index === 0 && <p className="offering-note">Decide you’d like ongoing support? Your ${COACH_CREDIT} is credited toward a Day-of or Full Planning package if you book within {COACH_CREDIT_WINDOW_DAYS} days of your follow-up call.</p>}
+              {index === 0 && <p className="offering-note">Decide you’d like ongoing support? Your ${COACH_CREDIT} is credited toward a Day-of or Wedding Planning & Management package if you book within {COACH_CREDIT_WINDOW_DAYS} days of your follow-up call.</p>}
               <div className="offering-action">{index === 0 ? <Button asChild variant="link"><a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">Book Your Session <ArrowRight /></a></Button> : <Button variant="link" onClick={() => inquire(offering.service)}>Inquire <ArrowRight /></Button>}</div>
             </div></article>)}
           </div>
