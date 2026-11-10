@@ -11,7 +11,7 @@ Color palette: Warm desert parchment and soft ivory canvas, deep midnight navy t
 
 Flow and interaction details:
 - For Offering 1 (Wedding Plan Coach, $150), the "Book Your Session →" button links out to an external booking link placeholder.
-- For Offering 2 (Day-of Coordination) and Offering 3 (Full Service), the "Inquire →" buttons scroll down to the intake form with the selected package pre-populated.
+- For Offering 2 (Month-Of Coordination) and Offering 3 (Full Service), the "Inquire →" buttons scroll down to the intake form with the selected package pre-populated.
 - Include the warm welcome note, about section with Kelsey's headshot, testimonials placeholder block, the 6-field intake form with toast confirmation, and the centered logomark in the footer with tagline and contact details.
 
 This project was built with [Lovable](https://lovable.dev).
