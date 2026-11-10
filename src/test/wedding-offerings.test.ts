@@ -27,7 +27,7 @@ describe('Wedding offering rules', () => {
       'Travel anywhere in the Greater Phoenix area included',
     ]);
   });
-  it('lists Full Planning includes in the requested order', () => {
+  it('lists Wedding Planning includes in the requested order', () => {
     expect(offerings[2].includes).toEqual([
       'Everything in Day-of Coordination',
       'Vendor sourcing: shortlists matched to your style and budget, plus outreach and booking support',
@@ -39,15 +39,15 @@ describe('Wedding offering rules', () => {
       'Monthly planning check-ins',
     ]);
   });
-  it('prices Full Planning & Coordination at $3,000', () => expect(offerings[2].price).toBe(3000));
-  it('shows the Full Planning price as starting at $3,000', () => expect(offerings[2].priceLabel).toBe('Starting at $3,000'));
+  it('prices Wedding Planning & Management at $3,500', () => expect(offerings[2].price).toBe(3500));
+  it('shows the Wedding Planning & Management price as starting at $3,500', () => expect(offerings[2].priceLabel).toBe('Starting at $3,500'));
   it('credits $150 toward Day-of within 30 days of follow-up', () => {
     expect(eligibleCoachCredit(30, 'Day-of Coordination')).toBe(150);
     expect(eligibleCoachCredit(31, 'Day-of Coordination')).toBe(0);
   });
-  it('credits $150 toward Full Planning & Coordination within 30 days of follow-up', () => {
-    expect(eligibleCoachCredit(30, 'Full Planning & Coordination')).toBe(150);
-    expect(eligibleCoachCredit(31, 'Full Planning & Coordination')).toBe(0);
+  it('credits $150 toward Wedding Planning & Management within 30 days of follow-up', () => {
+    expect(eligibleCoachCredit(30, 'Wedding Planning & Management')).toBe(150);
+    expect(eligibleCoachCredit(31, 'Wedding Planning & Management')).toBe(0);
     expect(eligibleCoachCredit(10, 'Kickstart Session')).toBe(0);
   });
 });
