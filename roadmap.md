@@ -34,4 +34,4 @@
 - [x] Custom events: more space under scope headings
 - [x] Tighten the space under the "Includes:" label on all three offering cards to a normal amount, matching the gap after the card title.
 - [x] Day-of: change the first includes line to "On-site vendor coordination, with me as point of contact on your day".
-- [ ] Rename the second offering to "Month-Of Coordination" on the site (name, service, credit note, tests) and in the services-guide PDF.
+- [x] Rename the second offering to "Month-Of Coordination" on the site (name, service, credit note, tests) and in the services-guide PDF.
