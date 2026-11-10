@@ -30,10 +30,10 @@ export const Route = createFileRoute("/")({
       { name: 'twitter:image:alt', content: OG_IMAGE_ALT },
     ] : []),
     { title: 'Wedding Planner & Coordinator | Arizona & Beyond' },
-    { name: 'description', content: 'Intimate, personalized wedding planning, from day-of coordination to full service packages.' },
+    { name: 'description', content: 'Intimate, personalized wedding planning, from month-of coordination to full service packages.' },
     { name: "robots", content: "index, follow, max-image-preview:large" },
     { property: 'og:title', content: 'Wedding Planner & Coordinator | Arizona & Beyond' },
-    { property: 'og:description', content: 'Intimate, personalized wedding planning, from day-of coordination to full service packages.' },
+    { property: 'og:description', content: 'Intimate, personalized wedding planning, from month-of coordination to full service packages.' },
     { property: 'og:type', content: 'website' },
     { property: 'og:site_name', content: "Near & Far Weddings" },
     { property: 'og:locale', content: "en_US" },
@@ -51,7 +51,7 @@ export const Route = createFileRoute("/")({
           url: `${loaderData.origin}/`,
           logo: `${loaderData.origin}/near-and-far-logo.png`,
           image: `${loaderData.origin}/og-image.jpg`,
-          description: 'Intimate, personalized wedding planning, from day-of coordination to full service packages.',
+          description: 'Intimate, personalized wedding planning, from month-of coordination to full service packages.',
           founder: { '@type': 'Person', name: 'Kelsey Marshall' },
           areaServed: ['Arizona', 'Worldwide'],
         },
@@ -143,7 +143,7 @@ function Index() {
             <img src={hero} alt="A couple walking hand in hand across a dry grassy hilltop at golden hour, the bride in a white gown carrying a bouquet, hazy mountains behind them" className="hero-image" width={1920} height={1280} fetchPriority="high" />
           </div>
           <div className="hero-inner">
-            <h1 id="hero-heading">Wedding Planning<br />& Day-Of Coordination</h1>
+            <h1 id="hero-heading">Wedding Planning<br />& Month-Of Coordination</h1>
             <p className="hero-copy">Whether you’re marrying close to home or a world away, let’s make it unforgettable.</p>
             <Button asChild variant="link" className="hero-cta"><a href="#inquire"><span className="hero-cta-label">Send Me a Note</span><ArrowRight size={16} /></a></Button>
           </div>
@@ -174,7 +174,7 @@ function Index() {
               <div className="offering-copy">{offering.copy.map(p => <p key={p}>{p}</p>)}</div>
               <p className="includes-label">Includes:</p>
               <ul>{offering.includes.map(item => <li key={item}><Check size={13} /><span>{item}</span></li>)}</ul>
-              {index === 0 && <p className="offering-note">Decide you’d like ongoing support? Your ${COACH_CREDIT} is credited toward a Day-of or Wedding Planning & Management package if you book within {COACH_CREDIT_WINDOW_DAYS} days of your follow-up call.</p>}
+              {index === 0 && <p className="offering-note">Decide you’d like ongoing support? Your ${COACH_CREDIT} is credited toward a Month-Of or Wedding Planning & Management package if you book within {COACH_CREDIT_WINDOW_DAYS} days of your follow-up call.</p>}
               <div className="offering-action">{index === 0 ? <Button asChild variant="link"><a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">Book Your Session <ArrowRight /></a></Button> : <Button variant="link" onClick={() => inquire(offering.service)}>Inquire <ArrowRight /></Button>}</div>
             </div></article>)}
           </div>
