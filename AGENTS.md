@@ -14,3 +14,4 @@
 - Send intake inquiries directly from browser event handlers to Web3Forms using its publishable submission key and shared input validation, because its free tier blocks server requests; confirm submission only after provider acceptance.
 
 - Keep the organic palette and paper material in global CSS semantic tokens so shared controls and section surfaces remain consistent when colors change.
+- Keep site photos as files committed to the repo and imported directly, not CDN asset pointers whose relative URLs only resolve on Lovable hosting, so the images load from GitHub and any other host.
