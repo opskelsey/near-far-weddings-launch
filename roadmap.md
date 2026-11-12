@@ -1,4 +1,5 @@
 # Website roadmap
+- [x] Hero photo: lift the shadows further and go a little brighter while holding midtone contrast, so the hills and couple keep their definition.
 - [x] Remove the Hannah and Windee placeholder quotes from About's Kind Words, leaving Alex's quote on its own.
 - [x] Add Kelsey's six event photos to the About page: two each for Reunion Banquet, Corporate Gatherings, and World Records.
 - [x] Use the homepage headshot in the About page headshot slot.
