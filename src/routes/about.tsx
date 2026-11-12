@@ -160,7 +160,7 @@ function AboutPage() {
               <li>
                 <span className="process-card-number" aria-hidden="true">03</span>
                 <h3>An eagle eye for budget gotchas</h3>
-                <p>I’ll track the details to preserve your vision <em>and</em> your wallet <em>(my years of experience have given me an eagle eye for budget “gotchas” — I manage these closely to avoid surprises for you).</em></p>
+                <p>I’ll track the details to preserve your vision and your wallet. My years of experience have given me an eagle eye for budget “gotchas” — I manage these closely to avoid surprises for you.</p>
               </li>
               <li>
                 <span className="process-card-number" aria-hidden="true">04</span>
