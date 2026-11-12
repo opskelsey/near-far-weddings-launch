@@ -65,7 +65,7 @@ function AboutPage() {
           <h1 id="about-page-heading" className="about-page-title">Hello, I’m <em>Kelsey</em></h1>
           <div className="about-intro-grid">
             <div className="about-intro-copy">
-              <p>I’ve spent more than a decade planning the kind of days where a lot of people need to be in the right place at the right time, from reunions and celebrations to record-setting weekends in the desert. Weddings are the next chapter, and the one I’m most excited about.</p>
+              <p>I’ve spent more than a decade planning and designing experiences, ranging from reunions and celebrations to record-setting weekends in the desert. Weddings are the next chapter, and the one I’m most excited about.</p>
               <p>What I love about this work is taking something that feels overwhelming and making it feel doable. Planning a wedding shouldn’t mean losing sleep over spreadsheets. It should feel like you’ve got someone in your corner who has it all handled.</p>
             </div>
             <div className="headshot-wrap about-headshot"><img src={headshot} alt="Kelsey Marshall among snow-covered evergreen trees" width={768} height={1152} loading="lazy" /><div className="headshot-caption" aria-hidden="true"><Star /></div></div>
