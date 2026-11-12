@@ -81,16 +81,6 @@ function AboutPage() {
               <blockquote>Working with Kelsey is great because your brain is free to focus on what you care about. You know the details and problem-solving are handled. She’s excellent at anticipating and solving small issues before they ever reach you.</blockquote>
               <figcaption>Alex Swindle <span aria-hidden="true">·</span> Event Photographer</figcaption>
             </figure>
-            <figure>
-              <span className="quote-mark" aria-hidden="true">“</span>
-              <blockquote>[placeholder]</blockquote>
-              <figcaption>Hannah Torres <span aria-hidden="true">·</span> Program Manager</figcaption>
-            </figure>
-            <figure>
-              <span className="quote-mark" aria-hidden="true">“</span>
-              <blockquote>[placeholder]</blockquote>
-              <figcaption>Windee Frassetto <span aria-hidden="true">·</span> Operations Manager</figcaption>
-            </figure>
           </div>
         </section>
 
@@ -149,22 +139,22 @@ function AboutPage() {
             <ol className="process-cards">
               <li>
                 <span className="process-card-number" aria-hidden="true">01</span>
-                <h3>Working backward from your priorities</h3>
+                <h3>Prioritize</h3>
                 <p>I work backward from your requirements to figure out what makes sense for <em>your</em> event. If something’s got to give, I’ll present you with options — so the decisions on priorities are yours, not mine.</p>
               </li>
               <li>
                 <span className="process-card-number" aria-hidden="true">02</span>
-                <h3>Date-based reminders for everything</h3>
+                <h3>Plan</h3>
                 <p>I keep many things moving at once and set date-based reminders for everything — so you don’t have to be the one tracking to-dos <em>(or worse, remembering them late at night when you wish you were sleeping!).</em></p>
               </li>
               <li>
                 <span className="process-card-number" aria-hidden="true">03</span>
-                <h3>An eagle eye for budget gotchas</h3>
+                <h3>Manage the details</h3>
                 <p>I’ll track the details to preserve your vision and your wallet. My years of experience have given me an eagle eye for budget “gotchas” — I manage these closely to avoid surprises for you.</p>
               </li>
               <li>
                 <span className="process-card-number" aria-hidden="true">04</span>
-                <h3>You always know where things stand</h3>
+                <h3>Keep you in the loop</h3>
                 <p>I keep you informed on progress, so you can feel confident as your dream day approaches.</p>
               </li>
             </ol>
