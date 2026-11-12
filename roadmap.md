@@ -1,4 +1,6 @@
 # Website roadmap
+- [x] Add Kelsey's six event photos to the About page: two each for Reunion Banquet, Corporate Gatherings, and World Records.
+- [ ] Kelsey to supply the About headshot and the three My Process detail photos (workbook, checklist, budget sheet).
 - [x] Add the shared homepage inquiry section and working form to the bottom of the About page.
 - [x] Add the public About page with Kelsey's supplied copy, top-navigation links, homepage “Get to know me” button, and labeled spaces for photos and unfinished testimonials.
 - [x] Center "Send Me a Note" under the heading, trim the welcome note and the "This might be for you if…" list, clean up the offering cards (drop the tagline and the extra sentence, even out spacing, Day-of to $950), and take the Instagram link out of the footer for now.
