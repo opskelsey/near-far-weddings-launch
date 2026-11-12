@@ -1,4 +1,7 @@
 # Website roadmap
+- [x] Move "Based in the Phoenix area and serving couples across the Valley, Sedona, and beyond." to the bottom of the homepage About-me section.
+- [x] Make the six About page event photos load from the site's own files so they work from GitHub and any host.
+- [x] Put "Whether you're marrying..." on its own line in the hero subtitle and shrink the star divider to bullet size.
 - [x] Apply the supplied Phoenix local SEO copy, metadata, and service-area schema; verify the homepage and rules.
 - [x] Roll the hero photo back to the untouched original after the brightening/warming passes.
 - [x] Hero photo: lift the shadows further and go a little brighter while holding midtone contrast, so the hills and couple keep their definition.
@@ -26,7 +29,7 @@
 - [x] Tablet/phone hero: photo full-bleed to the screen edges, box tall and centered with small top/bottom margins; drop the outlined stars beside Hello.
 - [x] Right-align "wrapped in a bow" inside the hero box on tablet and mobile.
 - [x] Desktop hero box: fixed width of 480px (no min/max juggling).
-- [ ] Bring the unfilled stars back on desktop only; keep them hidden on tablet and mobile.
+- [x] Bring the unfilled stars back on desktop only; keep them hidden on tablet and mobile.
 - [x] Day-of Coordination: drop “flat” from the price, use the new tagline and description, and replace the includes list.
 - [x] Change "creative teams, budgets" to "creative teams, and budgets."
 - [x] Reword the "This might be for you if…" planner bullet to "taking the logistical weight off your shoulders."

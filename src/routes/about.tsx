@@ -4,12 +4,12 @@ import { ArrowRight, ArrowUp, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { IntakeSection } from "@/components/intake-section";
 import headshot from "@/assets/kelsey-marshall.jpg";
-import banquetTables from "@/assets/30_yr_banquet_2.jpg.asset.json";
-import banquetHall from "@/assets/30yr_banquet.jpg.asset.json";
-import staffMeetingArena from "@/assets/staff_meeting.jpg.asset.json";
-import staffTeamPhoto from "@/assets/CSAGroupPic-6399.jpg.asset.json";
-import recordFormation from "@/assets/SWN05646_point1.jpg.asset.json";
-import recordExit from "@/assets/SWN05591.jpg.asset.json";
+import banquetTables from "@/assets/30_yr_banquet_2.jpg";
+import banquetHall from "@/assets/30yr_banquet.jpg";
+import staffMeetingArena from "@/assets/staff_meeting.jpg";
+import staffTeamPhoto from "@/assets/CSAGroupPic-6399.jpg";
+import recordFormation from "@/assets/SWN05646_point1.jpg";
+import recordExit from "@/assets/SWN05591.jpg";
 
 export const Route = createFileRoute("/about")({
   component: AboutPage,
@@ -97,8 +97,8 @@ function AboutPage() {
                   <p>We made it feel special without overspending. We booked a lovely local banquet hall, and I built DIY tablescapes to tie the space together. Rather than hire a DJ, we featured a playlist of songs from 1994, the year the team was founded. A friend of the team emceed, so I made sure he had time to practice, that the AV was set up the way he liked, and that his cues landed on time. Then I greeted guests and kept the evening flowing from arrival to dinner to presentation, without anyone feeling rushed. It was the kind of night where nobody notices the planning, which is exactly the point.</p>
                 </div>
                 <div className="experience-photos">
-                  <img src={banquetTables.url} alt="Guests seated at round dinner tables with gold runners and sunflower centerpieces at the reunion banquet" loading="lazy" />
-                  <img src={banquetHall.url} alt="The full banquet room filled with guests seated at round tables, watching the program" loading="lazy" />
+                  <img src={banquetTables} alt="Guests seated at round dinner tables with gold runners and sunflower centerpieces at the reunion banquet" loading="lazy" />
+                  <img src={banquetHall} alt="The full banquet room filled with guests seated at round tables, watching the program" loading="lazy" />
                 </div>
               </article>
 
@@ -110,8 +110,8 @@ function AboutPage() {
                   <p>I worked directly with the CEO on a four-week cycle, and handled run-of-show with a crew of projectionists, sound engineers, and camera operators. Printed cue sheets went to every person before the show, and I handled the unexpected in real-time with the crew — often without the audience noticing at all. The experience taught me how to make complicated things look effortless and stay calm under pressure (even with 10,000 people watching!).</p>
                 </div>
                 <div className="experience-photos">
-                  <img src={staffMeetingArena.url} alt="A packed auditorium facing three large screens reading Welcome to Staff Meeting" loading="lazy" />
-                  <img src={staffTeamPhoto.url} alt="The production team gathered on stage in front of a colorful illustrated backdrop for a group photo" loading="lazy" />
+                  <img src={staffMeetingArena} alt="A packed auditorium facing three large screens reading Welcome to Staff Meeting" loading="lazy" />
+                  <img src={staffTeamPhoto} alt="The production team gathered on stage in front of a colorful illustrated backdrop for a group photo" loading="lazy" />
                 </div>
               </article>
 
@@ -123,8 +123,8 @@ function AboutPage() {
                   <p>That meant recruiting participants and tracking payments and licenses, managing a six-figure budget, hiring about a dozen coaches and videographers, and getting everyone where they needed to be while the dropzone kept running around us. I also organized a participant dinner for 150, and solved every port-a-potty and hydration-station problem the week threw at me. In the end, both records were successfully achieved, and the participants left with one of the most memorable experiences of their skydiving careers.</p>
                 </div>
                 <div className="experience-photos">
-                  <img src={recordFormation.url} alt="Dozens of skydivers in a giant diamond formation falling over the desert" loading="lazy" />
-                  <img className="is-tall" src={recordExit.url} alt="Skydivers exiting two aircraft in a line over the desert during a record attempt" loading="lazy" />
+                  <img src={recordFormation} alt="Dozens of skydivers in a giant diamond formation falling over the desert" loading="lazy" />
+                  <img className="is-tall" src={recordExit} alt="Skydivers exiting two aircraft in a line over the desert during a record attempt" loading="lazy" />
                 </div>
               </article>
             </div>
