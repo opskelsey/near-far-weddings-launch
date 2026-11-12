@@ -23,11 +23,11 @@ export const Route = createFileRoute("/")({
       { name: 'twitter:image', content: `${loaderData.origin}/og-image.jpg` },
       { name: 'twitter:image:alt', content: OG_IMAGE_ALT },
     ] : []),
-    { title: 'Wedding Planner & Coordinator | Arizona & Beyond' },
-    { name: 'description', content: 'Intimate, personalized wedding planning, from month-of coordination to full service packages.' },
+    { title: 'Phoenix Wedding Planner & Month-Of Coordinator | Arizona & Beyond' },
+    { name: 'description', content: 'Wedding planning & month-of coordination based in Phoenix, Arizona. An experienced planner who can take the weight off your shoulders.' },
     { name: "robots", content: "index, follow, max-image-preview:large" },
-    { property: 'og:title', content: 'Wedding Planner & Coordinator | Arizona & Beyond' },
-    { property: 'og:description', content: 'Intimate, personalized wedding planning, from month-of coordination to full service packages.' },
+    { property: 'og:title', content: 'Phoenix Wedding Planner & Month-Of Coordinator | Arizona & Beyond' },
+    { property: 'og:description', content: 'Wedding planning & month-of coordination based in Phoenix, Arizona. An experienced planner who can take the weight off your shoulders.' },
     { property: 'og:type', content: 'website' },
     { property: 'og:site_name', content: "Near & Far Weddings" },
     { property: 'og:locale', content: "en_US" },
@@ -45,9 +45,9 @@ export const Route = createFileRoute("/")({
           url: `${loaderData.origin}/`,
           logo: `${loaderData.origin}/near-and-far-logo.png`,
           image: `${loaderData.origin}/og-image.jpg`,
-          description: 'Intimate, personalized wedding planning, from month-of coordination to full service packages.',
+          description: 'Wedding planning & month-of coordination based in Phoenix, Arizona. An experienced planner who can take the weight off your shoulders.',
           founder: { '@type': 'Person', name: 'Kelsey Marshall' },
-          areaServed: ['Arizona', 'Worldwide'],
+          areaServed: ['Phoenix', 'Scottsdale', 'Tempe', 'Gilbert', 'Chandler', 'Mesa', 'Casa Grande', 'Apache Junction', 'Queen Creek', 'San Tan Valley', 'Arizona', 'Worldwide'],
         },
         {
           '@type': 'WebSite',
@@ -102,7 +102,7 @@ function Index() {
           </div>
           <div className="hero-inner">
             <h1 id="hero-heading">Wedding Planning<br />& Month-Of Coordination</h1>
-            <p className="hero-copy">Whether you’re marrying close to home or a world away, let’s make it unforgettable.</p>
+            <p className="hero-copy">Serving the Greater Phoenix area and beyond <Star /> Whether you’re marrying close to home or a world away, let’s make it unforgettable.</p>
             <Button asChild variant="link" className="hero-cta"><a href="#inquire"><span className="hero-cta-label">Send Me a Note</span><ArrowRight size={16} /></a></Button>
           </div>
         </section>
@@ -120,7 +120,7 @@ function Index() {
 
         <section id="about" className="about section-space" aria-labelledby="about-heading">
           <div className="about-inner"><div className="headshot-wrap"><img src={headshot} alt="Kelsey Marshall among snow-covered evergreen trees" width={768} height={1152} loading="lazy" /><div className="headshot-caption" aria-hidden="true"><Star /></div></div>
-          <div className="about-copy"><h2 id="about-heading">Nice to meet you,<br />I’m <em>Kelsey.</em></h2><p>I’m a <strong>lifelong organizer, wanderlusty traveler, and believer that the little details are what make people feel cared for.</strong> I've spent more than a decade managing complex events, projects, creative teams, and budgets. Now I use that experience to make wedding planning feel less overwhelming.</p><p>My own intimate wedding in 2024 reminded me just how much the right celebration can be about the people, the place, and the little things.</p><p>I believe in warm welcomes, magical connections, and handwritten thank-you notes. I’ll be straight with you, cheer you on, and never let you feel like just another booking.</p><Button asChild variant="outline" className="about-more-link"><Link to="/about">Get to know me <ArrowRight /></Link></Button></div></div>
+          <div className="about-copy"><h2 id="about-heading">Nice to meet you,<br />I’m <em>Kelsey.</em></h2><p>Based in the Phoenix area and serving couples across the Valley, Sedona, and beyond.</p><p>I’m a <strong>lifelong organizer, wanderlusty traveler, and believer that the little details are what make people feel cared for.</strong> I've spent more than a decade managing complex events, projects, creative teams, and budgets. Now I use that experience to make wedding planning feel less overwhelming.</p><p>My own intimate wedding in 2024 reminded me just how much the right celebration can be about the people, the place, and the little things.</p><p>I believe in warm welcomes, magical connections, and handwritten thank-you notes. I’ll be straight with you, cheer you on, and never let you feel like just another booking.</p><Button asChild variant="outline" className="about-more-link"><Link to="/about">Get to know me <ArrowRight /></Link></Button></div></div>
         </section>
 
         <section id="offerings" className="offerings section-space" aria-labelledby="offerings-heading">
