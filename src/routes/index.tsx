@@ -102,7 +102,7 @@ function Index() {
           </div>
           <div className="hero-inner">
             <h1 id="hero-heading">Wedding Planning<br />& Month-Of Coordination</h1>
-            <p className="hero-copy">Serving the Greater Phoenix area and beyond <Star /> Whether you’re marrying close to home or a world away, let’s make it unforgettable.</p>
+            <p className="hero-copy">Serving the Greater Phoenix area and beyond <Star className="hero-copy-star" /> Whether you’re marrying close to home or a world away, let’s make it unforgettable.</p>
             <Button asChild variant="link" className="hero-cta"><a href="#inquire"><span className="hero-cta-label">Send Me a Note</span><ArrowRight size={16} /></a></Button>
           </div>
         </section>
