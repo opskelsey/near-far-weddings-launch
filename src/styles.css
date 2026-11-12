@@ -409,7 +409,6 @@ button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
 .experience-copy p + p { margin-top: 17px; }
 .experience-photo { width: 100%; aspect-ratio: .9; }
 .about-closing { max-width: 790px; margin: 76px auto 0; padding-top: 48px; border-top: 1px solid var(--border); text-align: center; font-size: 16px; color: var(--foreground); }
-.back-to-top-arrow { transform: rotate(-90deg); }
 @media (max-width: 900px) {
   .about-intro-grid { gap: 45px; }
   .process-content, .experience-item, .experience-item:nth-child(even) { gap: 40px; }
