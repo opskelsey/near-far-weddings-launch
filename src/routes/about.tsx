@@ -72,28 +72,6 @@ function AboutPage() {
           </div>
         </section>
 
-        <section className="about-process section-space" aria-labelledby="process-heading">
-          <div className="about-section-inner">
-            <div className="ornament"><span /><Star /><span /></div>
-            <div className="section-heading"><h2 id="process-heading">My <em>Process</em></h2></div>
-            <div className="process-photo-grid" aria-label="Detail photo placeholders">
-              <div className="about-photo-placeholder"><span>Workbook</span></div>
-              <div className="about-photo-placeholder"><span>Checklist</span></div>
-              <div className="about-photo-placeholder"><span>Budget sheet</span></div>
-            </div>
-            <div className="process-content">
-              <p className="process-intro">We start by talking about you: what you’re dreaming of, the budget you’re working with, and who you want in the room. From there, everything becomes a month-by-month checklist with clear checkpoints, so you always know the next small step instead of staring at the whole mountain.</p>
-              <ul className="process-list">
-                <li><Star /><span>I work backward from your requirements to figure out what makes sense for <em>your</em> event. If something’s got to give, I’ll present you with options — so the decisions on priorities are yours, not mine.</span></li>
-                <li><Star /><span>I keep many things moving at once and set date-based reminders for everything — so you don’t have to be the one tracking to-dos <em>(or worse, remembering them late at night when you wish you were sleeping!).</em></span></li>
-                <li><Star /><span>I’ll track the details to preserve your vision <em>and</em> your wallet <em>(my years of experience have given me an eagle eye for budget “gotchas” — I manage these closely to avoid surprises for you).</em></span></li>
-                <li><Star /><span>I keep you informed on progress, so you can feel confident as your dream day approaches.</span></li>
-              </ul>
-            </div>
-            <p className="process-closing">By the time your day arrives, the vendors are confirmed, the timeline is in everyone’s hands, and you get to be a guest at your own celebration!</p>
-          </div>
-        </section>
-
         <section className="kind-words about-kind-words section-space" aria-labelledby="kind-words-heading">
           <div className="ornament"><span /><Star /><span /></div>
           <h2 id="kind-words-heading">Kind <em>Words</em></h2>
@@ -163,6 +141,37 @@ function AboutPage() {
             <p className="about-closing"><em>You may have noticed a trend! I did about 1,300 jumps before hanging up my rig, and organizing events on the ground has been my way of staying close to the community I love. Now I’d love to bring that same energy to yours.</em></p>
           </div>
         </section>
+        <section className="about-process section-space" aria-labelledby="process-heading">
+          <div className="about-section-inner">
+            <div className="ornament"><span /><Star /><span /></div>
+            <div className="section-heading"><h2 id="process-heading">My <em>Process</em></h2></div>
+            <p className="process-intro">We start by talking about you: what you’re dreaming of, the budget you’re working with, and who you want in the room. From there, everything becomes a month-by-month checklist with clear checkpoints, so you always know the next small step instead of staring at the whole mountain.</p>
+            <ol className="process-cards">
+              <li>
+                <span className="process-card-number" aria-hidden="true">01</span>
+                <h3>Working backward from your priorities</h3>
+                <p>I work backward from your requirements to figure out what makes sense for <em>your</em> event. If something’s got to give, I’ll present you with options — so the decisions on priorities are yours, not mine.</p>
+              </li>
+              <li>
+                <span className="process-card-number" aria-hidden="true">02</span>
+                <h3>Date-based reminders for everything</h3>
+                <p>I keep many things moving at once and set date-based reminders for everything — so you don’t have to be the one tracking to-dos <em>(or worse, remembering them late at night when you wish you were sleeping!).</em></p>
+              </li>
+              <li>
+                <span className="process-card-number" aria-hidden="true">03</span>
+                <h3>An eagle eye for budget gotchas</h3>
+                <p>I’ll track the details to preserve your vision <em>and</em> your wallet <em>(my years of experience have given me an eagle eye for budget “gotchas” — I manage these closely to avoid surprises for you).</em></p>
+              </li>
+              <li>
+                <span className="process-card-number" aria-hidden="true">04</span>
+                <h3>You always know where things stand</h3>
+                <p>I keep you informed on progress, so you can feel confident as your dream day approaches.</p>
+              </li>
+            </ol>
+            <p className="process-closing">By the time your day arrives, the vendors are confirmed, the timeline is in everyone’s hands, and you get to be a guest at your own celebration!</p>
+          </div>
+        </section>
+
         <IntakeSection service={service} onServiceChange={setService} />
       </main>
 
