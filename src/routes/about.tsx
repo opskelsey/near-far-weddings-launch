@@ -81,16 +81,6 @@ function AboutPage() {
               <blockquote>Working with Kelsey is great because your brain is free to focus on what you care about. You know the details and problem-solving are handled. She’s excellent at anticipating and solving small issues before they ever reach you.</blockquote>
               <figcaption>Alex Swindle <span aria-hidden="true">·</span> Event Photographer</figcaption>
             </figure>
-            <figure>
-              <span className="quote-mark" aria-hidden="true">“</span>
-              <blockquote>[placeholder]</blockquote>
-              <figcaption>Hannah Torres <span aria-hidden="true">·</span> Program Manager</figcaption>
-            </figure>
-            <figure>
-              <span className="quote-mark" aria-hidden="true">“</span>
-              <blockquote>[placeholder]</blockquote>
-              <figcaption>Windee Frassetto <span aria-hidden="true">·</span> Operations Manager</figcaption>
-            </figure>
           </div>
         </section>
 

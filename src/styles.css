@@ -392,6 +392,9 @@ button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
 .process-closing { max-width: 710px; margin: 42px auto 0; padding-top: 31px; border-top: 1px solid var(--border); text-align: center; font-family: var(--font-display); font-size: 25px; line-height: 1.5 !important; color: var(--secondary-foreground); }
 .about-kind-words h2 { margin-bottom: 30px; }
 .about-kind-words .testimonials-grid { margin-top: 0; }
+.about-kind-words .testimonials-grid:has(figure:only-child) { grid-template-columns: minmax(0, 760px); justify-content: center; }
+.about-kind-words .testimonials-grid figure:only-child { padding: 0; text-align: center; }
+.about-kind-words .testimonials-grid figure:only-child figcaption { margin-top: 18px; }
 .about-kind-words blockquote { font-size: 20px; }
 .about-kind-words figcaption { line-height: 1.7; }
 .experience { background: var(--background); }

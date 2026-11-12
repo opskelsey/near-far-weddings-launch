@@ -1,4 +1,5 @@
 # Website roadmap
+- [x] Remove the Hannah and Windee placeholder quotes from About's Kind Words, leaving Alex's quote on its own.
 - [x] Add Kelsey's six event photos to the About page: two each for Reunion Banquet, Corporate Gatherings, and World Records.
 - [x] Use the homepage headshot in the About page headshot slot.
 - [x] My Process: drop the photo placeholders, move the section above the inquiry form, and format the four points as numbered milestone cards.
