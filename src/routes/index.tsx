@@ -83,7 +83,7 @@ function Index() {
   const [confirmation, setConfirmation] = useState('');
   const [submitError, setSubmitError] = useState('');
 
-  const nav = [['Offerings', '#offerings'], ['About', '#about']] as const;
+  const nav = [['Offerings', '#offerings']] as const;
 
   function inquire(selectedService: string) {
     setService(selectedService);
