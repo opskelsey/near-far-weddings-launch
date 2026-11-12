@@ -3,6 +3,12 @@ import { useState } from "react";
 import { ArrowRight, ArrowUp, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { IntakeSection } from "@/components/intake-section";
+import banquetTables from "@/assets/30_yr_banquet_2.jpg.asset.json";
+import banquetHall from "@/assets/30yr_banquet.jpg.asset.json";
+import staffMeetingArena from "@/assets/staff_meeting.jpg.asset.json";
+import staffTeamPhoto from "@/assets/CSAGroupPic-6399.jpg.asset.json";
+import recordFormation from "@/assets/SWN05646_point1.jpg.asset.json";
+import recordExit from "@/assets/SWN05591.jpg.asset.json";
 
 export const Route = createFileRoute("/about")({
   component: AboutPage,
@@ -121,7 +127,10 @@ function AboutPage() {
                   <p>When Arizona Airspeed, a skydiving team with six world championships to its name, turned 30, they asked me to plan a banquet to bring alumni, sponsors, and friends back together. The guest list was over 200, with a firm $20,000 budget.</p>
                   <p>We made it feel special without overspending. We booked a lovely local banquet hall, and I built DIY tablescapes to tie the space together. Rather than hire a DJ, we featured a playlist of songs from 1994, the year the team was founded. A friend of the team emceed, so I made sure he had time to practice, that the AV was set up the way he liked, and that his cues landed on time. Then I greeted guests and kept the evening flowing from arrival to dinner to presentation, without anyone feeling rushed. It was the kind of night where nobody notices the planning, which is exactly the point.</p>
                 </div>
-                <div className="about-photo-placeholder experience-photo"><span>[1–2 photos]</span></div>
+                <div className="experience-photos">
+                  <img src={banquetTables.url} alt="Guests seated at round dinner tables with gold runners and sunflower centerpieces at the reunion banquet" loading="lazy" />
+                  <img src={banquetHall.url} alt="The full banquet room filled with guests seated at round tables, watching the program" loading="lazy" />
+                </div>
               </article>
 
               <article className="experience-item">
@@ -131,7 +140,10 @@ function AboutPage() {
                   <p>For several years, I produced a monthly all-hands at a healthcare software company: two hours, in person, 10,000 employees, one auditorium. Every show involved both content development and creative direction, with milestone anniversaries, moving stories about patients helped, customer videos, and even live musical numbers.</p>
                   <p>I worked directly with the CEO on a four-week cycle, and handled run-of-show with a crew of projectionists, sound engineers, and camera operators. Printed cue sheets went to every person before the show, and I handled the unexpected in real-time with the crew — often without the audience noticing at all. The experience taught me how to make complicated things look effortless and stay calm under pressure (even with 10,000 people watching!).</p>
                 </div>
-                <div className="about-photo-placeholder experience-photo"><span>[1–2 photos]</span></div>
+                <div className="experience-photos">
+                  <img src={staffMeetingArena.url} alt="A packed auditorium facing three large screens reading Welcome to Staff Meeting" loading="lazy" />
+                  <img src={staffTeamPhoto.url} alt="The production team gathered on stage in front of a colorful illustrated backdrop for a group photo" loading="lazy" />
+                </div>
               </article>
 
               <article className="experience-item">
@@ -141,7 +153,10 @@ function AboutPage() {
                   <p>Skydive Arizona, in Eloy, is where people come from around the world to try to set records, with dozens or even hundreds of skydivers building huge formations in the sky. I organized the 150-way record in 2024 from start to finish over 12 months, and coordinated the month-of details and on-site support for the 100-way record in 2026.</p>
                   <p>That meant recruiting participants and tracking payments and licenses, managing a six-figure budget, hiring about a dozen coaches and videographers, and getting everyone where they needed to be while the dropzone kept running around us. I also organized a participant dinner for 150, and solved every port-a-potty and hydration-station problem the week threw at me. In the end, both records were successfully achieved, and the participants left with one of the most memorable experiences of their skydiving careers.</p>
                 </div>
-                <div className="about-photo-placeholder experience-photo"><span>[1–2 photos]</span></div>
+                <div className="experience-photos">
+                  <img src={recordFormation.url} alt="Dozens of skydivers in a giant diamond formation falling over the desert" loading="lazy" />
+                  <img className="is-tall" src={recordExit.url} alt="Skydivers exiting two aircraft in a line over the desert during a record attempt" loading="lazy" />
+                </div>
               </article>
             </div>
             <p className="about-closing"><em>You may have noticed a trend! I did about 1,300 jumps before hanging up my rig, and organizing events on the ground has been my way of staying close to the community I love. Now I’d love to bring that same energy to yours.</em></p>
