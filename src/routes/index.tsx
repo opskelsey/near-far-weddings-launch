@@ -4,7 +4,7 @@ import { ArrowRight, ArrowUp, Check, Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { IntakeSection } from '@/components/intake-section';
 import { offerings, BOOKING_URL, COACH_CREDIT, COACH_CREDIT_WINDOW_DAYS } from '@/lib/wedding-offerings';
-import hero from '@/assets/hero-mountain.jpg';
+import hero from '@/assets/hero-field.jpg';
 import headshot from '@/assets/kelsey-marshall.jpg';
 import { getRequestOrigin } from '@/lib/origin.functions';
 
@@ -98,7 +98,7 @@ function Index() {
       <main>
         <section className="hero" aria-labelledby="hero-heading">
           <div className="hero-media">
-            <img src={hero} alt="A couple embracing on a granite overlook, a towering granite dome rising behind them across a mountain valley" className="hero-image" width={1920} height={1280} fetchPriority="high" />
+            <img src={hero} alt="A couple walking hand in hand across a dry grassy hilltop at golden hour, the bride in a white gown carrying a bouquet, hazy mountains behind them" className="hero-image" width={1920} height={1280} fetchPriority="high" />
           </div>
           <div className="hero-inner">
             <h1 id="hero-heading">Wedding Planning<br />& Month-Of Coordination</h1>
