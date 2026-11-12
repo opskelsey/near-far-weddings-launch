@@ -1,5 +1,5 @@
 # Website roadmap
-- [ ] Apply the supplied Phoenix local SEO copy, metadata, and service-area schema; verify the homepage and rules.
+- [x] Apply the supplied Phoenix local SEO copy, metadata, and service-area schema; verify the homepage and rules.
 - [x] Roll the hero photo back to the untouched original after the brightening/warming passes.
 - [x] Hero photo: lift the shadows further and go a little brighter while holding midtone contrast, so the hills and couple keep their definition.
 - [x] Remove the Hannah and Windee placeholder quotes from About's Kind Words, leaving Alex's quote on its own.
