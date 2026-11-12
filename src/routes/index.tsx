@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { useRef, useState, type FormEvent } from 'react';
 import { ArrowRight, ArrowUp, Check, Menu, X, CalendarIcon, LoaderCircle } from 'lucide-react';
 import { toast } from 'sonner';

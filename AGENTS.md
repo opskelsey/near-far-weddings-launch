@@ -9,7 +9,7 @@
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
 
-- Keep the public site as a single index route with hash navigation; unlisted pages (e.g. /custom-events) are separate noindex routes not linked from navigation.
+- Keep the homepage as a long-scrolling index route with hash navigation for its sections; the public About page lives at /about and is linked from the main navigation. Unlisted pages (e.g. /custom-events) are separate noindex routes not linked from navigation.
 - Keep offering prices and credit eligibility in the shared wedding-offerings module with concrete rule tests, so business values remain consistent.
 - Send intake inquiries directly from browser event handlers to Web3Forms using its publishable submission key and shared input validation, because its free tier blocks server requests; confirm submission only after provider acceptance.
 

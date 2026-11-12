@@ -1,4 +1,5 @@
 # Website roadmap
+- [ ] Add the public About page with Kelsey's supplied copy, top-navigation links, homepage “Get to know me” button, and labeled spaces for photos and unfinished testimonials.
 - [x] Center "Send Me a Note" under the heading, trim the welcome note and the "This might be for you if…" list, clean up the offering cards (drop the tagline and the extra sentence, even out spacing, Day-of to $950), and take the Instagram link out of the footer for now.
 - [x] Replace the hero photo with the couple-on-the-hilltop shot, center the new header/subtitle directly over the sky with no containing box, and restyle "Send Me a Note" as an unfilled link with arrow and stylized underline.
 - [x] Set the page/share title to "Your Wedding, Wrapped in a Bow." and apply Kelsey's wording edits (handwritten, pile of Post-Its, staring at a checklist, Instagram screenshots).
