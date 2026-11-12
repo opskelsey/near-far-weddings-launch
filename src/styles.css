@@ -379,7 +379,7 @@ button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
 .about-photo-placeholder { position: relative; display: grid; place-items: center; min-height: 150px; border: 1px solid var(--border); background: color-mix(in oklch, var(--parchment) 42%, var(--background)); color: var(--muted-foreground); font-size: 10px; letter-spacing: .13em; text-transform: uppercase; text-align: center; }
 .about-photo-placeholder::after { content: ''; position: absolute; inset: 9px; border: 1px solid var(--border); pointer-events: none; }
 .about-photo-placeholder span { position: relative; z-index: 1; padding: 12px; }
-.about-headshot-placeholder { width: 100%; max-width: 320px; aspect-ratio: .78; justify-self: end; }
+.about-headshot { width: 100%; max-width: 320px; justify-self: end; }
 .about-process { background: var(--secondary); }
 .about-process .section-heading { margin-bottom: 35px; }
 .process-photo-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; margin-bottom: 48px; }
@@ -423,7 +423,7 @@ button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
   .about-intro-grid, .process-content, .experience-item, .experience-item:nth-child(even) { grid-template-columns: 1fr; }
   .about-intro-grid { gap: 34px; }
   .about-intro-copy { font-size: 15px; }
-  .about-headshot-placeholder { max-width: 280px; justify-self: center; order: -1; }
+  .about-headshot { max-width: 280px; justify-self: center; order: -1; }
   .process-photo-grid { grid-template-columns: 1fr; gap: 13px; margin-bottom: 36px; }
   .process-photo-grid .about-photo-placeholder { aspect-ratio: 1.9; min-height: 130px; }
   .process-content { gap: 28px; }

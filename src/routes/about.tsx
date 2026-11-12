@@ -3,6 +3,7 @@ import { useState } from "react";
 import { ArrowRight, ArrowUp, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { IntakeSection } from "@/components/intake-section";
+import headshot from "@/assets/kelsey-marshall.jpg";
 import banquetTables from "@/assets/30_yr_banquet_2.jpg.asset.json";
 import banquetHall from "@/assets/30yr_banquet.jpg.asset.json";
 import staffMeetingArena from "@/assets/staff_meeting.jpg.asset.json";
@@ -67,7 +68,7 @@ function AboutPage() {
               <p>I’ve spent more than a decade planning the kind of days where a lot of people need to be in the right place at the right time, from reunions and celebrations to record-setting weekends in the desert. Weddings are the next chapter, and the one I’m most excited about.</p>
               <p>What I love about this work is taking something that feels overwhelming and making it feel doable. Planning a wedding shouldn’t mean losing sleep over spreadsheets. It should feel like you’ve got someone in your corner who has it all handled.</p>
             </div>
-            <div className="about-photo-placeholder about-headshot-placeholder"><span>[Headshot]</span></div>
+            <div className="headshot-wrap about-headshot"><img src={headshot} alt="Kelsey Marshall among snow-covered evergreen trees" width={768} height={1152} loading="lazy" /><div className="headshot-caption" aria-hidden="true"><Star /></div></div>
           </div>
         </section>
 
