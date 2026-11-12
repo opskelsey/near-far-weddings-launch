@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { ArrowRight, ArrowUp, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { IntakeSection } from "@/components/intake-section";
 
 export const Route = createFileRoute("/about")({
   component: AboutPage,
@@ -32,6 +33,7 @@ function Star({ className = "" }: { className?: string }) {
 
 function AboutPage() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [service, setService] = useState('Not sure yet');
 
   return (
     <div id="top" className="wedding-site about-page">
@@ -40,13 +42,13 @@ function AboutPage() {
         <nav className="desktop-nav" aria-label="Main navigation">
           <Link to="/" hash="offerings">Offerings</Link>
           <Link to="/about" aria-current="page">About</Link>
-          <Button asChild variant="outline" className="nav-cta"><Link to="/" hash="inquire">Let’s begin <ArrowRight /></Link></Button>
+          <Button asChild variant="outline" className="nav-cta"><a href="#inquire">Let’s begin <ArrowRight /></a></Button>
         </nav>
         <Button className="mobile-menu" variant="ghost" size="icon" aria-label={menuOpen ? "Close menu" : "Open menu"} onClick={() => setMenuOpen(!menuOpen)}>{menuOpen ? <X /> : <Menu />}</Button>
         {menuOpen && <nav className="mobile-nav" aria-label="Mobile navigation">
           <Link to="/" hash="offerings" onClick={() => setMenuOpen(false)}>Offerings<ArrowRight size={16} /></Link>
           <Link to="/about" onClick={() => setMenuOpen(false)}>About<ArrowRight size={16} /></Link>
-          <Link to="/" hash="inquire" onClick={() => setMenuOpen(false)}>Let’s begin<ArrowRight size={16} /></Link>
+          <a href="#inquire" onClick={() => setMenuOpen(false)}>Let’s begin<ArrowRight size={16} /></a>
         </nav>}
       </header>
 
@@ -145,6 +147,7 @@ function AboutPage() {
             <p className="about-closing"><em>You may have noticed a trend! I did about 1,300 jumps before hanging up my rig, and organizing events on the ground has been my way of staying close to the community I love. Now I’d love to bring that same energy to yours.</em></p>
           </div>
         </section>
+        <IntakeSection service={service} onServiceChange={setService} />
       </main>
 
       <footer className="site-footer"><div className="footer-contact"><p className="footer-location">Arizona-rooted, travel bag ready.</p><Star /></div><div className="footer-bottom"><span>© 2026 Near & Far Weddings</span><Button asChild variant="ghost" size="icon"><a href="#top" aria-label="Back to top"><ArrowUp size={17} /></a></Button></div></footer>
