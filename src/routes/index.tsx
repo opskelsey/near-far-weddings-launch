@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { useRef, useState, type FormEvent } from 'react';
 import { ArrowRight, ArrowUp, Check, Menu, X, CalendarIcon, LoaderCircle } from 'lucide-react';
 import { toast } from 'sonner';
@@ -83,7 +83,7 @@ function Index() {
   const [confirmation, setConfirmation] = useState('');
   const [submitError, setSubmitError] = useState('');
 
-  const nav = [['Offerings', '#offerings'], ['About', '#about']] as const;
+  const nav = [['Offerings', '#offerings']] as const;
 
   function inquire(selectedService: string) {
     setService(selectedService);
@@ -131,10 +131,15 @@ function Index() {
         <a href="#top" className="wordmark" aria-label="Near & Far Weddings home">NEAR <span>&</span> FAR<small>W E D D I N G S</small></a>
         <nav className="desktop-nav" aria-label="Main navigation">
           {nav.map(([label, href]) => <a key={href} href={href}>{label}</a>)}
+          <Link to="/about">About</Link>
           <Button asChild variant="outline" className="nav-cta"><a href="#inquire">Let’s begin <ArrowRight /></a></Button>
         </nav>
         <Button className="mobile-menu" variant="ghost" size="icon" aria-label={menuOpen ? 'Close menu' : 'Open menu'} onClick={() => setMenuOpen(!menuOpen)}>{menuOpen ? <X /> : <Menu />}</Button>
-        {menuOpen && <nav className="mobile-nav" aria-label="Mobile navigation">{[...nav, ['Let’s begin', '#inquire']].map(([label, href]) => <a href={href} key={href} onClick={() => setMenuOpen(false)}>{label}<ArrowRight size={16} /></a>)}</nav>}
+        {menuOpen && <nav className="mobile-nav" aria-label="Mobile navigation">
+          {nav.map(([label, href]) => <a href={href} key={href} onClick={() => setMenuOpen(false)}>{label}<ArrowRight size={16} /></a>)}
+          <Link to="/about" onClick={() => setMenuOpen(false)}>About<ArrowRight size={16} /></Link>
+          <a href="#inquire" onClick={() => setMenuOpen(false)}>Let’s begin<ArrowRight size={16} /></a>
+        </nav>}
       </header>
 
       <main>
@@ -162,7 +167,7 @@ function Index() {
 
         <section id="about" className="about section-space" aria-labelledby="about-heading">
           <div className="about-inner"><div className="headshot-wrap"><img src={headshot} alt="Kelsey Marshall among snow-covered evergreen trees" width={768} height={1152} loading="lazy" /><div className="headshot-caption" aria-hidden="true"><Star /></div></div>
-          <div className="about-copy"><h2 id="about-heading">Nice to meet you,<br />I’m <em>Kelsey.</em></h2><p>I’m a <strong>lifelong organizer, wanderlusty traveler, and believer that the little details are what make people feel cared for.</strong> I've spent more than a decade managing complex events, projects, creative teams, and budgets. Now I use that experience to make wedding planning feel less overwhelming.</p><p>My own intimate wedding in 2024 reminded me just how much the right celebration can be about the people, the place, and the little things.</p><p>I believe in warm welcomes, magical connections, and handwritten thank-you notes. I’ll be straight with you, cheer you on, and never let you feel like just another booking.</p></div></div>
+          <div className="about-copy"><h2 id="about-heading">Nice to meet you,<br />I’m <em>Kelsey.</em></h2><p>I’m a <strong>lifelong organizer, wanderlusty traveler, and believer that the little details are what make people feel cared for.</strong> I've spent more than a decade managing complex events, projects, creative teams, and budgets. Now I use that experience to make wedding planning feel less overwhelming.</p><p>My own intimate wedding in 2024 reminded me just how much the right celebration can be about the people, the place, and the little things.</p><p>I believe in warm welcomes, magical connections, and handwritten thank-you notes. I’ll be straight with you, cheer you on, and never let you feel like just another booking.</p><Button asChild variant="outline" className="about-more-link"><Link to="/about">Get to know me <ArrowRight /></Link></Button></div></div>
         </section>
 
         <section id="offerings" className="offerings section-space" aria-labelledby="offerings-heading">
