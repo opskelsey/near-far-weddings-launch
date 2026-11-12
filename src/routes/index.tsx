@@ -1,17 +1,11 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { useRef, useState, type FormEvent } from 'react';
-import { ArrowRight, ArrowUp, Check, Menu, X, CalendarIcon, LoaderCircle } from 'lucide-react';
-import { toast } from 'sonner';
-import { format } from 'date-fns';
+import { useState } from 'react';
+import { ArrowRight, ArrowUp, Check, Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Calendar } from '@/components/ui/calendar';
-import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
-import { cn } from '@/lib/utils';
+import { IntakeSection } from '@/components/intake-section';
 import { offerings, BOOKING_URL, COACH_CREDIT, COACH_CREDIT_WINDOW_DAYS } from '@/lib/wedding-offerings';
 import hero from '@/assets/hero-field.jpg';
 import headshot from '@/assets/kelsey-marshall.jpg';
-import { intakeSchema } from '@/lib/intake-schema';
-import { deliverIntake, WEB3FORMS_PUBLIC_ACCESS_KEY } from '@/lib/intake';
 import { getRequestOrigin } from '@/lib/origin.functions';
 
 const OG_IMAGE_ALT = 'A couple walking hand in hand across a dry grassy hilltop at golden hour, the bride in a white gown carrying a bouquet, hazy mountains behind them';
@@ -76,53 +70,12 @@ function Star({ className = '' }: { className?: string }) {
 function Index() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [service, setService] = useState('Not sure yet');
-  const [date, setDate] = useState<Date>();
-  const [dateOpen, setDateOpen] = useState(false);
-  const [sending, setSending] = useState(false);
-  const sendingRef = useRef(false);
-  const [confirmation, setConfirmation] = useState('');
-  const [submitError, setSubmitError] = useState('');
 
   const nav = [['Offerings', '#offerings']] as const;
 
   function inquire(selectedService: string) {
     setService(selectedService);
     document.getElementById('inquire')?.scrollIntoView({ behavior: 'smooth' });
-  }
-
-  async function submitNote(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    if (sendingRef.current) return;
-    const form = event.currentTarget;
-    const fields = new FormData(form);
-    setConfirmation('');
-    setSubmitError('');
-    const parsed = intakeSchema.safeParse({
-      name: fields.get('name'), email: fields.get('email'),
-      date: date ? format(date, 'yyyy-MM-dd') : '', services: service,
-      botcheck: fields.get('botcheck') === 'on',
-    });
-    if (!parsed.success) {
-      setSubmitError(parsed.error.issues[0]?.message ?? 'Please check your details.');
-      return;
-    }
-    sendingRef.current = true;
-    setSending(true);
-    try {
-      const result = await deliverIntake(parsed.data, WEB3FORMS_PUBLIC_ACCESS_KEY);
-      if (!result.success) throw new Error('Submission failed');
-      const message = 'Thank you! Your inquiry has been sent. I’ll reply within 1–2 business days.';
-      setConfirmation(message);
-      toast.success(message);
-      form.reset();
-      setDate(undefined);
-      setService('Not sure yet');
-    } catch {
-      setSubmitError('Your inquiry couldn’t be sent. Please try again—your details are still here.');
-    } finally {
-      sendingRef.current = false;
-      setSending(false);
-    }
   }
 
   return (
@@ -188,29 +141,7 @@ function Index() {
 
         {/* <section id="kind-words" className="kind-words section-space" aria-labelledby="kind-heading"><div className="ornament"><span /><Star /><span /></div><h2 id="kind-heading">Kind <em>Words</em></h2><div className="testimonials-grid">{[{ quote: 'Kelsey kept our timeline on track when nothing was going to plan, and we never once felt rushed or forgotten. The day felt like ours from start to finish.', name: 'Jenna R.', state: 'WI' }, { quote: 'She handled every vendor detail we would have fumbled and arrived with a plan for things we never thought to ask about. We actually got to be guests at our own wedding.', name: 'Marcus T.', state: 'AZ' }, { quote: 'Every question I had got an answer, and nothing fell through the cracks, not even the small stuff. Our families still talk about how smoothly the day ran.', name: 'Priya S.', state: 'MI' }].map(({ quote, name, state }) => <figure key={name}><span className="quote-mark" aria-hidden="true">“</span><blockquote>{quote}</blockquote><figcaption>{name} <span aria-hidden="true">·</span> {state}</figcaption></figure>)}</div></section> */}
 
-        <section id="inquire" className="intake section-space" aria-labelledby="intake-heading"><div className="intake-inner"><div className="intake-intro"><Star /><h2 id="intake-heading">Let’s begin,<br /><em>shall we?</em></h2><p>Tell me about your day and I’ll reply within 1–2 business days.</p></div>
-          <form onSubmit={submitNote} className="intake-form" aria-busy={sending}>
-            <input type="checkbox" name="botcheck" className="hidden" tabIndex={-1} aria-hidden="true" />
-            <div className="form-row form-names"><label>Your names <span>*</span><input name="name" autoComplete="name" maxLength={100} disabled={sending} required /></label><label htmlFor="wedding-date">Wedding date
-              <Popover open={dateOpen} onOpenChange={setDateOpen}>
-                <PopoverTrigger asChild>
-                  <Button type="button" id="wedding-date" variant="outline" disabled={sending} className={cn('date-trigger', !date && 'date-empty')}>
-                    <CalendarIcon />
-                    {date ? format(date, 'PPP') : <span>Still deciding</span>}
-                  </Button>
-                </PopoverTrigger>
-                <PopoverContent className="w-auto p-0 date-pop" align="start">
-                  <Calendar mode="single" selected={date} captionLayout="dropdown" className="pointer-events-auto" onSelect={day => { setDate(day); setDateOpen(false); }} />
-                </PopoverContent>
-              </Popover>
-            </label></div>
-            <div className="form-row form-single"><label>Email <span>*</span><input type="email" name="email" autoComplete="email" maxLength={255} disabled={sending} required /></label></div>
-            <div className="form-row form-service"><label htmlFor="service">Which service interests you? <span className="optional">(optional)</span><select id="service" name="services" value={service} disabled={sending} onChange={event => setService(event.target.value)}><option>Not sure yet</option>{offerings.map(item => <option key={item.id}>{item.service}</option>)}</select></label><Button type="submit" className="primary-cta" disabled={sending}>{sending ? <>Sending… <LoaderCircle className="motion-safe:animate-spin" /></> : <>Send it my way <ArrowRight /></>}</Button></div>
-            {confirmation && <p role="status" className="text-sm text-foreground">{confirmation}</p>}
-            {submitError && <p role="alert" className="text-sm text-destructive">{submitError}</p>}
-
-          </form>
-        </div></section>
+        <IntakeSection service={service} onServiceChange={setService} />
       </main>
 
       <footer className="site-footer"><div className="footer-contact"><p className="footer-location">Arizona-rooted, travel bag ready.</p><Star /></div><div className="footer-bottom"><span>© 2026 Near & Far Weddings</span><Button asChild variant="ghost" size="icon"><a href="#top" aria-label="Back to top"><ArrowUp size={17} /></a></Button></div></footer>
