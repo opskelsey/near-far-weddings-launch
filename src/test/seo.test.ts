@@ -43,6 +43,17 @@ describe("Search listing metadata", () => {
     expect(siteName?.["content"]).toBe("Near & Far Weddings");
   });
 
+  it("uses the 1200 by 630 homepage photo for social link previews", () => {
+    const meta = head().meta;
+    const imageUrl = `${ORIGIN}/og-image.jpg`;
+
+    expect(meta?.find((m) => m.property === "og:image")?.content).toBe(imageUrl);
+    expect(meta?.find((m) => m.property === "og:image:width")?.content).toBe("1200");
+    expect(meta?.find((m) => m.property === "og:image:height")?.content).toBe("630");
+    expect(meta?.find((m) => m.name === "twitter:card")?.content).toBe("summary_large_image");
+    expect(meta?.find((m) => m.name === "twitter:image")?.content).toBe(imageUrl);
+  });
+
   it("uses the Phoenix wedding planner title for search and sharing", () => {
     const title = "Phoenix Wedding Planner & Month-Of Coordinator | Arizona & Beyond";
     const meta = head().meta;
