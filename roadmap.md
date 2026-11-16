@@ -1,4 +1,5 @@
 # Website roadmap
+- [ ] Remove the hero text glow, improve the photo crop and text contrast, and reduce the header logo's size and visual weight.
 - [x] Rename the business to Marshall & Rose Events throughout, update the hero subtitle spacing, and use the uploaded meadow photo for the hero and link preview.
 - [x] Move "Based in the Phoenix area and serving couples across the Valley, Sedona, and beyond." to the bottom of the homepage About-me section.
 - [x] Make the six About page event photos load from the site's own files so they work from GitHub and any host.
