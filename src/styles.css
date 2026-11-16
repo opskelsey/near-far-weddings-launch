@@ -465,3 +465,27 @@ button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
 @media (max-width: 1200px) and (min-width: 701px) { .hero-inner { padding-top: 64px; } .hero h1 { font-size: 36px; } .hero-copy { max-width: 520px; } }
 @media (max-width: 700px) { .hero-inner { padding-top: 78px; } .hero h1 { font-size: clamp(22px, 6.6vw, 26px); } .hero-copy { max-width: 330px; margin-top: 10px; line-height: 1.5; } }
 @media (min-width: 1201px) { .hero-inner { padding-top: 66px; } .hero-copy { max-width: 760px; margin-top: 10px; } }
+
+/* Split hero: photo held still behind the window (couple left), text block right */
+.hero-media { clip-path: inset(0); }
+.hero h1 { font-size: 56px; }
+@media (min-width: 701px) {
+  .hero { height: 820px; }
+  .hero-image { position: fixed; top: 0; left: -38vw; width: 150vw; height: 100vh; min-height: 820px; object-fit: cover; object-position: 50% 30%; }
+  .hero-inner { align-items: flex-start; text-align: left; justify-content: flex-start; padding: 150px 6% 0 54%; }
+  .hero-copy { max-width: 440px; margin-top: 18px; }
+}
+@media (min-width: 1500px) { .hero h1 { font-size: 64px; } .hero-inner { padding-top: 180px; } }
+@media (max-width: 1200px) and (min-width: 701px) { .hero h1 { font-size: 44px; } .hero-inner { padding: 140px 5% 0 50%; } .hero-image { left: -45vw; width: 160vw; } }
+@media (max-width: 700px) { .hero h1 { font-size: clamp(26px, 8vw, 32px); } }
+@media (min-width: 701px) { .hero { display: block; position: relative; } .hero-media { position: absolute; inset: 0; width: 100%; } .hero-inner { position: relative; z-index: 1; background: none; } }
+@media (min-width: 701px) { .hero-image { max-width: none; right: auto; bottom: auto; left: -45vw; } }
+@media (max-width: 1200px) and (min-width: 701px) { .hero-image { left: -51vw; width: 160vw; } }
+@media (min-width: 701px) {
+  .hero-image { object-position: 50% 0%; }
+  .hero-inner { height: 100%; justify-content: center; padding: 0 6% 0 52%; }
+  .hero-inner > * { position: relative; }
+  .hero-inner::before { content: ""; position: absolute; top: 50%; right: 6%; left: 48%; transform: translateY(-50%); height: 440px; background: var(--hero-wash); }
+  .hero-copy { max-width: 460px; }
+}
+@media (max-width: 1200px) and (min-width: 701px) { .hero-inner { padding: 0 7% 0 50%; } .hero-inner::before { left: 46%; right: 4%; height: 420px; } }
