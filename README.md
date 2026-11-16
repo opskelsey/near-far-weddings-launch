@@ -1,6 +1,6 @@
-# Near & Far Weddings Launch
+# Marshall & Rose Events Launch
 
-Create a one-page website for a new wedding planning business called Near & Far Weddings.
+Create a one-page website for a wedding and event planning business called Marshall & Rose Events.
 
 Use the attached copy in 1. Hero (pasted).md.
 

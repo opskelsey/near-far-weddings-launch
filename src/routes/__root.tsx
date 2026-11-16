@@ -79,10 +79,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Near & Far Weddings | Thoughtful Wedding Planning" },
+      { title: "Marshall & Rose Events | Thoughtful Wedding Planning" },
       { name: "description", content: "Warm, thoughtful wedding planning with Kelsey Marshall. Arizona-rooted, travel bag ready." },
-      { name: "author", content: "Near & Far Weddings" },
-      { property: "og:title", content: "Near & Far Weddings" },
+      { name: "author", content: "Marshall & Rose Events" },
+      { property: "og:title", content: "Marshall & Rose Events" },
       { property: "og:description", content: "Weddings, tied up with a bow. Thoughtful planning with warmth and care." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

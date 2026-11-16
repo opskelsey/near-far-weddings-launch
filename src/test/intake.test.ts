@@ -19,7 +19,7 @@ describe('Intake submissions', () => {
     const body = call?.[1]?.body;
     expect(body).toBeInstanceOf(FormData);
     if (!(body instanceof FormData)) throw new Error('Expected form fields');
-    expect({ name: body.get('name'), email: body.get('email'), date: body.get('date'), services: body.get('services') }).toEqual({ name: input.name, email: input.email, date: input.date, services: input.services });
+    expect({ name: body.get('name'), email: body.get('email'), date: body.get('date'), services: body.get('services'), subject: body.get('subject') }).toEqual({ name: input.name, email: input.email, date: input.date, services: input.services, subject: 'Marshall & Rose Events — new inquiry' });
   });
   it('allows an undecided date', () => expect(intakeSchema.safeParse({ ...input, date: '' }).success).toBe(true));
   it('only confirms success when Web3Forms accepts the request', async () => {
