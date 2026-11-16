@@ -102,8 +102,7 @@ function Index() {
           </div>
           <div className="hero-inner">
             <h1 id="hero-heading">Wedding Planning<br />& Month-Of Coordination</h1>
-            <p className="hero-copy"><span>Serving the Greater Phoenix area and beyond <Star className="hero-copy-star" /></span><span className="hero-destination">Whether you’re marrying close to home or a world away, let’s make it unforgettable.</span></p>
-            <Button asChild variant="link" className="hero-cta"><a href="#inquire"><span className="hero-cta-label">Send Me a Note</span><ArrowRight size={16} /></a></Button>
+            <p className="hero-copy">Considerate planning that honors your budget, lifts the weight off your shoulders, and lets you feel genuinely cared for every step of the way. Serving the Greater Phoenix area and beyond.</p>
           </div>
         </section>
 
