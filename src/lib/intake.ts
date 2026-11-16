@@ -13,7 +13,7 @@ export async function deliverIntake(input: IntakeInput, accessKey: string, send:
     body.set('email', data.email);
     body.set('date', data.date || 'Still deciding');
     body.set('services', data.services);
-    body.set('subject', 'Near & Far Weddings — new inquiry');
+    body.set('subject', 'Marshall & Rose Events — new inquiry');
     const response = await send('https://api.web3forms.com/submit', {
       method: 'POST',
       headers: { Accept: 'application/json' },

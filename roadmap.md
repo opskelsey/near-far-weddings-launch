@@ -1,4 +1,5 @@
 # Website roadmap
+- [ ] Rename the business to Marshall & Rose Events throughout, update the hero subtitle spacing, and use the uploaded meadow photo for the hero and link preview.
 - [x] Move "Based in the Phoenix area and serving couples across the Valley, Sedona, and beyond." to the bottom of the homepage About-me section.
 - [x] Make the six About page event photos load from the site's own files so they work from GitHub and any host.
 - [x] Put "Whether you're marrying..." on its own line in the hero subtitle and shrink the star divider to bullet size.

@@ -15,14 +15,14 @@ export const Route = createFileRoute("/about")({
   component: AboutPage,
   head: () => ({
     meta: [
-      { title: "About Kelsey Marshall | Near & Far Weddings" },
+      { title: "About Kelsey Marshall | Marshall & Rose Events" },
       {
         name: "description",
         content:
           "Meet Kelsey Marshall: lifelong organizer, wedding planner, and experienced coordinator of celebrations, corporate gatherings, and world records.",
       },
       { name: "robots", content: "index, follow, max-image-preview:large" },
-      { property: "og:title", content: "About Kelsey Marshall | Near & Far Weddings" },
+      { property: "og:title", content: "About Kelsey Marshall | Marshall & Rose Events" },
       {
         property: "og:description",
         content:
@@ -45,7 +45,7 @@ function AboutPage() {
   return (
     <div id="top" className="wedding-site about-page">
       <header className="site-header">
-        <Link to="/" className="wordmark" aria-label="Near & Far Weddings home">NEAR <span>&</span> FAR<small>W E D D I N G S</small></Link>
+        <Link to="/" className="wordmark" aria-label="Marshall & Rose Events home">NEAR <span>&</span> FAR<small>W E D D I N G S</small></Link>
         <nav className="desktop-nav" aria-label="Main navigation">
           <Link to="/" hash="offerings">Offerings</Link>
           <Link to="/about" aria-current="page">About</Link>
@@ -165,7 +165,7 @@ function AboutPage() {
         <IntakeSection service={service} onServiceChange={setService} />
       </main>
 
-      <footer className="site-footer"><div className="footer-contact"><p className="footer-location">Arizona-rooted, travel bag ready.</p><Star /></div><div className="footer-bottom"><span>© 2026 Near & Far Weddings</span><Button asChild variant="ghost" size="icon"><a href="#top" aria-label="Back to top"><ArrowUp size={17} /></a></Button></div></footer>
+      <footer className="site-footer"><div className="footer-contact"><p className="footer-location">Arizona-rooted, travel bag ready.</p><Star /></div><div className="footer-bottom"><span>© 2026 Marshall & Rose Events</span><Button asChild variant="ghost" size="icon"><a href="#top" aria-label="Back to top"><ArrowUp size={17} /></a></Button></div></footer>
     </div>
   );
 }

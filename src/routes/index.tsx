@@ -29,7 +29,7 @@ export const Route = createFileRoute("/")({
     { property: 'og:title', content: 'Phoenix Wedding Planner & Month-Of Coordinator | Arizona & Beyond' },
     { property: 'og:description', content: 'Wedding planning & month-of coordination based in Phoenix, Arizona. An experienced planner who can take the weight off your shoulders.' },
     { property: 'og:type', content: 'website' },
-    { property: 'og:site_name', content: "Near & Far Weddings" },
+    { property: 'og:site_name', content: "Marshall & Rose Events" },
     { property: 'og:locale', content: "en_US" },
     { name: 'twitter:card', content: 'summary_large_image' },
   ], scripts: loaderData?.origin ? [{
@@ -40,7 +40,7 @@ export const Route = createFileRoute("/")({
         {
           '@type': 'Organization',
           '@id': `${loaderData.origin}/#organization`,
-          name: 'Near & Far Weddings',
+          name: 'Marshall & Rose Events',
           alternateName: 'Near and Far Weddings',
           url: `${loaderData.origin}/`,
           logo: `${loaderData.origin}/near-and-far-logo.png`,
@@ -53,7 +53,7 @@ export const Route = createFileRoute("/")({
           '@type': 'WebSite',
           '@id': `${loaderData.origin}/#website`,
           url: `${loaderData.origin}/`,
-          name: 'Near & Far Weddings',
+          name: 'Marshall & Rose Events',
           publisher: { '@id': `${loaderData.origin}/#organization` },
           inLanguage: 'en-US',
         },
@@ -81,7 +81,7 @@ function Index() {
   return (
     <div id="top" className="wedding-site">
       <header className="site-header">
-        <a href="#top" className="wordmark" aria-label="Near & Far Weddings home">NEAR <span>&</span> FAR<small>W E D D I N G S</small></a>
+        <a href="#top" className="wordmark" aria-label="Marshall & Rose Events home">NEAR <span>&</span> FAR<small>W E D D I N G S</small></a>
         <nav className="desktop-nav" aria-label="Main navigation">
           {nav.map(([label, href]) => <a key={href} href={href}>{label}</a>)}
           <Link to="/about">About</Link>
@@ -144,7 +144,7 @@ function Index() {
         <IntakeSection service={service} onServiceChange={setService} />
       </main>
 
-      <footer className="site-footer"><div className="footer-contact"><p className="footer-location">Arizona-rooted, travel bag ready.</p><Star /></div><div className="footer-bottom"><span>© 2026 Near & Far Weddings</span><Button asChild variant="ghost" size="icon"><a href="#top" aria-label="Back to top"><ArrowUp size={17} /></a></Button></div></footer>
+      <footer className="site-footer"><div className="footer-contact"><p className="footer-location">Arizona-rooted, travel bag ready.</p><Star /></div><div className="footer-bottom"><span>© 2026 Marshall & Rose Events</span><Button asChild variant="ghost" size="icon"><a href="#top" aria-label="Back to top"><ArrowUp size={17} /></a></Button></div></footer>
     </div>
   );
 }

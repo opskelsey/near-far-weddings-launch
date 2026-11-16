@@ -35,10 +35,10 @@ export const Route = createFileRoute("/custom-events")({
   component: CustomEvents,
   head: () => ({
     meta: [
-      { title: "Event Planning & Coordination | Near & Far Weddings" },
+      { title: "Event Planning & Coordination | Marshall & Rose Events" },
       { name: "description", content: "Banquets, private parties, and special events, custom-quoted to your event's scope." },
       { name: "robots", content: "noindex, nofollow" },
-      { property: "og:title", content: "Event Planning & Coordination | Near & Far Weddings" },
+      { property: "og:title", content: "Event Planning & Coordination | Marshall & Rose Events" },
       { property: "og:description", content: "Banquets, private parties, and special events, custom-quoted to your event's scope." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
@@ -54,7 +54,7 @@ function CustomEvents() {
   return (
     <div className="wedding-site">
       <header className="site-header">
-        <Link to="/" className="wordmark" aria-label="Near & Far Weddings home">NEAR <span>&</span> FAR<small>W E D D I N G S</small></Link>
+        <Link to="/" className="wordmark" aria-label="Marshall & Rose Events home">NEAR <span>&</span> FAR<small>W E D D I N G S</small></Link>
         <Button asChild variant="outline" className="nav-cta"><a href={MAILTO}>Inquire <ArrowRight /></a></Button>
       </header>
       <main>
@@ -90,7 +90,7 @@ function CustomEvents() {
           <Button asChild variant="link" className="hero-cta events-cta"><a href={MAILTO}><span className="hero-cta-label">Email me at {CONTACT_EMAIL}</span><ArrowRight size={16} /></a></Button>
         </section>
       </main>
-      <footer className="site-footer"><div className="footer-contact"><p className="footer-location">Arizona-rooted, travel bag ready.</p><Star /></div><div className="footer-bottom"><span>© 2026 Near & Far Weddings</span></div></footer>
+      <footer className="site-footer"><div className="footer-contact"><p className="footer-location">Arizona-rooted, travel bag ready.</p><Star /></div><div className="footer-bottom"><span>© 2026 Marshall & Rose Events</span></div></footer>
     </div>
   );
 }

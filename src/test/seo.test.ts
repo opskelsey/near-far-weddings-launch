@@ -30,17 +30,17 @@ describe("Search listing metadata", () => {
     const org = graph.find((n) => n["@type"] === "Organization");
     const site = graph.find((n) => n["@type"] === "WebSite");
 
-    expect(org?.name).toBe("Near & Far Weddings");
+    expect(org?.name).toBe("Marshall & Rose Events");
     expect(org?.url).toBe(`${ORIGIN}/`);
     expect(org?.logo).toBe(`${ORIGIN}/near-and-far-logo.png`);
-    expect(site?.name).toBe("Near & Far Weddings");
+    expect(site?.name).toBe("Marshall & Rose Events");
     expect(site?.publisher?.["@id"]).toBe(`${ORIGIN}/#organization`);
   });
 
   it("keeps the share site name on the same spelling as the business name", () => {
     const siteName = head().meta?.find((m) => m["property"] === "og:site_name");
 
-    expect(siteName?.["content"]).toBe("Near & Far Weddings");
+    expect(siteName?.["content"]).toBe("Marshall & Rose Events");
   });
 
   it("uses the 1200 by 630 homepage photo for social link previews", () => {
