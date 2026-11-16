@@ -45,7 +45,7 @@ function AboutPage() {
   return (
     <div id="top" className="wedding-site about-page">
       <header className="site-header">
-        <Link to="/" className="wordmark" aria-label="Marshall & Rose Events home">NEAR <span>&</span> FAR<small>W E D D I N G S</small></Link>
+        <Link to="/" className="wordmark" aria-label="Marshall & Rose Events home">MARSHALL <span>&</span> ROSE<small>E V E N T S</small></Link>
         <nav className="desktop-nav" aria-label="Main navigation">
           <Link to="/" hash="offerings">Offerings</Link>
           <Link to="/about" aria-current="page">About</Link>

@@ -54,7 +54,7 @@ function CustomEvents() {
   return (
     <div className="wedding-site">
       <header className="site-header">
-        <Link to="/" className="wordmark" aria-label="Marshall & Rose Events home">NEAR <span>&</span> FAR<small>W E D D I N G S</small></Link>
+        <Link to="/" className="wordmark" aria-label="Marshall & Rose Events home">MARSHALL <span>&</span> ROSE<small>E V E N T S</small></Link>
         <Button asChild variant="outline" className="nav-cta"><a href={MAILTO}>Inquire <ArrowRight /></a></Button>
       </header>
       <main>

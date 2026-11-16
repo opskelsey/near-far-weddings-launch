@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest";
 
 import { Route } from "@/routes/index";
 
-const ORIGIN = "https://nearandfarweddings.com";
+const ORIGIN = "https://example.com";
 
 type HeadOutput = {
   meta?: { property?: string; content?: string; name?: string; title?: string }[];
@@ -32,7 +32,7 @@ describe("Search listing metadata", () => {
 
     expect(org?.name).toBe("Marshall & Rose Events");
     expect(org?.url).toBe(`${ORIGIN}/`);
-    expect(org?.logo).toBe(`${ORIGIN}/near-and-far-logo.png`);
+    expect(org?.logo).toBe(`${ORIGIN}/marshall-and-rose-logo.png`);
     expect(site?.name).toBe("Marshall & Rose Events");
     expect(site?.publisher?.["@id"]).toBe(`${ORIGIN}/#organization`);
   });

@@ -4,11 +4,11 @@ import { ArrowRight, ArrowUp, Check, Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { IntakeSection } from '@/components/intake-section';
 import { offerings, BOOKING_URL, COACH_CREDIT, COACH_CREDIT_WINDOW_DAYS } from '@/lib/wedding-offerings';
-import hero from '@/assets/hero-field.jpg';
+import hero from '@/assets/hero-meadow.jpg';
 import headshot from '@/assets/kelsey-marshall.jpg';
 import { getRequestOrigin } from '@/lib/origin.functions';
 
-const OG_IMAGE_ALT = 'A couple walking hand in hand across a dry grassy hilltop at golden hour, the bride in a white gown carrying a bouquet, hazy mountains behind them';
+const OG_IMAGE_ALT = 'A bride and groom standing close together in a green meadow, looking toward hazy mountains in warm evening light';
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -41,9 +41,9 @@ export const Route = createFileRoute("/")({
           '@type': 'Organization',
           '@id': `${loaderData.origin}/#organization`,
           name: 'Marshall & Rose Events',
-          alternateName: 'Near and Far Weddings',
+          alternateName: 'Marshall and Rose Events',
           url: `${loaderData.origin}/`,
-          logo: `${loaderData.origin}/near-and-far-logo.png`,
+          logo: `${loaderData.origin}/marshall-and-rose-logo.png`,
           image: `${loaderData.origin}/og-image.jpg`,
           description: 'Wedding planning & month-of coordination based in Phoenix, Arizona. An experienced planner who can take the weight off your shoulders.',
           founder: { '@type': 'Person', name: 'Kelsey Marshall' },
@@ -81,7 +81,7 @@ function Index() {
   return (
     <div id="top" className="wedding-site">
       <header className="site-header">
-        <a href="#top" className="wordmark" aria-label="Marshall & Rose Events home">NEAR <span>&</span> FAR<small>W E D D I N G S</small></a>
+        <a href="#top" className="wordmark" aria-label="Marshall & Rose Events home">MARSHALL <span>&</span> ROSE<small>E V E N T S</small></a>
         <nav className="desktop-nav" aria-label="Main navigation">
           {nav.map(([label, href]) => <a key={href} href={href}>{label}</a>)}
           <Link to="/about">About</Link>
@@ -98,11 +98,11 @@ function Index() {
       <main>
         <section className="hero" aria-labelledby="hero-heading">
           <div className="hero-media">
-            <img src={hero} alt="A couple walking hand in hand across a dry grassy hilltop at golden hour, the bride in a white gown carrying a bouquet, hazy mountains behind them" className="hero-image" width={1920} height={1280} fetchPriority="high" />
+            <img src={hero} alt="A bride and groom standing close together in a green meadow, looking toward hazy mountains in warm evening light" className="hero-image" width={1920} height={1280} fetchPriority="high" />
           </div>
           <div className="hero-inner">
             <h1 id="hero-heading">Wedding Planning<br />& Month-Of Coordination</h1>
-            <p className="hero-copy">Serving the Greater Phoenix area and beyond <Star className="hero-copy-star" /> Whether you’re marrying close to home or a world away, let’s make it unforgettable.</p>
+            <p className="hero-copy"><span>Serving the Greater Phoenix area and beyond <Star className="hero-copy-star" /></span><span className="hero-destination">Whether you’re marrying close to home or a world away, let’s make it unforgettable.</span></p>
             <Button asChild variant="link" className="hero-cta"><a href="#inquire"><span className="hero-cta-label">Send Me a Note</span><ArrowRight size={16} /></a></Button>
           </div>
         </section>
