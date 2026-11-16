@@ -150,9 +150,9 @@ button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
 .wedding-site p { line-height: 1.8; }
 .wedding-site em { font-family: var(--font-display); font-weight: 400; }
 .site-header { height: 99px; max-width: 1440px; padding: 0 6%; margin: auto; display: flex; align-items: center; justify-content: space-between; position: relative; }
-.wordmark { font-family: var(--font-display); font-size: 30px; line-height: 1; text-decoration: none; text-align: center; }
-.wordmark span { font-style: italic; color: var(--gold); }
-.wordmark small { display: block; font-family: var(--font-sans); font-size: 8px; margin-top: 10px; }
+.wordmark { font-family: var(--font-display); font-size: 23px; line-height: 1; text-decoration: none; text-align: center; }
+.wordmark span { font-style: italic; color: var(--gold); font-size: .9em; }
+.wordmark small { display: block; font-family: var(--font-sans); font-size: 7px; margin-top: 8px; }
 .desktop-nav { display: flex; align-items: center; gap: 35px; font-size: 12px; }
 .desktop-nav > a { transition: color .2s; }
 .desktop-nav > a:hover { color: var(--primary); }
@@ -254,7 +254,7 @@ button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
 @media (max-width: 1000px) { .desktop-nav { gap: 23px; } .offerings-grid { gap: 25px; } .offering h3 { font-size: 27px; } .about-inner { gap: 50px; } .intake-inner { gap: 44px; } }
 @media (max-width: 700px) {
   .site-header { height: 82px; padding: 0 6%; }
-  .wordmark { font-size: 25px; }.wordmark small { font-size: 7px; }
+  .wordmark { font-size: 20px; }.wordmark small { font-size: 6px; }
   .desktop-nav { display: none; }.mobile-menu { display: inline-flex; }
   .mobile-nav { position: absolute; z-index: 20; top: 82px; left: 0; right: 0; background: var(--background); padding: 15px 6% 24px; border-bottom: 1px solid var(--border); }
   .mobile-nav a { display: flex; justify-content: space-between; padding: 13px 0; font-size: 13px; }
@@ -316,16 +316,16 @@ button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
 .offering-body { flex: 1; min-width: 0; display: flex; flex-direction: column; }
 .offering-copy { font-size: 14px; color: var(--muted-foreground); display: flex; flex-direction: column; gap: 10px; margin-top: 14px; margin-bottom: 20px; }
 @media (max-width: 760px) { .offerings-grid { max-width: none; } .offering { flex-direction: column; gap: 10px; padding: 32px 24px; } .offering-number { font-size: 34px; } .fit ul, .fit-close { font-size: 14px; } }
-/* Hero: full-bleed meadow photo, with the wording held above the couple */
-.hero { position: relative; display: block; height: clamp(760px, 58vw, 1120px); min-height: 0; background: var(--background); }
+/* Hero: full-bleed meadow photo, with natural text contrast and no glow */
+.hero { position: relative; display: block; height: 900px; min-height: 0; background: var(--background); }
 .hero-media { position: absolute; inset: 0; }
 .hero-image { object-position: 50% 0%; }
-.hero-inner { position: relative; z-index: 1; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; text-align: center; padding: 28px 6% 0; background: none; }
-.hero h1 { font-family: var(--font-display); font-weight: 400; font-size: 48px; line-height: 1.1; color: var(--foreground); max-width: none; text-shadow: 0 1px 16px var(--background); }
-.hero-copy { font-size: 15px; max-width: 600px; margin: 10px 0 0; color: var(--foreground); text-shadow: 0 1px 12px var(--background); }
+.hero-inner { position: relative; z-index: 1; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; text-align: center; padding: 32px 6% 0; background: none; }
+.hero h1 { font-family: var(--font-display); font-weight: 400; font-size: 48px; line-height: 1.1; color: var(--foreground); max-width: none; text-shadow: none; }
+.hero-copy { font-size: 15px; max-width: 600px; margin: 10px 0 0; color: var(--foreground); text-shadow: none; }
 .hero-copy .hero-copy-star { display: inline; font-size: 10px; line-height: 1; margin-left: 4px; }
 .hero-destination { display: block; margin-top: 12px; }
-.hero-cta { position: relative; height: auto; padding: 0; border-radius: 0; background: none; box-shadow: none; color: var(--foreground); font-size: 12px; letter-spacing: .17em; text-transform: uppercase; gap: 0; text-shadow: 0 1px 12px var(--background); }
+.hero-cta { position: relative; height: auto; padding: 0; border-radius: 0; background: none; box-shadow: none; color: var(--foreground); font-size: 12px; letter-spacing: .17em; text-transform: uppercase; gap: 0; text-shadow: none; }
 .hero-cta, .hero-cta:hover { text-decoration: none; }
 .hero-cta .hero-cta-label { position: relative; padding-bottom: 10px; }
 .hero-cta .hero-cta-label::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 1px; background: currentColor; opacity: .8; }
@@ -339,22 +339,22 @@ button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
   .hero h1 { font-size: 56px; }
 }
 @media (min-width: 701px) and (max-width: 1200px) {
-  .hero { height: 800px; }
-  .hero-inner { padding-top: 12px; }
+  .hero { height: 900px; }
+  .hero-inner { padding-top: 24px; }
   .hero h1 { font-size: 38px; }
   .hero-copy { font-size: 13px; margin: 8px 0 0; }
   .hero-destination { margin-top: 8px; }
 }
 @media (max-width: 700px) {
-  .hero { height: 860px; }
-  .hero-inner { padding-top: 24px; }
+  .hero { height: 960px; }
+  .hero-inner { padding-top: 28px; }
   .hero h1 { font-size: clamp(25px, 7.7vw, 30px); }
   .hero-copy { font-size: 13px; max-width: 320px; margin: 14px 0 4px; }
   .hero-destination { margin-top: 12px; }
 }
 @media (max-width: 360px) {
-  .hero { height: 920px; }
-  .hero-inner { padding-top: 20px; }
+  .hero { height: 960px; }
+  .hero-inner { padding-top: 28px; }
   .hero-copy { font-size: 12px; }
 }
 @media (max-width: 1199px) { .welcome::before, .welcome::after { display: none; } }
