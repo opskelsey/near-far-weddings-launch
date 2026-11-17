@@ -4,7 +4,7 @@ import { offerings, eligibleCoachCredit, BOOKING_URL, INSTAGRAM_URL } from '@/li
 describe('Wedding offering rules', () => {
   it('prices Kickstart Session at $150', () => expect(offerings[0].price).toBe(150));
   it('books Kickstart Session through Kelsey’s Calendly', () => expect(BOOKING_URL).toBe('https://calendly.com/marshall-kelseyrose/kickstart'));
-  it('keeps the existing Instagram account link', () => expect(INSTAGRAM_URL).toBe('https://www.instagram.com/nearandfarweddings'));
+  it('keeps the Instagram account link ready for the new handle', () => expect(INSTAGRAM_URL).toBe('https://www.instagram.com/marshallandroseevents'));
   it('sets the original Kickstart Session price to $225', () => expect(offerings[0].originalPrice).toBe(225));
   it('prices Month-Of Coordination at $1,800', () => expect(offerings[1].price).toBe(1800));
   it('shows the Month-Of Coordination price as starting at $1,800', () => expect(offerings[1].priceLabel).toBe('Starting at $1,800'));
