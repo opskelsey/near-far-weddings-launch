@@ -47,13 +47,15 @@ function AboutPage() {
       <header className="site-header">
         <Link to="/" className="wordmark" aria-label="Marshall & Rose Events home">MARSHALL <span>&</span> ROSE<small>E V E N T S</small></Link>
         <nav className="desktop-nav" aria-label="Main navigation">
-          <Link to="/" hash="offerings">Offerings</Link>
+          <Link to="/" hash="offerings">Wedding Services</Link>
+          <Link to="/custom-events">Custom Events</Link>
           <Link to="/about" aria-current="page">About</Link>
           <Button asChild variant="outline" className="nav-cta"><a href="#inquire">Let’s begin <ArrowRight /></a></Button>
         </nav>
         <Button className="mobile-menu" variant="ghost" size="icon" aria-label={menuOpen ? "Close menu" : "Open menu"} onClick={() => setMenuOpen(!menuOpen)}>{menuOpen ? <X /> : <Menu />}</Button>
         {menuOpen && <nav className="mobile-nav" aria-label="Mobile navigation">
-          <Link to="/" hash="offerings" onClick={() => setMenuOpen(false)}>Offerings<ArrowRight size={16} /></Link>
+          <Link to="/" hash="offerings" onClick={() => setMenuOpen(false)}>Wedding Services<ArrowRight size={16} /></Link>
+          <Link to="/custom-events" onClick={() => setMenuOpen(false)}>Custom Events<ArrowRight size={16} /></Link>
           <Link to="/about" onClick={() => setMenuOpen(false)}>About<ArrowRight size={16} /></Link>
           <a href="#inquire" onClick={() => setMenuOpen(false)}>Let’s begin<ArrowRight size={16} /></a>
         </nav>}

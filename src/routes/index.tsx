@@ -71,8 +71,6 @@ function Index() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [service, setService] = useState('Not sure yet');
 
-  const nav = [['Offerings', '#offerings']] as const;
-
   function inquire(selectedService: string) {
     setService(selectedService);
     document.getElementById('inquire')?.scrollIntoView({ behavior: 'smooth' });
@@ -83,13 +81,15 @@ function Index() {
       <header className="site-header">
         <a href="#top" className="wordmark" aria-label="Marshall & Rose Events home">MARSHALL <span>&</span> ROSE<small>E V E N T S</small></a>
         <nav className="desktop-nav" aria-label="Main navigation">
-          {nav.map(([label, href]) => <a key={href} href={href}>{label}</a>)}
+          <a href="#offerings">Wedding Services</a>
+          <Link to="/custom-events">Custom Events</Link>
           <Link to="/about">About</Link>
           <Button asChild variant="outline" className="nav-cta"><a href="#inquire">Let’s begin <ArrowRight /></a></Button>
         </nav>
         <Button className="mobile-menu" variant="ghost" size="icon" aria-label={menuOpen ? 'Close menu' : 'Open menu'} onClick={() => setMenuOpen(!menuOpen)}>{menuOpen ? <X /> : <Menu />}</Button>
         {menuOpen && <nav className="mobile-nav" aria-label="Mobile navigation">
-          {nav.map(([label, href]) => <a href={href} key={href} onClick={() => setMenuOpen(false)}>{label}<ArrowRight size={16} /></a>)}
+          <a href="#offerings" onClick={() => setMenuOpen(false)}>Wedding Services<ArrowRight size={16} /></a>
+          <Link to="/custom-events" onClick={() => setMenuOpen(false)}>Custom Events<ArrowRight size={16} /></Link>
           <Link to="/about" onClick={() => setMenuOpen(false)}>About<ArrowRight size={16} /></Link>
           <a href="#inquire" onClick={() => setMenuOpen(false)}>Let’s begin<ArrowRight size={16} /></a>
         </nav>}

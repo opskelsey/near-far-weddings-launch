@@ -154,7 +154,7 @@ button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
 .wordmark span { font-style: italic; color: var(--gold); font-size: .9em; }
 .wordmark small { display: block; font-family: var(--font-sans); font-size: 7px; margin-top: 8px; }
 .desktop-nav { display: flex; align-items: center; gap: 35px; font-size: 12px; }
-.desktop-nav > a { transition: color .2s; }
+.desktop-nav > a { transition: color .2s; white-space: nowrap; }
 .desktop-nav > a:hover { color: var(--primary); }
 .nav-cta { border-color: var(--gold); color: var(--foreground); height: 40px; padding: 0 21px; font-size: 12px; border-radius: 0; background: transparent; box-shadow: none; }
 .mobile-menu { display: none; }
