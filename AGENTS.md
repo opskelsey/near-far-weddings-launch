@@ -9,7 +9,7 @@
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
 
-- Keep the homepage as a long-scrolling index route with hash navigation for its sections. The main navigation links /, /about and /custom-events; /custom-events stays noindex until Kelsey decides whether it should appear in search. Any other page is a separate noindex route not linked from navigation.
+- Keep the homepage as a long-scrolling index route with hash navigation for its sections. The main navigation links /, /about and /custom-events. Search visibility for these pages follows project memory; any other page is a separate noindex route not linked from navigation.
 - Keep offering prices and credit eligibility in the shared wedding-offerings module with concrete rule tests, so business values remain consistent.
 - Send intake inquiries directly from browser event handlers to Web3Forms using its publishable submission key and shared input validation, because its free tier blocks server requests; confirm submission only after provider acceptance.
 

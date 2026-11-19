@@ -37,7 +37,7 @@ export const Route = createFileRoute("/custom-events")({
     meta: [
       { title: "Event Planning & Coordination | Marshall & Rose Events" },
       { name: "description", content: "Banquets, private parties, and special events, custom-quoted to your event's scope." },
-      { name: "robots", content: "noindex, nofollow" },
+      { name: "robots", content: "index, follow, max-image-preview:large" },
       { property: "og:title", content: "Event Planning & Coordination | Marshall & Rose Events" },
       { property: "og:description", content: "Banquets, private parties, and special events, custom-quoted to your event's scope." },
       { property: "og:type", content: "website" },

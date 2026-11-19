@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 
 import { Route } from "@/routes/index";
+import { Route as CustomEventsRoute } from "@/routes/custom-events";
 
 const ORIGIN = "https://example.com";
 
@@ -16,6 +17,16 @@ function head(): HeadOutput {
 }
 
 describe("Search listing metadata", () => {
+  it("allows Google to index and follow the Custom Events page", () => {
+    const headFn = CustomEventsRoute.options.head;
+    if (!headFn) throw new Error("the Custom Events route must define head()");
+    const output = headFn({} as never) as unknown as HeadOutput;
+
+    expect(output.meta?.find((m) => m.name === "robots")?.content).toBe(
+      "index, follow, max-image-preview:large",
+    );
+  });
+
   it("tells search engines the business name", () => {
     const ld = head().scripts?.find((s) => s.type === "application/ld+json");
 
