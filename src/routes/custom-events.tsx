@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowRight, Check } from "lucide-react";
+import { useState } from "react";
+import { ArrowRight, Check, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export const CONTACT_EMAIL = "marshall.kelseyrose@gmail.com";
@@ -51,11 +52,25 @@ function Star() {
 }
 
 function CustomEvents() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <div className="wedding-site">
       <header className="site-header">
         <Link to="/" className="wordmark" aria-label="Marshall & Rose Events home">MARSHALL <span>&</span> ROSE<small>E V E N T S</small></Link>
-        <Button asChild variant="outline" className="nav-cta"><a href={MAILTO}>Inquire <ArrowRight /></a></Button>
+        <nav className="desktop-nav" aria-label="Main navigation">
+          <Link to="/" hash="offerings">Wedding Services</Link>
+          <Link to="/custom-events" aria-current="page">Custom Events</Link>
+          <Link to="/about">About</Link>
+          <Button asChild variant="outline" className="nav-cta"><a href="#contact">Let’s begin <ArrowRight /></a></Button>
+        </nav>
+        <Button className="mobile-menu" variant="ghost" size="icon" aria-label={menuOpen ? "Close menu" : "Open menu"} onClick={() => setMenuOpen(!menuOpen)}>{menuOpen ? <X /> : <Menu />}</Button>
+        {menuOpen && <nav className="mobile-nav" aria-label="Mobile navigation">
+          <Link to="/" hash="offerings" onClick={() => setMenuOpen(false)}>Wedding Services<ArrowRight size={16} /></Link>
+          <Link to="/custom-events" onClick={() => setMenuOpen(false)}>Custom Events<ArrowRight size={16} /></Link>
+          <Link to="/about" onClick={() => setMenuOpen(false)}>About<ArrowRight size={16} /></Link>
+          <a href="#contact" onClick={() => setMenuOpen(false)}>Let’s begin<ArrowRight size={16} /></a>
+        </nav>}
       </header>
       <main>
         <section className="welcome section-space" aria-labelledby="events-heading">
@@ -84,7 +99,7 @@ function CustomEvents() {
           <div className="welcome-copy"><p>Every gathering has its own footprint, from guest counts and venue logistics to single-evening vs. multi-day timelines. All services are custom-quoted based on the scope, scale, and hands-on hours required for your event.</p></div>
         </section>
 
-        <section className="welcome no-side-stars section-space" aria-labelledby="contact-heading">
+        <section id="contact" className="welcome no-side-stars section-space" aria-labelledby="contact-heading">
           <h2 id="contact-heading">Let’s <em>talk</em></h2>
           <div className="welcome-copy"><p>Reach out to me to inquire and schedule a free consult.</p></div>
           <Button asChild variant="link" className="hero-cta events-cta"><a href={MAILTO}><span className="hero-cta-label">Email me at {CONTACT_EMAIL}</span><ArrowRight size={16} /></a></Button>
