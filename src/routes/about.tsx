@@ -78,13 +78,13 @@ function AboutPage() {
           <div className="testimonials-grid">
             <figure>
               <span className="quote-mark" aria-hidden="true">“</span>
-              <blockquote>Working with Kelsey is great because your brain is free to focus on what you care about. You know the details and problem-solving are handled. She’s excellent at anticipating and solving small issues before they ever reach you.</blockquote>
-              <figcaption>Alex Swindle <span aria-hidden="true">·</span> Event Photographer</figcaption>
+              <blockquote>Kelsey is a true event-planning aficionado. She’s the full package: creative, attentive, timely, and organized. Kelsey listens to my ideas, helps me plan the best approach, and takes care of every little detail. She stays true to my vision while taking the weight of planning off my shoulders. She thinks of all the moving parts that I didn’t even know existed. I’m never worried when Kelsey takes on event planning for me. She never misses a step.</blockquote>
+              <figcaption>Hannah Torres <span aria-hidden="true">·</span> Program Manager</figcaption>
             </figure>
             <figure>
               <span className="quote-mark" aria-hidden="true">“</span>
-              <blockquote>Kelsey is a true event-planning aficionado. She’s the full package: creative, attentive, timely, and organized. Kelsey listens to my ideas, helps me plan the best approach, and takes care of every little detail. She stays true to my vision while taking the weight of planning off my shoulders. She thinks of all the moving parts that I didn’t even know existed. I’m never worried when Kelsey takes on event planning for me. She never misses a step.</blockquote>
-              <figcaption>Hannah Torres <span aria-hidden="true">·</span> Program Manager</figcaption>
+              <blockquote>Working with Kelsey is great because your brain is free to focus on what you care about. You know the details and problem-solving are handled. She’s excellent at anticipating and solving small issues before they ever reach you.</blockquote>
+              <figcaption>Alex Swindle <span aria-hidden="true">·</span> Event Photographer</figcaption>
             </figure>
           </div>
         </section>
