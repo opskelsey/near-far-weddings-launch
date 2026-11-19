@@ -102,7 +102,7 @@ function Index() {
           </div>
           <div className="hero-inner">
             <h1 id="hero-heading">Wedding Planning<br />& Month-Of Coordination</h1>
-            <p className="hero-copy">Considerate planning that honors your budget, lifts the weight off your shoulders, and lets you feel genuinely cared for every step of the way. Serving the Greater Phoenix area and beyond.</p>
+            <p className="hero-copy">Considerate planning that honors your budget, lifts the weight off your shoulders, and lets you feel cared for every step of the way. Serving the Greater Phoenix area and beyond.</p>
           </div>
         </section>
 
